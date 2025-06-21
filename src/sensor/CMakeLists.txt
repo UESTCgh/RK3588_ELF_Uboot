@@ -22,6 +22,24 @@ find_package(std_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_srvs REQUIRED)
 
+find_package(rosidl_default_generators REQUIRED)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/CoreCommand.msg"
+  "msg/DeviceStatus.msg"
+  DEPENDENCIES std_msgs
+)
+
+# openamp
+add_executable(openamp_core1 src/openamp_core1.cpp)
+ament_target_dependencies(openamp_core1 rclcpp std_msgs)
+
+rosidl_target_interfaces(openamp_core1
+  ${PROJECT_NAME} "rosidl_typesupport_cpp"
+)
+
+
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -52,6 +70,7 @@ install(TARGETS
   sensor_node
   human_detector_client
   do_something_server
+  openamp_core1
   DESTINATION lib/${PROJECT_NAME}
 )
 

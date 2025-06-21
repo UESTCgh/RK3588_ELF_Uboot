@@ -1,26 +1,26 @@
-import sounddevice as sd
-import numpy as np
-from scipy.io.wavfile import write
+from speechGC import Speech
 
-# 录音参数
-duration = 5  # 录音时长（秒）
-sample_rate = 44100  # 采样率
-channels = 2  # 声道数（单声道为1，立体声为2）
-dtype = 'int16'  # 数据类型
+speech = Speech()
 
-print("开始录音...")
+print("请按下键盘上的 1、2、3、4（按 ESC 退出）")
 
-# 开始录音
-recording = sd.rec(int(duration * sample_rate), samplerate=sample_rate, channels=channels, dtype=dtype)
-sd.wait()  # 等待录音完成
-
-print("录音完成。")
-
-# 获取录音数据并归一化（因为 int16 的范围是 -32768 到 32767）
-recording_normalized = recording / np.iinfo(dtype).max
-
-# 保存为 WAV 文件
-filename = "recording.wav"
-write(filename, sample_rate, (recording_normalized * 32767).astype(dtype))
-
-print(f"录音已保存为 {filename}")
+while True:
+    key = input("按下键盘上的数字键（1-5）或 C 键：")
+    if key == '1':
+        print("你按下了键 1")
+        speech.talk('好的，这就去A1006号房间')
+    elif key == '2':
+        print("你按下了键 2")
+        speech.talk('已到达目标房间，请问有什么需要帮助的吗？')
+    elif key == '3':
+        print("你按下了键 3")
+        speech.talk('好的，这就去A1009号房间')
+    elif key == '4':
+        print("你按下了键 4")
+        speech.talk('已到达目标房间，请问有什么需要帮助的吗？')
+    elif key == '5':
+        print("你按下了键 5")
+        speech.talk('好的，开始返回服务点')
+    elif key == 'f':
+        print("检测到 ESC，退出程序。")
+        break

@@ -2,7 +2,7 @@
 from setuptools import find_packages, setup
 
 # 包名称
-package_name = 'uboot_chat'
+package_name = 'yolo_v5'
 
 # 调用setup配置包信息
 setup(
@@ -22,15 +22,14 @@ setup(
     zip_safe=True, # 指定包是否可以作为zip文件安全地安装和运行
     maintainer='xyc', # 指定包的维护者姓名
     maintainer_email='vistar@todo.todo', # 指定维护者的电子邮件地址
-    description='chat function', # 包的简短描述
+    description='yolo_v5', # 包的简短描述
     license='Apache-2.0', # 包的许可证类型
     tests_require=['pytest'], # 指定运行测试所需的依赖项
     # 定义入口点，即将包内的函数或类暴露为命令行工具
     entry_points={
         'console_scripts': [
             # 定义一个名为talker的命令行工具，映射到hello_world_py.publisher模块中的main函数
-            "chat = " + package_name + ".chat:main",
-            "pub = " + package_name + ".test_pub_msg:main"
+            "start = " + package_name + ".yolo_node:main",
         ],
     },
 )

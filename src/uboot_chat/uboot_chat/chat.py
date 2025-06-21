@@ -16,6 +16,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String
 from time import sleep
+from sensor.msg import DeviceStatus
 
 
 class Chat:
@@ -30,19 +31,29 @@ class Chat:
         self.work = True
         self.recognizer_thread.start()
         while self.work:
+            # question = input('顾客：' )
+            if self.recognizer.rec_result.empty():
+                sleep(0.1)
+                continue
             question = self.recognizer.rec_result.get()
             print('顾客：' + question)
             answer = self.chat_core.contact(question)
-            self.speech.talk(answer)
-            print('征服者机器人：'+answer)
+            if answer:
+                self.talk(answer)
             self.recognizer.rec_result.task_done()
             
+    def talk(self, msg):
+        self.recognizer.close_ear()
+        self.speech.talk(msg)
+        self.recognizer.open_ear()
+        print('UBOOT机器人：'+msg)
 
     def end(self):
         self.work = False
         self.recognizer.end()
         self.chat_core.end()
         self.speech.end()
+        self.recognizer_thread.join()
 
 
 class ChatPublisher(Node):
@@ -52,16 +63,45 @@ class ChatPublisher(Node):
         self.chat_thread = threading.Thread(target=self.chat.start)
         self.publisher_ = self.create_publisher(String, '/chat', 10)
         self.subscription = self.create_subscription(String, '/uboot', self.listener_callback, 10)
-        self.timer_ = self.create_timer(1.0, self.timer_callback)
+        self.subscription_status = self.create_subscription(DeviceStatus, '/from_core', self.status_callback, 10)
+        self.T = 24  # 温度
+        self.H = 68  # 湿度
+        self.talk = False  # 说话标志位
+        self.timer_ = self.create_timer(0.5, self.timer_callback)
         self.chat_thread.start()
 
     def listener_callback(self, msg):
-        print(msg.data)
+        if str(msg.data) == 'back':
+            self.chat.talk('尊敬的客人，我们已到达目标房间，本机将开始返回服务点')
+
+    def status_callback(self, msg: DeviceStatus):
+        self.T = msg.temperature
+        self.H = msg.humidity
+        if msg.mq2 == 0 and self.talk==False:
+            self.talk = True
+            self.chat.talk('警告！有毒，快跑！')
+            self.talk = False
+
 
     def timer_callback(self):
         msg = String()
-        msg.data = "0"
+        if self.chat.chat_core.user_requirements.empty():
+            msg.data = "0"
+        else:
+            requirement = str(self.chat.chat_core.user_requirements.get())[1:]
+            if requirement.isdigit():
+                msg.data = requirement
+            else:
+                msg.data = "0"
+                self.talk_status(requirement)
+            self.chat.chat_core.user_requirements.task_done()
         self.publisher_.publish(msg)
+
+    def talk_status(self, status):
+        if status == '温度':
+            self.chat.talk(f'现在的环境温度为{self.T:.1f}度')
+        else:
+            self.chat.talk(f'现在的环境湿度为百分之{self.H:.1f}')
 
     def msg_to_uboot(self, value:str):
         msg = String()
@@ -70,6 +110,7 @@ class ChatPublisher(Node):
     
     def end(self):
         self.chat.end()
+        self.chat_thread.join()
 
 
 def main(args=None):
