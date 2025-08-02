@@ -1,0 +1,65 @@
+[3.017s] Invoking command in '/home/uboot/data/ros2_uboot/src/uboot_chat': PYTHONPATH=/home/uboot/data/ros2_uboot/build/uboot_chat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uboot_chat build --build-base /home/uboot/data/ros2_uboot/build/uboot_chat/build install --record /home/uboot/data/ros2_uboot/build/uboot_chat/install.log --install-scripts $base/lib/uboot_chat --single-version-externally-managed install_data
+[4.971s] running egg_info
+[4.975s] creating ../../build/uboot_chat/uboot_chat.egg-info
+[4.978s] writing ../../build/uboot_chat/uboot_chat.egg-info/PKG-INFO
+[4.982s] writing dependency_links to ../../build/uboot_chat/uboot_chat.egg-info/dependency_links.txt
+[4.985s] writing entry points to ../../build/uboot_chat/uboot_chat.egg-info/entry_points.txt
+[4.987s] writing requirements to ../../build/uboot_chat/uboot_chat.egg-info/requires.txt
+[4.989s] writing top-level names to ../../build/uboot_chat/uboot_chat.egg-info/top_level.txt
+[4.999s] writing manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'
+[5.351s] reading manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'
+[5.361s] writing manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'
+[5.362s] running build
+[5.362s] running build_py
+[5.363s] creating /home/uboot/data/ros2_uboot/build/uboot_chat/build
+[5.363s] creating /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib
+[5.363s] creating /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[5.364s] copying uboot_chat/__init__.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[5.364s] copying uboot_chat/micro_recognizer.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[5.378s] copying uboot_chat/calibrate.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[5.384s] copying uboot_chat/test.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[5.387s] copying uboot_chat/test_micro_record.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[5.388s] copying uboot_chat/publisher.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[5.390s] copying uboot_chat/test_micro.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[5.393s] copying uboot_chat/test_pub_msg.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[5.395s] copying uboot_chat/speechGC.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[5.397s] copying uboot_chat/chat.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[5.401s] copying uboot_chat/sparkModel.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[5.413s] running install
+[5.416s] running install_lib
+[5.435s] creating /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[5.435s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/__init__.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[5.435s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/micro_recognizer.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[5.435s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/calibrate.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[5.436s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/test.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[5.436s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/test_micro_record.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[5.436s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/publisher.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[5.437s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/test_micro.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[5.437s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/test_pub_msg.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[5.438s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/speechGC.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[5.438s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/chat.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[5.439s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/sparkModel.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[5.441s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/__init__.py to __init__.cpython-38.pyc
+[5.448s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/micro_recognizer.py to micro_recognizer.cpython-38.pyc
+[5.452s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/calibrate.py to calibrate.cpython-38.pyc
+[5.455s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/test.py to test.cpython-38.pyc
+[5.457s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/test_micro_record.py to test_micro_record.cpython-38.pyc
+[5.458s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/publisher.py to publisher.cpython-38.pyc
+[5.460s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/test_micro.py to test_micro.cpython-38.pyc
+[5.462s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/test_pub_msg.py to test_pub_msg.cpython-38.pyc
+[5.464s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/speechGC.py to speechGC.cpython-38.pyc
+[5.466s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/chat.py to chat.cpython-38.pyc
+[5.471s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/sparkModel.py to sparkModel.cpython-38.pyc
+[5.477s] running install_data
+[5.479s] creating /home/uboot/data/ros2_uboot/install/uboot_chat/share/ament_index
+[5.480s] creating /home/uboot/data/ros2_uboot/install/uboot_chat/share/ament_index/resource_index
+[5.481s] creating /home/uboot/data/ros2_uboot/install/uboot_chat/share/ament_index/resource_index/packages
+[5.482s] copying resource/uboot_chat -> /home/uboot/data/ros2_uboot/install/uboot_chat/share/ament_index/resource_index/packages
+[5.484s] copying package.xml -> /home/uboot/data/ros2_uboot/install/uboot_chat/share/uboot_chat
+[5.485s] running install_egg_info
+[5.496s] Copying ../../build/uboot_chat/uboot_chat.egg-info to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat-0.0.0-py3.8.egg-info
+[5.501s] running install_scripts
+[5.605s] Installing chat script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat
+[5.607s] Installing pub script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat
+[5.611s] writing list of installed files to '/home/uboot/data/ros2_uboot/build/uboot_chat/install.log'
+[5.855s] Invoked command in '/home/uboot/data/ros2_uboot/src/uboot_chat' returned '0': PYTHONPATH=/home/uboot/data/ros2_uboot/build/uboot_chat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uboot_chat build --build-base /home/uboot/data/ros2_uboot/build/uboot_chat/build install --record /home/uboot/data/ros2_uboot/build/uboot_chat/install.log --install-scripts $base/lib/uboot_chat --single-version-externally-managed install_data

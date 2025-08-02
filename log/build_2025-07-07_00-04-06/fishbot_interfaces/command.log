@@ -1,0 +1,4 @@
+Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_interfaces -- -j8 -l8
+Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_interfaces -- -j8 -l8
+Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_interfaces
+Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_interfaces

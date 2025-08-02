@@ -1,0 +1,13 @@
+[35m[1mScanning dependencies of target sensor_node[0m
+[  4%] Built target do_something_server
+[ 12%] Built target sensor__rosidl_generator_c
+[ 17%] Built target human_detector_client
+[ 19%] Built target sensor__cpp
+[ 21%] [32mBuilding CXX object CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o[0m
+[ 29%] Built target sensor__rosidl_typesupport_c
+[ 38%] Built target sensor__rosidl_typesupport_introspection_c
+[ 46%] Built target sensor__rosidl_typesupport_fastrtps_cpp
+[ 55%] Built target sensor__rosidl_typesupport_cpp
+[ 63%] Built target sensor__rosidl_typesupport_introspection_cpp
+[ 72%] Built target sensor__rosidl_typesupport_fastrtps_c
+[ 72%] Built target sensor

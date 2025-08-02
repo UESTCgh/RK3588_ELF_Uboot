@@ -1,0 +1,19 @@
+[0.225s] Invoking command in '/home/uboot/data/ros2_uboot/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/micro_ros_agent -- -j8 -l8
+[0.392s] [ 31%] [34m[1mPerforming download step (git clone) for 'xrceagent'[0m
+[0.463s] Cloning into 'xrceagent'...
+[0.628s] fatal: unable to access 'https://github.com/eProsima/Micro-XRCE-DDS-Agent.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.
+[0.638s] Cloning into 'xrceagent'...
+[0.711s] fatal: unable to access 'https://github.com/eProsima/Micro-XRCE-DDS-Agent.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.
+[0.722s] Cloning into 'xrceagent'...
+[0.797s] fatal: unable to access 'https://github.com/eProsima/Micro-XRCE-DDS-Agent.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.
+[0.801s] -- Had to git clone more than once:
+[0.802s]           3 times.
+[0.802s] CMake Error at /home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/tmp/xrceagent-gitclone.cmake:31 (message):
+[0.802s]   Failed to clone repository:
+[0.803s]   'https://github.com/eProsima/Micro-XRCE-DDS-Agent.git'
+[0.803s] 
+[0.804s] 
+[0.805s] make[2]: *** [CMakeFiles/xrceagent.dir/build.make:91: agent/src/xrceagent-stamp/xrceagent-download] Error 1
+[0.805s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/xrceagent.dir/all] Error 2
+[0.806s] make: *** [Makefile:84: all] Error 2
+[0.810s] Invoked command in '/home/uboot/data/ros2_uboot/build/micro_ros_agent' returned '2': AMENT_PREFIX_PATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/micro_ros_agent -- -j8 -l8

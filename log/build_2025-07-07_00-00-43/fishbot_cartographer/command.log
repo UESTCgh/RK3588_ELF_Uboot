@@ -1,0 +1,6 @@
+Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/uboot/data/ros2_uboot/src/fishbot/src/fishbot_cartographer -DCMAKE_INSTALL_PREFIX=/home/uboot/data/ros2_uboot/install/fishbot_cartographer
+Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/uboot/data/ros2_uboot/src/fishbot/src/fishbot_cartographer -DCMAKE_INSTALL_PREFIX=/home/uboot/data/ros2_uboot/install/fishbot_cartographer
+Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_cartographer -- -j8 -l8
+Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_cartographer -- -j8 -l8
+Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_cartographer
+Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_cartographer

@@ -30,13 +30,18 @@ public:
         npu_publisher_     = this->create_publisher<std_msgs::msg::Float32>("npu", 10);
 
         init_sensor();
+
+        led_subscriber_ = this->create_subscription<std_msgs::msg::Bool>(
+            "led", 10,
+            std::bind(&SensorNode::led_callback, this, std::placeholders::_1));
+
         init_mq2();
 
         // 等待 100ms 确保文件系统设备准备完毕
         usleep(100000);
 
         // 每 200ms 读取并发布所有数据
-        timer_ = this->create_wall_timer(200ms, std::bind(&SensorNode::read_and_publish, this));
+        timer_ = this->create_wall_timer(50ms, std::bind(&SensorNode::read_and_publish, this));
     }
 
 private:
@@ -52,10 +57,23 @@ private:
     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr    mq2_publisher_;
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr npu_publisher_;
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr cpuT_publisher_;
+
+    //订阅者
+    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr led_subscriber_;
+
     rclcpp::TimerBase::SharedPtr                         timer_;
 
     float humidity;
     float temperature;
+    bool gpio101_state_ = false;
+    bool gpio97_state_ = false;
+
+    void led_callback(const std_msgs::msg::Bool::SharedPtr msg)
+    {
+        gpio101_state_ = msg->data;
+        write_gpio101(gpio101_state_);
+        // RCLCPP_INFO(this->get_logger(), "Set LED: %s", gpio101_state_ ? "ON" : "OFF");
+    }
 
     void init_sensor()
     {
@@ -89,6 +107,26 @@ private:
             gpio_file >> gpio_value_;
         } else {
             RCLCPP_ERROR(this->get_logger(), "Failed to read GPIO value");
+        }
+    }
+
+    void write_gpio101(bool value)
+    {
+        std::ofstream gpio_file("/sys/class/gpio/gpio101/value");
+        if (gpio_file.is_open()) {
+            gpio_file << (value ? "1" : "0");
+        } else {
+            RCLCPP_ERROR(this->get_logger(), "Failed to write GPIO101");
+        }
+    }
+
+    void write_gpio97(bool value)
+    {
+        std::ofstream gpio_file("/sys/class/gpio/gpio97/value");
+        if (gpio_file.is_open()) {
+            gpio_file << (value ? "1" : "0");
+        } else {
+            RCLCPP_ERROR(this->get_logger(), "Failed to write GPIO101");
         }
     }
 
@@ -180,6 +218,10 @@ private:
         std_msgs::msg::Bool mq2_msg;
         mq2_msg.data = (gpio_value_ == "0");
         mq2_publisher_->publish(mq2_msg);
+
+        //GOIO 
+        // gpio97_state_ = !gpio97_state_;
+        // write_gpio97(gpio97_state_);
 
         // —— CPU 温度读取 & 发布 —— //
         float cpu_temp = read_cpu_temp();

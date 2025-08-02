@@ -1,0 +1,83 @@
+[0.000000] (-) TimerEvent: {}
+[0.000622] (-) JobUnselected: {'identifier': 'fishbot_bringup'}
+[0.000819] (-) JobUnselected: {'identifier': 'fishbot_cartographer'}
+[0.000929] (-) JobUnselected: {'identifier': 'fishbot_description'}
+[0.001033] (-) JobUnselected: {'identifier': 'fishbot_interfaces'}
+[0.001130] (-) JobUnselected: {'identifier': 'fishbot_navigation2'}
+[0.001235] (-) JobUnselected: {'identifier': 'micro_ros_agent'}
+[0.001555] (-) JobUnselected: {'identifier': 'micro_ros_msgs'}
+[0.001721] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.001827] (-) JobUnselected: {'identifier': 'sensor'}
+[0.001946] (-) JobUnselected: {'identifier': 'task_scheduler'}
+[0.002047] (-) JobUnselected: {'identifier': 'yolo_v5'}
+[0.002308] (uboot_chat) JobQueued: {'identifier': 'uboot_chat', 'dependencies': OrderedDict()}
+[0.002472] (uboot_chat) JobStarted: {'identifier': 'uboot_chat'}
+[0.099261] (-) TimerEvent: {}
+[0.199905] (-) TimerEvent: {}
+[0.300475] (-) TimerEvent: {}
+[0.401187] (-) TimerEvent: {}
+[0.501836] (-) TimerEvent: {}
+[0.602395] (-) TimerEvent: {}
+[0.702924] (-) TimerEvent: {}
+[0.803470] (-) TimerEvent: {}
+[0.856981] (uboot_chat) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/uboot_chat', 'build', '--build-base', '/home/uboot/data/ros2_uboot/build/uboot_chat/build', 'install', '--record', '/home/uboot/data/ros2_uboot/build/uboot_chat/install.log', '--install-scripts', '$base/lib/uboot_chat', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/uboot/data/ros2_uboot/src/uboot_chat', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'uboot', 'SSH_CLIENT': '192.168.0.3 64219 22', 'LC_TIME': 'C.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/uboot/data/ros2_uboot/install/sensor/lib:/home/uboot/data/ros2_uboot/install/micro_ros_agent/lib:/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib:/home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/uboot', 'OLDPWD': '/home/uboot', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'COGL_DRIVER': 'gles2', 'LC_MONETARY': 'C.UTF-8', 'deepseekR1_s': '/home/uboot/data/xyc/LLM/model/DeepSeek-R1-Distill-Qwen-1.5B_W8A8_RK3588.rkllm', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'QTWEBENGINE_CHROMIUM_FLAGS': '--no-sandbox --disable-es3-gl-context --ignore-gpu-blacklist --ignore-gpu-blocklist --enable-accelerated-video-decode', 'COLCON_PREFIX_PATH': '/home/uboot/data/ros2_uboot/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'uboot', 'qwen3_s': '/home/uboot/data/xyc/LLM/model/Qwen3-0.6B-rk3588-w8a8.rkllm', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'GST_GL_API': 'gles2', 'XDG_SESSION_ID': 'c10', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/uboot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'a4', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1001', 'GST_GL_PLATFORM': 'egl', 'ADBD_SHELL': '/bin/bash', 'DISPLAY': 'localhost:10.0', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/sensor:/home/uboot/data/ros2_uboot/install/rplidar_ros:/home/uboot/data/ros2_uboot/install/micro_ros_agent:/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/home/uboot/data/ros2_uboot/install/fishbot_navigation2:/home/uboot/data/ros2_uboot/install/fishbot_interfaces:/home/uboot/data/ros2_uboot/install/fishbot_description:/home/uboot/data/ros2_uboot/install/fishbot_cartographer:/home/uboot/data/ros2_uboot/install/fishbot_bringup:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'C.UTF-8', 'qwen2_5': '/home/uboot/data/xyc/LLM/model/qwen2.5-vl-3b-w8a8_level1_rk3588.rkllm', 'LC_IDENTIFICATION': 'C.UTF-8', 'deepseekR1_b': '/home/uboot/data/xyc/LLM/model/DeepSeek-R1-Distill-Qwen-1.5B_FP16_RK3588.rkllm', 'PWD': '/home/uboot/data/ros2_uboot/build/uboot_chat', 'SSH_CONNECTION': '192.168.0.3 64219 192.168.0.106 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'ADB_TCP_PORT': '5555', 'PYTHONPATH': '/home/uboot/data/ros2_uboot/build/uboot_chat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/yolo_v5/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'qwen3_b': '/home/uboot/data/xyc/LLM/model/Qwen3-1.7B-rk3588-w8a8.rkllm', 'CMAKE_PREFIX_PATH': '/home/uboot/data/ros2_uboot/install/sensor:/home/uboot/data/ros2_uboot/install/rplidar_ros:/home/uboot/data/ros2_uboot/install/micro_ros_agent:/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/home/uboot/data/ros2_uboot/install/fishbot_navigation2:/home/uboot/data/ros2_uboot/install/fishbot_interfaces:/home/uboot/data/ros2_uboot/install/fishbot_cartographer:/home/uboot/data/ros2_uboot/install/fishbot_bringup'}, 'shell': False}
+[0.903613] (-) TimerEvent: {}
+[1.004227] (-) TimerEvent: {}
+[1.104750] (-) TimerEvent: {}
+[1.119742] (uboot_chat) StdoutLine: {'line': b'running egg_info\n'}
+[1.120499] (uboot_chat) StdoutLine: {'line': b'writing ../../build/uboot_chat/uboot_chat.egg-info/PKG-INFO\n'}
+[1.121658] (uboot_chat) StdoutLine: {'line': b'writing dependency_links to ../../build/uboot_chat/uboot_chat.egg-info/dependency_links.txt\n'}
+[1.122045] (uboot_chat) StdoutLine: {'line': b'writing entry points to ../../build/uboot_chat/uboot_chat.egg-info/entry_points.txt\n'}
+[1.122408] (uboot_chat) StdoutLine: {'line': b'writing requirements to ../../build/uboot_chat/uboot_chat.egg-info/requires.txt\n'}
+[1.122761] (uboot_chat) StdoutLine: {'line': b'writing top-level names to ../../build/uboot_chat/uboot_chat.egg-info/top_level.txt\n'}
+[1.169292] (uboot_chat) StdoutLine: {'line': b"reading manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'\n"}
+[1.171162] (uboot_chat) StdoutLine: {'line': b"writing manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'\n"}
+[1.171573] (uboot_chat) StdoutLine: {'line': b'running build\n'}
+[1.171902] (uboot_chat) StdoutLine: {'line': b'running build_py\n'}
+[1.174002] (uboot_chat) StdoutLine: {'line': b'copying uboot_chat/micro_recognizer.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat\n'}
+[1.174364] (uboot_chat) StdoutLine: {'line': b'copying uboot_chat/denoised.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat\n'}
+[1.174746] (uboot_chat) StdoutLine: {'line': b'copying uboot_chat/test_micro_recognizer_denoised.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat\n'}
+[1.175173] (uboot_chat) StdoutLine: {'line': b'copying uboot_chat/localModel.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat\n'}
+[1.175611] (uboot_chat) StdoutLine: {'line': b'copying uboot_chat/test_record_denoised.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat\n'}
+[1.175995] (uboot_chat) StdoutLine: {'line': b'copying uboot_chat/calibrate.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat\n'}
+[1.176416] (uboot_chat) StdoutLine: {'line': b'copying uboot_chat/test_micro_record.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat\n'}
+[1.177039] (uboot_chat) StdoutLine: {'line': b'copying uboot_chat/chat.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat\n'}
+[1.177399] (uboot_chat) StdoutLine: {'line': b'copying uboot_chat/localCalibrate.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat\n'}
+[1.177778] (uboot_chat) StdoutLine: {'line': b'copying uboot_chat/sparkModel.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat\n'}
+[1.178321] (uboot_chat) StdoutLine: {'line': b'running install\n'}
+[1.179390] (uboot_chat) StdoutLine: {'line': b'running install_lib\n'}
+[1.180868] (uboot_chat) StdoutLine: {'line': b'copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/micro_recognizer.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat\n'}
+[1.181229] (uboot_chat) StdoutLine: {'line': b'copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/denoised.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat\n'}
+[1.181594] (uboot_chat) StdoutLine: {'line': b'copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/test_micro_recognizer_denoised.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat\n'}
+[1.181951] (uboot_chat) StdoutLine: {'line': b'copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/localModel.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat\n'}
+[1.182321] (uboot_chat) StdoutLine: {'line': b'copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/test_record_denoised.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat\n'}
+[1.182672] (uboot_chat) StdoutLine: {'line': b'copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/calibrate.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat\n'}
+[1.183039] (uboot_chat) StdoutLine: {'line': b'copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/test_micro_record.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat\n'}
+[1.183372] (uboot_chat) StdoutLine: {'line': b'copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/chat.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat\n'}
+[1.183717] (uboot_chat) StdoutLine: {'line': b'copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/localCalibrate.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat\n'}
+[1.184060] (uboot_chat) StdoutLine: {'line': b'copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/sparkModel.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat\n'}
+[1.184391] (uboot_chat) StdoutLine: {'line': b'byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/micro_recognizer.py to micro_recognizer.cpython-38.pyc\n'}
+[1.185445] (uboot_chat) StdoutLine: {'line': b'byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/denoised.py to denoised.cpython-38.pyc\n'}
+[1.186148] (uboot_chat) StdoutLine: {'line': b'byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/test_micro_recognizer_denoised.py to test_micro_recognizer_denoised.cpython-38.pyc\n'}
+[1.187197] (uboot_chat) StdoutLine: {'line': b'byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/localModel.py to localModel.cpython-38.pyc\n'}
+[1.188352] (uboot_chat) StdoutLine: {'line': b'byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/test_record_denoised.py to test_record_denoised.cpython-38.pyc\n'}
+[1.188834] (uboot_chat) StdoutLine: {'line': b'byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/calibrate.py to calibrate.cpython-38.pyc\n'}
+[1.189517] (uboot_chat) StdoutLine: {'line': b'byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/test_micro_record.py to test_micro_record.cpython-38.pyc\n'}
+[1.189965] (uboot_chat) StdoutLine: {'line': b'byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/chat.py to chat.cpython-38.pyc\n'}
+[1.191096] (uboot_chat) StdoutLine: {'line': b'byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/localCalibrate.py to localCalibrate.cpython-38.pyc\n'}
+[1.191664] (uboot_chat) StdoutLine: {'line': b'byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/sparkModel.py to sparkModel.cpython-38.pyc\n'}
+[1.192690] (uboot_chat) StdoutLine: {'line': b'running install_data\n'}
+[1.196207] (uboot_chat) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.198402] (uboot_chat) StdoutLine: {'line': b"removing '/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[1.198790] (uboot_chat) StdoutLine: {'line': b'Copying ../../build/uboot_chat/uboot_chat.egg-info to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat-0.0.0-py3.8.egg-info\n'}
+[1.199716] (uboot_chat) StdoutLine: {'line': b'running install_scripts\n'}
+[1.204838] (-) TimerEvent: {}
+[1.220348] (uboot_chat) StdoutLine: {'line': b'Installing chat script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat\n'}
+[1.220978] (uboot_chat) StdoutLine: {'line': b'Installing micro script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat\n'}
+[1.221374] (uboot_chat) StdoutLine: {'line': b'Installing pub script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat\n'}
+[1.221706] (uboot_chat) StdoutLine: {'line': b'Installing speech script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat\n'}
+[1.222063] (uboot_chat) StdoutLine: {'line': b"writing list of installed files to '/home/uboot/data/ros2_uboot/build/uboot_chat/install.log'\n"}
+[1.262593] (uboot_chat) CommandEnded: {'returncode': 0}
+[1.305393] (-) TimerEvent: {}
+[1.313896] (uboot_chat) JobEnded: {'identifier': 'uboot_chat', 'rc': 0}
+[1.315925] (-) EventReactorShutdown: {}

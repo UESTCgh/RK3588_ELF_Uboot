@@ -1,0 +1,48 @@
+[1.389s] Invoking command in '/home/uboot/data/ros2_uboot/src/fishbot/src/fishbot_description': PYTHONPATH=/home/uboot/data/ros2_uboot/build/fishbot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/fishbot_description build --build-base /home/uboot/data/ros2_uboot/build/fishbot_description/build install --record /home/uboot/data/ros2_uboot/build/fishbot_description/install.log --single-version-externally-managed install_data
+[2.433s] running egg_info
+[2.434s] creating ../../../../build/fishbot_description/fishbot_description.egg-info
+[2.435s] writing ../../../../build/fishbot_description/fishbot_description.egg-info/PKG-INFO
+[2.435s] writing dependency_links to ../../../../build/fishbot_description/fishbot_description.egg-info/dependency_links.txt
+[2.436s] writing entry points to ../../../../build/fishbot_description/fishbot_description.egg-info/entry_points.txt
+[2.436s] writing requirements to ../../../../build/fishbot_description/fishbot_description.egg-info/requires.txt
+[2.437s] writing top-level names to ../../../../build/fishbot_description/fishbot_description.egg-info/top_level.txt
+[2.438s] writing manifest file '../../../../build/fishbot_description/fishbot_description.egg-info/SOURCES.txt'
+[2.438s] reading manifest file '../../../../build/fishbot_description/fishbot_description.egg-info/SOURCES.txt'
+[2.439s] writing manifest file '../../../../build/fishbot_description/fishbot_description.egg-info/SOURCES.txt'
+[2.439s] running build
+[2.440s] running build_py
+[2.440s] creating /home/uboot/data/ros2_uboot/build/fishbot_description/build
+[2.441s] creating /home/uboot/data/ros2_uboot/build/fishbot_description/build/lib
+[2.446s] creating /home/uboot/data/ros2_uboot/build/fishbot_description/build/lib/fishbot_description
+[2.447s] copying fishbot_description/__init__.py -> /home/uboot/data/ros2_uboot/build/fishbot_description/build/lib/fishbot_description
+[2.447s] copying fishbot_description/rotate_wheel.py -> /home/uboot/data/ros2_uboot/build/fishbot_description/build/lib/fishbot_description
+[2.448s] running install
+[2.448s] running install_lib
+[2.448s] creating /home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages/fishbot_description
+[2.449s] copying /home/uboot/data/ros2_uboot/build/fishbot_description/build/lib/fishbot_description/__init__.py -> /home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages/fishbot_description
+[2.449s] copying /home/uboot/data/ros2_uboot/build/fishbot_description/build/lib/fishbot_description/rotate_wheel.py -> /home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages/fishbot_description
+[2.450s] byte-compiling /home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages/fishbot_description/__init__.py to __init__.cpython-38.pyc
+[2.451s] byte-compiling /home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages/fishbot_description/rotate_wheel.py to rotate_wheel.cpython-38.pyc
+[2.456s] running install_data
+[2.457s] creating /home/uboot/data/ros2_uboot/install/fishbot_description/share/ament_index
+[2.458s] creating /home/uboot/data/ros2_uboot/install/fishbot_description/share/ament_index/resource_index
+[2.459s] creating /home/uboot/data/ros2_uboot/install/fishbot_description/share/ament_index/resource_index/packages
+[2.460s] copying resource/fishbot_description -> /home/uboot/data/ros2_uboot/install/fishbot_description/share/ament_index/resource_index/packages
+[2.460s] copying package.xml -> /home/uboot/data/ros2_uboot/install/fishbot_description/share/fishbot_description
+[2.461s] creating /home/uboot/data/ros2_uboot/install/fishbot_description/share/fishbot_description/launch
+[2.461s] copying launch/gazebo.launch.py -> /home/uboot/data/ros2_uboot/install/fishbot_description/share/fishbot_description/launch
+[2.462s] copying launch/display_rviz2.launch.py -> /home/uboot/data/ros2_uboot/install/fishbot_description/share/fishbot_description/launch
+[2.462s] creating /home/uboot/data/ros2_uboot/install/fishbot_description/share/fishbot_description/urdf
+[2.463s] copying urdf/fishbot_base.urdf -> /home/uboot/data/ros2_uboot/install/fishbot_description/share/fishbot_description/urdf
+[2.464s] copying urdf/fishbot_gazebo.urdf -> /home/uboot/data/ros2_uboot/install/fishbot_description/share/fishbot_description/urdf
+[2.464s] copying urdf/fishbot_v1.0.1.urdf -> /home/uboot/data/ros2_uboot/install/fishbot_description/share/fishbot_description/urdf
+[2.464s] copying urdf/fishbot_v1.0.0.urdf -> /home/uboot/data/ros2_uboot/install/fishbot_description/share/fishbot_description/urdf
+[2.465s] creating /home/uboot/data/ros2_uboot/install/fishbot_description/share/fishbot_description/world
+[2.466s] copying world/fishbot.world -> /home/uboot/data/ros2_uboot/install/fishbot_description/share/fishbot_description/world
+[2.466s] copying world/fish.world -> /home/uboot/data/ros2_uboot/install/fishbot_description/share/fishbot_description/world
+[2.467s] running install_egg_info
+[2.467s] Copying ../../../../build/fishbot_description/fishbot_description.egg-info to /home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages/fishbot_description-0.0.0-py3.8.egg-info
+[2.468s] running install_scripts
+[2.468s] Installing rotate_wheel script to /home/uboot/data/ros2_uboot/install/fishbot_description/lib/fishbot_description
+[2.468s] writing list of installed files to '/home/uboot/data/ros2_uboot/build/fishbot_description/install.log'
+[2.491s] Invoked command in '/home/uboot/data/ros2_uboot/src/fishbot/src/fishbot_description' returned '0': PYTHONPATH=/home/uboot/data/ros2_uboot/build/fishbot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/fishbot_description build --build-base /home/uboot/data/ros2_uboot/build/fishbot_description/build install --record /home/uboot/data/ros2_uboot/build/fishbot_description/install.log --single-version-externally-managed install_data

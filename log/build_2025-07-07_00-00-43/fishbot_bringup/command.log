@@ -1,0 +1,3 @@
+Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_bringup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/uboot/data/ros2_uboot/src/fishbot/src/fishbot_bringup -DCMAKE_INSTALL_PREFIX=/home/uboot/data/ros2_uboot/install/fishbot_bringup
+Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/uboot/data/ros2_uboot/src/fishbot/src/fishbot_bringup -DCMAKE_INSTALL_PREFIX=/home/uboot/data/ros2_uboot/install/fishbot_bringup
+Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_bringup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_bringup -- -j8 -l8

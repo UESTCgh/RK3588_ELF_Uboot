@@ -1,0 +1,47 @@
+[0.032s] Invoking command in '/home/uboot/data/ros2_uboot/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8
+[0.320s] [35m[1mScanning dependencies of target sensor_node[0m
+[0.351s] [  8%] Built target sensor__rosidl_generator_c
+[0.357s] [ 10%] Built target sensor__cpp
+[0.363s] [ 14%] Built target human_detector_client
+[0.382s] [ 19%] Built target do_something_server
+[0.405s] [ 21%] [32mBuilding CXX object CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o[0m
+[0.431s] [ 29%] Built target sensor__rosidl_typesupport_introspection_cpp
+[0.434s] [ 38%] Built target sensor__rosidl_typesupport_cpp
+[0.437s] [ 46%] Built target sensor__rosidl_typesupport_c
+[0.454s] [ 55%] Built target sensor__rosidl_typesupport_introspection_c
+[0.475s] [ 63%] Built target sensor__rosidl_typesupport_fastrtps_cpp
+[0.556s] [ 72%] Built target sensor__rosidl_typesupport_fastrtps_c
+[0.620s] [ 72%] Built target sensor
+[0.691s] [ 74%] Built target sensor__py
+[0.722s] [ 78%] Built target openamp_core1
+[0.799s] [ 85%] Built target sensor__python
+[0.893s] [ 89%] Built target sensor__rosidl_typesupport_c__pyext
+[0.898s] [ 93%] Built target sensor__rosidl_typesupport_fastrtps_c__pyext
+[0.909s] [ 97%] Built target sensor__rosidl_typesupport_introspection_c__pyext
+[3.085s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:[m[K In constructor ‘[01m[KSensorNode::SensorNode()[m[K’:
+[3.086s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:23:72:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat16[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat32[m[K’?
+[3.086s]    23 |         temperature_publisher_ = this->create_publisher<std_msgs::msg::[01;31m[KFloat16[m[K>("temp", 10);
+[3.087s]       |                                                                        [01;31m[K^~~~~~~[m[K
+[3.087s]       |                                                                        [32m[KFloat32[m[K
+[3.088s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:23:72:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat16[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KFloat32[m[K’?
+[3.088s]    23 |         temperature_publisher_ = this->create_publisher<std_msgs::msg::[01;31m[KFloat16[m[K>("temp", 10);
+[3.088s]       |                                                                        [01;31m[K^~~~~~~[m[K
+[3.089s]       |                                                                        [32m[KFloat32[m[K
+[3.095s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:23:91:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KSensorNode::create_publisher<<expression error> >(const char [5], int)[m[K’
+[3.095s]    23 |         temperature_publisher_ = this->create_publisher<std_msgs::msg::Float16>("temp", 10[01;31m[K)[m[K;
+[3.096s]       |                                                                                           [01;31m[K^[m[K
+[3.096s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.096s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[3.097s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[3.097s]                  from [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:9[m[K:
+[3.097s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[3.098s]   184 |   [01;36m[Kcreate_publisher[m[K(
+[3.098s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[3.098s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:184:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.099s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:23:91:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.099s]    23 |         temperature_publisher_ = this->create_publisher<std_msgs::msg::Float16>("temp", 10[01;31m[K)[m[K;
+[3.099s]       |                                                                                           [01;31m[K^[m[K
+[5.187s] make[2]: *** [CMakeFiles/sensor_node.dir/build.make:63: CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o] Error 1
+[5.187s] make[1]: *** [CMakeFiles/Makefile2:559: CMakeFiles/sensor_node.dir/all] Error 2
+[5.188s] make: *** [Makefile:141: all] Error 2
+[5.197s] Invoked command in '/home/uboot/data/ros2_uboot/build/sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8

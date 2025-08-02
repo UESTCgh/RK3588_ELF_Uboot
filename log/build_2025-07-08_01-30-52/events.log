@@ -1,0 +1,67 @@
+[0.000000] (-) TimerEvent: {}
+[0.000805] (-) JobUnselected: {'identifier': 'fishbot_bringup'}
+[0.000970] (-) JobUnselected: {'identifier': 'fishbot_cartographer'}
+[0.001126] (-) JobUnselected: {'identifier': 'fishbot_description'}
+[0.001810] (-) JobUnselected: {'identifier': 'fishbot_interfaces'}
+[0.001979] (-) JobUnselected: {'identifier': 'fishbot_navigation2'}
+[0.002138] (-) JobUnselected: {'identifier': 'micro_ros_agent'}
+[0.002295] (-) JobUnselected: {'identifier': 'micro_ros_msgs'}
+[0.002451] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.002607] (-) JobUnselected: {'identifier': 'sensor'}
+[0.002764] (-) JobUnselected: {'identifier': 'task_scheduler'}
+[0.002966] (-) JobUnselected: {'identifier': 'yolo_v5'}
+[0.003120] (uboot_chat) JobQueued: {'identifier': 'uboot_chat', 'dependencies': OrderedDict()}
+[0.003559] (uboot_chat) JobStarted: {'identifier': 'uboot_chat'}
+[0.097935] (-) TimerEvent: {}
+[0.199569] (-) TimerEvent: {}
+[0.300777] (-) TimerEvent: {}
+[0.401877] (-) TimerEvent: {}
+[0.502832] (-) TimerEvent: {}
+[0.603777] (-) TimerEvent: {}
+[0.705003] (-) TimerEvent: {}
+[0.806280] (-) TimerEvent: {}
+[0.907370] (-) TimerEvent: {}
+[1.008514] (-) TimerEvent: {}
+[1.109553] (-) TimerEvent: {}
+[1.210632] (-) TimerEvent: {}
+[1.311738] (-) TimerEvent: {}
+[1.412907] (-) TimerEvent: {}
+[1.514257] (-) TimerEvent: {}
+[1.604008] (uboot_chat) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/uboot_chat', 'build', '--build-base', '/home/uboot/data/ros2_uboot/build/uboot_chat/build', 'install', '--record', '/home/uboot/data/ros2_uboot/build/uboot_chat/install.log', '--install-scripts', '$base/lib/uboot_chat', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/uboot/data/ros2_uboot/src/uboot_chat', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/uboot', 'USER': 'uboot', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/uboot/data/ros2_uboot/install/sensor/lib:/home/uboot/data/ros2_uboot/install/micro_ros_agent/lib:/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib:/home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/uboot', 'OLDPWD': '/home/uboot/data/ros2_uboot/src', 'HUSHLOGIN': 'FALSE', 'ROS_PYTHON_VERSION': '3', 'COGL_DRIVER': 'gles2', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'QTWEBENGINE_CHROMIUM_FLAGS': '--no-sandbox --disable-es3-gl-context --ignore-gpu-blacklist --ignore-gpu-blocklist --enable-accelerated-video-decode', 'COLCON_PREFIX_PATH': '/home/uboot/data/ros2_uboot/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'uboot', 'JOURNAL_STREAM': '7:21390', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'vt220', 'GST_GL_API': 'gles2', 'XDG_SESSION_ID': 'c2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/uboot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'INVOCATION_ID': '93d8ef3a4e2a41429311e9cb149e0584', 'XDG_RUNTIME_DIR': '/run/user/1001', 'GST_GL_PLATFORM': 'egl', 'ADBD_SHELL': '/bin/bash', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/sensor:/home/uboot/data/ros2_uboot/install/rplidar_ros:/home/uboot/data/ros2_uboot/install/micro_ros_agent:/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/home/uboot/data/ros2_uboot/install/fishbot_navigation2:/home/uboot/data/ros2_uboot/install/fishbot_interfaces:/home/uboot/data/ros2_uboot/install/fishbot_description:/home/uboot/data/ros2_uboot/install/fishbot_cartographer:/home/uboot/data/ros2_uboot/install/fishbot_bringup:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/uboot/data/ros2_uboot/build/uboot_chat', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'ADB_TCP_PORT': '5555', 'PYTHONPATH': '/home/uboot/data/ros2_uboot/build/uboot_chat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/yolo_v5/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/uboot/data/ros2_uboot/install/sensor:/home/uboot/data/ros2_uboot/install/rplidar_ros:/home/uboot/data/ros2_uboot/install/micro_ros_agent:/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/home/uboot/data/ros2_uboot/install/fishbot_navigation2:/home/uboot/data/ros2_uboot/install/fishbot_interfaces:/home/uboot/data/ros2_uboot/install/fishbot_cartographer:/home/uboot/data/ros2_uboot/install/fishbot_bringup'}, 'shell': False}
+[1.617246] (-) TimerEvent: {}
+[1.718849] (-) TimerEvent: {}
+[1.819911] (-) TimerEvent: {}
+[1.921009] (-) TimerEvent: {}
+[2.021957] (-) TimerEvent: {}
+[2.048105] (uboot_chat) StdoutLine: {'line': b'running egg_info\n'}
+[2.049374] (uboot_chat) StdoutLine: {'line': b'writing ../../build/uboot_chat/uboot_chat.egg-info/PKG-INFO\n'}
+[2.050614] (uboot_chat) StdoutLine: {'line': b'writing dependency_links to ../../build/uboot_chat/uboot_chat.egg-info/dependency_links.txt\n'}
+[2.051337] (uboot_chat) StdoutLine: {'line': b'writing entry points to ../../build/uboot_chat/uboot_chat.egg-info/entry_points.txt\n'}
+[2.051693] (uboot_chat) StdoutLine: {'line': b'writing requirements to ../../build/uboot_chat/uboot_chat.egg-info/requires.txt\n'}
+[2.052029] (uboot_chat) StdoutLine: {'line': b'writing top-level names to ../../build/uboot_chat/uboot_chat.egg-info/top_level.txt\n'}
+[2.122166] (-) TimerEvent: {}
+[2.183215] (uboot_chat) StdoutLine: {'line': b"reading manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'\n"}
+[2.186496] (uboot_chat) StdoutLine: {'line': b"writing manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'\n"}
+[2.187316] (uboot_chat) StdoutLine: {'line': b'running build\n'}
+[2.188068] (uboot_chat) StdoutLine: {'line': b'running build_py\n'}
+[2.191650] (uboot_chat) StdoutLine: {'line': b'copying uboot_chat/speechGC.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat\n'}
+[2.192718] (uboot_chat) StdoutLine: {'line': b'running install\n'}
+[2.195247] (uboot_chat) StdoutLine: {'line': b'running install_lib\n'}
+[2.198956] (uboot_chat) StdoutLine: {'line': b'copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/speechGC.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat\n'}
+[2.203552] (uboot_chat) StdoutLine: {'line': b'byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/speechGC.py to speechGC.cpython-38.pyc\n'}
+[2.218497] (uboot_chat) StdoutLine: {'line': b'running install_data\n'}
+[2.221018] (uboot_chat) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.222300] (-) TimerEvent: {}
+[2.233936] (uboot_chat) StdoutLine: {'line': b"removing '/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[2.236145] (uboot_chat) StdoutLine: {'line': b'Copying ../../build/uboot_chat/uboot_chat.egg-info to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat-0.0.0-py3.8.egg-info\n'}
+[2.241659] (uboot_chat) StdoutLine: {'line': b'running install_scripts\n'}
+[2.322685] (-) TimerEvent: {}
+[2.327580] (uboot_chat) StdoutLine: {'line': b'Installing chat script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat\n'}
+[2.329270] (uboot_chat) StdoutLine: {'line': b'Installing micro script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat\n'}
+[2.330225] (uboot_chat) StdoutLine: {'line': b'Installing pub script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat\n'}
+[2.331368] (uboot_chat) StdoutLine: {'line': b'Installing speech script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat\n'}
+[2.332139] (uboot_chat) StdoutLine: {'line': b"writing list of installed files to '/home/uboot/data/ros2_uboot/build/uboot_chat/install.log'\n"}
+[2.420184] (uboot_chat) CommandEnded: {'returncode': 0}
+[2.422802] (-) TimerEvent: {}
+[2.495896] (uboot_chat) JobEnded: {'identifier': 'uboot_chat', 'rc': 0}
+[2.498876] (-) EventReactorShutdown: {}

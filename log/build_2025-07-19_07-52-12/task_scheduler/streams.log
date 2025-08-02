@@ -1,0 +1,21 @@
+[2.319s] Invoking command in '/home/uboot/data/ros2_uboot/src/task_scheduler': PYTHONPATH=/home/uboot/data/ros2_uboot/build/task_scheduler/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task_scheduler build --build-base /home/uboot/data/ros2_uboot/build/task_scheduler/build install --record /home/uboot/data/ros2_uboot/build/task_scheduler/install.log --install-scripts $base/lib/task_scheduler --single-version-externally-managed install_data
+[2.636s] running egg_info
+[2.637s] writing ../../build/task_scheduler/task_scheduler.egg-info/PKG-INFO
+[2.637s] writing dependency_links to ../../build/task_scheduler/task_scheduler.egg-info/dependency_links.txt
+[2.639s] writing entry points to ../../build/task_scheduler/task_scheduler.egg-info/entry_points.txt
+[2.640s] writing requirements to ../../build/task_scheduler/task_scheduler.egg-info/requires.txt
+[2.640s] writing top-level names to ../../build/task_scheduler/task_scheduler.egg-info/top_level.txt
+[2.686s] reading manifest file '../../build/task_scheduler/task_scheduler.egg-info/SOURCES.txt'
+[2.688s] writing manifest file '../../build/task_scheduler/task_scheduler.egg-info/SOURCES.txt'
+[2.689s] running build
+[2.689s] running build_py
+[2.690s] running install
+[2.690s] running install_lib
+[2.693s] running install_data
+[2.694s] running install_egg_info
+[2.697s] removing '/home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler-0.0.0-py3.8.egg-info' (and everything under it)
+[2.697s] Copying ../../build/task_scheduler/task_scheduler.egg-info to /home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler-0.0.0-py3.8.egg-info
+[2.700s] running install_scripts
+[2.729s] Installing start script to /home/uboot/data/ros2_uboot/install/task_scheduler/lib/task_scheduler
+[2.730s] writing list of installed files to '/home/uboot/data/ros2_uboot/build/task_scheduler/install.log'
+[2.796s] Invoked command in '/home/uboot/data/ros2_uboot/src/task_scheduler' returned '0': PYTHONPATH=/home/uboot/data/ros2_uboot/build/task_scheduler/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task_scheduler build --build-base /home/uboot/data/ros2_uboot/build/task_scheduler/build install --record /home/uboot/data/ros2_uboot/build/task_scheduler/install.log --install-scripts $base/lib/task_scheduler --single-version-externally-managed install_data

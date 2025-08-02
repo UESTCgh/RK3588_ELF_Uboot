@@ -1,0 +1,30 @@
+[2.281s] Invoking command in '/home/uboot/data/ros2_uboot/src/uboot_chat': PYTHONPATH=/home/uboot/data/ros2_uboot/build/uboot_chat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uboot_chat build --build-base /home/uboot/data/ros2_uboot/build/uboot_chat/build install --record /home/uboot/data/ros2_uboot/build/uboot_chat/install.log --install-scripts $base/lib/uboot_chat --single-version-externally-managed install_data
+[2.727s] running egg_info
+[2.728s] writing ../../build/uboot_chat/uboot_chat.egg-info/PKG-INFO
+[2.730s] writing dependency_links to ../../build/uboot_chat/uboot_chat.egg-info/dependency_links.txt
+[2.730s] writing entry points to ../../build/uboot_chat/uboot_chat.egg-info/entry_points.txt
+[2.731s] writing requirements to ../../build/uboot_chat/uboot_chat.egg-info/requires.txt
+[2.731s] writing top-level names to ../../build/uboot_chat/uboot_chat.egg-info/top_level.txt
+[2.804s] reading manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'
+[2.807s] writing manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'
+[2.807s] running build
+[2.808s] running build_py
+[2.810s] copying uboot_chat/micro_recognizer.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[2.811s] copying uboot_chat/test_speech.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[2.811s] copying uboot_chat/speechGC.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+[2.812s] running install
+[2.813s] running install_lib
+[2.815s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/micro_recognizer.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[2.816s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/test_speech.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[2.816s] copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/speechGC.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+[2.817s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/micro_recognizer.py to micro_recognizer.cpython-38.pyc
+[2.821s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/test_speech.py to test_speech.cpython-38.pyc
+[2.822s] byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/speechGC.py to speechGC.cpython-38.pyc
+[2.822s] running install_data
+[2.823s] running install_egg_info
+[2.826s] Copying ../../build/uboot_chat/uboot_chat.egg-info to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat-0.0.0-py3.8.egg-info
+[2.828s] running install_scripts
+[2.861s] Installing chat script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat
+[2.863s] Installing pub = uboot_chat.test_pub_msg:mainmicro = uboot_chat.micro_recognizer:mainspeech script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat
+[2.863s] writing list of installed files to '/home/uboot/data/ros2_uboot/build/uboot_chat/install.log'
+[2.940s] Invoked command in '/home/uboot/data/ros2_uboot/src/uboot_chat' returned '0': PYTHONPATH=/home/uboot/data/ros2_uboot/build/uboot_chat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uboot_chat build --build-base /home/uboot/data/ros2_uboot/build/uboot_chat/build install --record /home/uboot/data/ros2_uboot/build/uboot_chat/install.log --install-scripts $base/lib/uboot_chat --single-version-externally-managed install_data

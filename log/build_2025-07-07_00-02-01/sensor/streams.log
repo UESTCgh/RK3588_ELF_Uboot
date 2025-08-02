@@ -1,0 +1,159 @@
+[0.612s] Invoking command in '/home/uboot/data/ros2_uboot/build/sensor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8
+[0.782s] [  2%] Built target sensor__cpp
+[0.838s] [  6%] Built target sensor_node
+[0.839s] [ 10%] Built target do_something_server
+[0.840s] [ 19%] Built target sensor__rosidl_generator_c
+[0.846s] [ 23%] Built target human_detector_client
+[0.855s] [ 31%] Built target sensor__rosidl_typesupport_cpp
+[0.887s] [ 40%] Built target sensor__rosidl_typesupport_c
+[0.888s] [ 48%] Built target sensor__rosidl_typesupport_introspection_cpp
+[0.910s] [ 57%] Built target sensor__rosidl_typesupport_introspection_c
+[0.916s] [ 65%] Built target sensor__rosidl_typesupport_fastrtps_cpp
+[0.965s] [ 74%] Built target sensor__rosidl_typesupport_fastrtps_c
+[1.032s] [ 74%] Built target sensor
+[1.099s] [ 76%] Built target sensor__py
+[1.120s] [ 80%] Built target openamp_core1
+[1.165s] [ 87%] Built target sensor__python
+[1.203s] [ 91%] Built target sensor__rosidl_typesupport_introspection_c__pyext
+[1.237s] [ 95%] Built target sensor__rosidl_typesupport_c__pyext
+[1.253s] [100%] Built target sensor__rosidl_typesupport_fastrtps_c__pyext
+[2.287s] Invoked command in '/home/uboot/data/ros2_uboot/build/sensor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8
+[2.296s] Invoking command in '/home/uboot/data/ros2_uboot/build/sensor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/sensor
+[2.384s] -- Install configuration: ""
+[2.386s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/ament_index/resource_index/rosidl_interfaces/sensor
+[2.390s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor
+[2.390s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg
+[2.391s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/rosidl_generator_c__visibility_control.h
+[2.392s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/core_command.h
+[2.392s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail
+[2.393s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__functions.c
+[2.393s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__struct.h
+[2.393s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__type_support.h
+[2.394s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__functions.c
+[2.394s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__struct.h
+[2.394s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__functions.h
+[2.395s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__functions.h
+[2.395s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__type_support.h
+[2.396s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/device_status.h
+[2.396s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/library_path.sh
+[2.396s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/library_path.dsv
+[2.397s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_generator_c.so
+[2.397s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_generator_c.so" to ""
+[2.398s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor
+[2.399s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg
+[2.400s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail
+[2.401s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__rosidl_typesupport_fastrtps_c.h
+[2.402s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__rosidl_typesupport_fastrtps_c.h
+[2.405s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.407s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_fastrtps_c.so
+[2.407s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_fastrtps_c.so" to ""
+[2.409s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor
+[2.413s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg
+[2.415s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.415s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail
+[2.416s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__rosidl_typesupport_fastrtps_cpp.hpp
+[2.416s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/dds_fastrtps
+[2.416s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__rosidl_typesupport_fastrtps_cpp.hpp
+[2.417s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_fastrtps_cpp.so
+[2.422s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.424s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor
+[2.425s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg
+[2.425s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.426s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail
+[2.426s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__type_support.c
+[2.427s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__type_support.c
+[2.427s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__rosidl_typesupport_introspection_c.h
+[2.427s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__rosidl_typesupport_introspection_c.h
+[2.428s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_introspection_c.so
+[2.429s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_introspection_c.so" to ""
+[2.429s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_c.so
+[2.430s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_c.so" to ""
+[2.432s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor
+[2.433s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg
+[2.433s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail
+[2.433s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__builder.hpp
+[2.433s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__type_support.hpp
+[2.433s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__type_support.hpp
+[2.433s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__traits.hpp
+[2.433s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__traits.hpp
+[2.433s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__builder.hpp
+[2.433s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__struct.hpp
+[2.434s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__struct.hpp
+[2.434s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/device_status.hpp
+[2.434s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/core_command.hpp
+[2.434s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.434s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor
+[2.434s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg
+[2.434s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail
+[2.434s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__rosidl_typesupport_introspection_cpp.hpp
+[2.434s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__type_support.cpp
+[2.434s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__rosidl_typesupport_introspection_cpp.hpp
+[2.434s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__type_support.cpp
+[2.435s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_introspection_cpp.so
+[2.435s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_introspection_cpp.so" to ""
+[2.435s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_cpp.so
+[2.436s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_cpp.so" to ""
+[2.436s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/pythonpath.sh
+[2.436s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/pythonpath.dsv
+[2.436s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/__init__.py
+[2.444s] Compiling '/home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/__init__.py'...
+[2.445s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/msg
+[2.445s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/msg/__init__.py
+[2.445s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/msg/_core_command_s.c
+[2.445s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/msg/_core_command.py
+[2.445s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/msg/_device_status_s.c
+[2.446s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/msg/_device_status.py
+[2.446s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/sensor_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[2.446s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/sensor_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""
+[2.446s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/sensor_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[2.446s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/sensor_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""
+[2.446s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/sensor_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[2.446s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/sensor_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""
+[2.446s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__python.so
+[2.446s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__python.so" to ""
+[2.446s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/msg/CoreCommand.idl
+[2.446s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/msg/DeviceStatus.idl
+[2.447s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/msg/CoreCommand.msg
+[2.447s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/msg/DeviceStatus.msg
+[2.447s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/sensor/sensor_node
+[2.451s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/sensor/sensor_node" to ""
+[2.451s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/sensor/human_detector_client
+[2.452s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/sensor/human_detector_client" to ""
+[2.452s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/sensor/do_something_server
+[2.454s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/sensor/do_something_server" to ""
+[2.455s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/sensor/openamp_core1
+[2.462s] -- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/sensor/openamp_core1" to ""
+[2.463s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/ament_index/resource_index/package_run_dependencies/sensor
+[2.464s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/ament_index/resource_index/parent_prefix_path/sensor
+[2.465s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/ament_prefix_path.sh
+[2.466s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/ament_prefix_path.dsv
+[2.466s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/path.sh
+[2.466s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/path.dsv
+[2.467s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/local_setup.bash
+[2.467s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/local_setup.sh
+[2.467s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/local_setup.zsh
+[2.468s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/local_setup.dsv
+[2.469s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/package.dsv
+[2.469s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/ament_index/resource_index/packages/sensor
+[2.469s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_generator_cExport.cmake
+[2.470s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_generator_cExport-noconfig.cmake
+[2.472s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_introspection_cExport.cmake
+[2.476s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.477s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_cExport.cmake
+[2.477s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_cExport-noconfig.cmake
+[2.478s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_generator_cppExport.cmake
+[2.479s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_introspection_cppExport.cmake
+[2.480s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.480s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_cppExport.cmake
+[2.485s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_cppExport-noconfig.cmake
+[2.486s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/rosidl_cmake-extras.cmake
+[2.488s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.488s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/ament_cmake_export_libraries-extras.cmake
+[2.490s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/ament_cmake_export_targets-extras.cmake
+[2.491s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.492s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.493s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.494s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensorConfig.cmake
+[2.495s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensorConfig-version.cmake
+[2.498s] -- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/package.xml
+[2.560s] Invoked command in '/home/uboot/data/ros2_uboot/build/sensor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/sensor

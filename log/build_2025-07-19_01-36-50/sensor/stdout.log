@@ -1,0 +1,19 @@
+[  8%] Built target sensor__rosidl_generator_c
+[35m[1mScanning dependencies of target sensor_node[0m
+[ 25%] Built target sensor__rosidl_typesupport_introspection_c
+[ 25%] Built target sensor__rosidl_typesupport_c
+[ 29%] Built target human_detector_client
+[ 31%] Built target sensor__cpp
+[ 36%] Built target do_something_server
+[ 44%] Built target sensor__rosidl_typesupport_introspection_cpp
+[ 46%] [32mBuilding CXX object CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o[0m
+[ 55%] Built target sensor__rosidl_typesupport_cpp
+[ 63%] Built target sensor__rosidl_typesupport_fastrtps_cpp
+[ 72%] Built target sensor__rosidl_typesupport_fastrtps_c
+[ 72%] Built target sensor
+[ 76%] Built target openamp_core1
+[ 78%] Built target sensor__py
+[ 85%] Built target sensor__python
+[ 89%] Built target sensor__rosidl_typesupport_introspection_c__pyext
+[ 93%] Built target sensor__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] Built target sensor__rosidl_typesupport_c__pyext

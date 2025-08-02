@@ -1,0 +1,7 @@
+[01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:[m[K In member function ‘[01m[Kvoid SensorNode::read_and_publish()[m[K’:
+[01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:189:30:[m[K [01;31m[Kerror: [m[K‘[01m[Knpu_score[m[K’ was not declared in this scope
+  189 |         npu_msg.percentage = [01;31m[Knpu_score[m[K / 100.0f;  // 转为 0.0 ~ 1.0 区间
+      |                              [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/sensor_node.dir/build.make:63: CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:559: CMakeFiles/sensor_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

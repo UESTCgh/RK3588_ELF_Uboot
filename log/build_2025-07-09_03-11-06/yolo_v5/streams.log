@@ -1,0 +1,21 @@
+[2.524s] Invoking command in '/home/uboot/data/ros2_uboot/src/yolo_v5': PYTHONPATH=/home/uboot/data/ros2_uboot/build/yolo_v5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/yolo_v5/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolo_v5 build --build-base /home/uboot/data/ros2_uboot/build/yolo_v5/build install --record /home/uboot/data/ros2_uboot/build/yolo_v5/install.log --install-scripts $base/lib/yolo_v5 --single-version-externally-managed install_data
+[2.838s] running egg_info
+[2.841s] writing ../../build/yolo_v5/yolo_v5.egg-info/PKG-INFO
+[2.841s] writing dependency_links to ../../build/yolo_v5/yolo_v5.egg-info/dependency_links.txt
+[2.842s] writing entry points to ../../build/yolo_v5/yolo_v5.egg-info/entry_points.txt
+[2.843s] writing requirements to ../../build/yolo_v5/yolo_v5.egg-info/requires.txt
+[2.843s] writing top-level names to ../../build/yolo_v5/yolo_v5.egg-info/top_level.txt
+[2.895s] reading manifest file '../../build/yolo_v5/yolo_v5.egg-info/SOURCES.txt'
+[2.895s] writing manifest file '../../build/yolo_v5/yolo_v5.egg-info/SOURCES.txt'
+[2.895s] running build
+[2.895s] running build_py
+[2.895s] running install
+[2.897s] running install_lib
+[2.901s] running install_data
+[2.901s] running install_egg_info
+[2.901s] removing '/home/uboot/data/ros2_uboot/install/yolo_v5/lib/python3.8/site-packages/yolo_v5-0.0.0-py3.8.egg-info' (and everything under it)
+[2.901s] Copying ../../build/yolo_v5/yolo_v5.egg-info to /home/uboot/data/ros2_uboot/install/yolo_v5/lib/python3.8/site-packages/yolo_v5-0.0.0-py3.8.egg-info
+[2.902s] running install_scripts
+[2.925s] Installing start script to /home/uboot/data/ros2_uboot/install/yolo_v5/lib/yolo_v5
+[2.925s] writing list of installed files to '/home/uboot/data/ros2_uboot/build/yolo_v5/install.log'
+[2.983s] Invoked command in '/home/uboot/data/ros2_uboot/src/yolo_v5' returned '0': PYTHONPATH=/home/uboot/data/ros2_uboot/build/yolo_v5/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/yolo_v5/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolo_v5 build --build-base /home/uboot/data/ros2_uboot/build/yolo_v5/build install --record /home/uboot/data/ros2_uboot/build/yolo_v5/install.log --install-scripts $base/lib/yolo_v5 --single-version-externally-managed install_data

@@ -1,0 +1,48 @@
+[0.026s] Invoking command in '/home/uboot/data/ros2_uboot/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8
+[0.162s] [  8%] Built target sensor__rosidl_generator_c
+[0.167s] [35m[1mScanning dependencies of target sensor_node[0m
+[0.189s] [ 25%] Built target sensor__rosidl_typesupport_introspection_c
+[0.190s] [ 25%] Built target sensor__rosidl_typesupport_c
+[0.194s] [ 29%] Built target human_detector_client
+[0.200s] [ 31%] Built target sensor__cpp
+[0.202s] [ 36%] Built target do_something_server
+[0.233s] [ 44%] Built target sensor__rosidl_typesupport_introspection_cpp
+[0.244s] [ 46%] [32mBuilding CXX object CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o[0m
+[0.259s] [ 55%] Built target sensor__rosidl_typesupport_cpp
+[0.299s] [ 63%] Built target sensor__rosidl_typesupport_fastrtps_cpp
+[0.390s] [ 72%] Built target sensor__rosidl_typesupport_fastrtps_c
+[0.448s] [ 72%] Built target sensor
+[0.496s] [ 76%] Built target openamp_core1
+[0.533s] [ 78%] Built target sensor__py
+[0.611s] [ 85%] Built target sensor__python
+[0.698s] [ 89%] Built target sensor__rosidl_typesupport_introspection_c__pyext
+[0.712s] [ 93%] Built target sensor__rosidl_typesupport_fastrtps_c__pyext
+[0.713s] [ 97%] Built target sensor__rosidl_typesupport_c__pyext
+[2.110s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:[m[K In constructor ‘[01m[KSensorNode::SensorNode()[m[K’:
+[2.110s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:32:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kbattery_state[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’; did you mean ‘[01m[KBatteryState[m[K’?
+[2.110s]    32 |         battery_publisher_     = this->create_publisher<sensor_msgs::msg::[01;31m[Kbattery_state[m[K>("battery", 10);
+[2.111s]       |                                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[2.111s]       |                                                                           [32m[KBatteryState[m[K
+[2.112s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:32:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kbattery_state[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’; did you mean ‘[01m[KBatteryState[m[K’?
+[2.112s]    32 |         battery_publisher_     = this->create_publisher<sensor_msgs::msg::[01;31m[Kbattery_state[m[K>("battery", 10);
+[2.112s]       |                                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[2.113s]       |                                                                           [32m[KBatteryState[m[K
+[2.113s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:32:103:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KSensorNode::create_publisher<<expression error> >(const char [8], int)[m[K’
+[2.113s]    32 |         battery_publisher_     = this->create_publisher<sensor_msgs::msg::battery_state>("battery", 10[01;31m[K)[m[K;
+[2.114s]       |                                                                                                       [01;31m[K^[m[K
+[2.114s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1224[m[K,
+[2.114s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.115s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[2.115s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.115s]                  from [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:12[m[K:
+[2.116s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:71:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[2.116s]    71 | [01;36m[KNode[m[K::create_publisher(
+[2.116s]       | [01;36m[K^~~~[m[K
+[2.117s] [01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:71:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.117s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:32:103:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.117s]    32 |         battery_publisher_     = this->create_publisher<sensor_msgs::msg::battery_state>("battery", 10[01;31m[K)[m[K;
+[2.118s]       |                                                                                                       [01;31m[K^[m[K
+[3.715s] make[2]: *** [CMakeFiles/sensor_node.dir/build.make:63: CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o] Error 1
+[3.715s] make[1]: *** [CMakeFiles/Makefile2:559: CMakeFiles/sensor_node.dir/all] Error 2
+[3.716s] make: *** [Makefile:141: all] Error 2
+[3.719s] Invoked command in '/home/uboot/data/ros2_uboot/build/sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8

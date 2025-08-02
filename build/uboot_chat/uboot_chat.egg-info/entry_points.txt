@@ -1,0 +1,6 @@
+[console_scripts]
+chat = uboot_chat.chat:main
+micro = uboot_chat.micro_recognizer:main
+pub = uboot_chat.test_pub_msg:main
+speech = uboot_chat.speechGC:main
+

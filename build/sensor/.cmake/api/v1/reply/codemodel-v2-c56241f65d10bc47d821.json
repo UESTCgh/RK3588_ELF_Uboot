@@ -1,0 +1,249 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "sensor__py",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/uboot/data/ros2_uboot/build/sensor/sensor__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "sensor",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "do_something_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-do_something_server-8f81a96ad4b12e7913af.json",
+					"name" : "do_something_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "human_detector_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-human_detector_client-18dd274227536fb67769.json",
+					"name" : "human_detector_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openamp_core1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openamp_core1-affeb69477de70729365.json",
+					"name" : "openamp_core1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor-33e5c9a4ba610e6f0003.json",
+					"name" : "sensor",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor__cpp-a5fa44a4dabd7edad2cd.json",
+					"name" : "sensor__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sensor__py::@54259e36a477606f37fc",
+					"jsonFile" : "target-sensor__py-1780bc3168266c26407a.json",
+					"name" : "sensor__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor__python::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor__python-7e5e1092c56e0fe00bea.json",
+					"name" : "sensor__python",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor__rosidl_generator_c-5af8d7a210a90aea5cf6.json",
+					"name" : "sensor__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor__rosidl_typesupport_c-cb64727839a3cdb68c07.json",
+					"name" : "sensor__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor__rosidl_typesupport_c__pyext-b1b133a74c93cc8c2131.json",
+					"name" : "sensor__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor__rosidl_typesupport_cpp-693d945731eb0cd22dab.json",
+					"name" : "sensor__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor__rosidl_typesupport_fastrtps_c-f2f425c366f461536de7.json",
+					"name" : "sensor__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor__rosidl_typesupport_fastrtps_c__pyext-bd403893937becca85dc.json",
+					"name" : "sensor__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor__rosidl_typesupport_fastrtps_cpp-3b57cb7c2f9c4d9a4909.json",
+					"name" : "sensor__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor__rosidl_typesupport_introspection_c-3c59790e145b3f35c6a6.json",
+					"name" : "sensor__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor__rosidl_typesupport_introspection_c__pyext-1ee5e9a57c9f06dba92d.json",
+					"name" : "sensor__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor__rosidl_typesupport_introspection_cpp-59c7aeb9443d75fb3e24.json",
+					"name" : "sensor__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor_node-d21adfc7545c4dd52bd7.json",
+					"name" : "sensor_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor_uninstall-82a8544bb0a4d8cd5ec9.json",
+					"name" : "sensor_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-5633c38fdeb31abc2cef.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/uboot/data/ros2_uboot/build/sensor",
+		"source" : "/home/uboot/data/ros2_uboot/src/sensor"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

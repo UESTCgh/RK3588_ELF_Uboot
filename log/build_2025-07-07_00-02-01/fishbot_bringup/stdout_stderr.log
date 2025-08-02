@@ -1,0 +1,24 @@
+[100%] Built target odom2tf
+-- Install configuration: ""
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/lib/fishbot_bringup/odom2tf
+-- Set runtime path of "/home/uboot/data/ros2_uboot/install/fishbot_bringup/lib/fishbot_bringup/odom2tf" to ""
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/launch
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/launch/bringup_quick.launch.py
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/launch/bringup.launch.py
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/launch/urdf2tf.launch.py
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/launch/fishbot_bringup.launch.py
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/ament_index/resource_index/package_run_dependencies/fishbot_bringup
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/ament_index/resource_index/parent_prefix_path/fishbot_bringup
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/environment/ament_prefix_path.sh
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/environment/ament_prefix_path.dsv
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/environment/path.sh
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/environment/path.dsv
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/local_setup.bash
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/local_setup.sh
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/local_setup.zsh
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/local_setup.dsv
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/package.dsv
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/ament_index/resource_index/packages/fishbot_bringup
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/cmake/fishbot_bringupConfig.cmake
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/cmake/fishbot_bringupConfig-version.cmake
+-- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/package.xml

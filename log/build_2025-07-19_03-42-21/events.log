@@ -1,0 +1,240 @@
+[0.000000] (-) TimerEvent: {}
+[0.000516] (-) JobUnselected: {'identifier': 'fishbot_bringup'}
+[0.000691] (-) JobUnselected: {'identifier': 'fishbot_cartographer'}
+[0.000850] (-) JobUnselected: {'identifier': 'fishbot_description'}
+[0.001344] (-) JobUnselected: {'identifier': 'fishbot_interfaces'}
+[0.001888] (-) JobUnselected: {'identifier': 'fishbot_navigation2'}
+[0.002052] (-) JobUnselected: {'identifier': 'micro_ros_agent'}
+[0.002208] (-) JobUnselected: {'identifier': 'micro_ros_msgs'}
+[0.002841] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.003048] (-) JobUnselected: {'identifier': 'task_scheduler'}
+[0.003335] (-) JobUnselected: {'identifier': 'uboot_chat'}
+[0.003500] (-) JobUnselected: {'identifier': 'yolo_v5'}
+[0.003668] (sensor) JobQueued: {'identifier': 'sensor', 'dependencies': OrderedDict()}
+[0.003820] (sensor) JobStarted: {'identifier': 'sensor'}
+[0.027824] (sensor) JobProgress: {'identifier': 'sensor', 'progress': 'cmake'}
+[0.033160] (sensor) JobProgress: {'identifier': 'sensor', 'progress': 'build'}
+[0.034941] (sensor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/uboot/data/ros2_uboot/build/sensor', '--', '-j8', '-l8'], 'cwd': '/home/uboot/data/ros2_uboot/build/sensor', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'uboot'), ('SSH_CLIENT', '192.168.0.116 37624 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/uboot/data/ros2_uboot/install/sensor/lib:/home/uboot/data/ros2_uboot/install/micro_ros_agent/lib:/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib:/home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/uboot'), ('OLDPWD', '/home/uboot/data/ros2_uboot/sh'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('LC_MONETARY', 'C.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('QTWEBENGINE_CHROMIUM_FLAGS', '--no-sandbox --disable-es3-gl-context --ignore-gpu-blacklist --ignore-gpu-blocklist --enable-accelerated-video-decode'), ('COLCON_PREFIX_PATH', '/home/uboot/data/ros2_uboot/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'uboot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', 'c3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/uboot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GST_GL_PLATFORM', 'egl'), ('ADBD_SHELL', '/bin/bash'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/sensor:/home/uboot/data/ros2_uboot/install/rplidar_ros:/home/uboot/data/ros2_uboot/install/micro_ros_agent:/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/home/uboot/data/ros2_uboot/install/fishbot_navigation2:/home/uboot/data/ros2_uboot/install/fishbot_interfaces:/home/uboot/data/ros2_uboot/install/fishbot_description:/home/uboot/data/ros2_uboot/install/fishbot_cartographer:/home/uboot/data/ros2_uboot/install/fishbot_bringup:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'C.UTF-8'), ('qwen2_5', '/home/uboot/data/xyc/LLM/model/qwen2.5-vl-3b-w8a8_level1_rk3588.rkllm'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('PWD', '/home/uboot/data/ros2_uboot/build/sensor'), ('SSH_CONNECTION', '192.168.0.116 37624 192.168.0.113 22'), ('deepseekR1', '/home/uboot/data/xyc/LLM/model/DeepSeek-R1-Distill-Qwen-1.5B_FP16_RK3588.rkllm'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('ADB_TCP_PORT', '5555'), ('PYTHONPATH', '/home/uboot/data/ros2_uboot/install/yolo_v5/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/uboot/data/ros2_uboot/install/sensor:/home/uboot/data/ros2_uboot/install/rplidar_ros:/home/uboot/data/ros2_uboot/install/micro_ros_agent:/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/home/uboot/data/ros2_uboot/install/fishbot_navigation2:/home/uboot/data/ros2_uboot/install/fishbot_interfaces:/home/uboot/data/ros2_uboot/install/fishbot_cartographer:/home/uboot/data/ros2_uboot/install/fishbot_bringup:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy')]), 'shell': False}
+[0.099307] (-) TimerEvent: {}
+[0.200008] (-) TimerEvent: {}
+[0.238606] (sensor) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.300184] (-) TimerEvent: {}
+[0.358121] (sensor) StdoutLine: {'line': b'-- Found PythonInterp: /bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.359045] (sensor) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /bin/python3\n'}
+[0.400366] (-) TimerEvent: {}
+[0.501139] (-) TimerEvent: {}
+[0.601926] (-) TimerEvent: {}
+[0.702598] (-) TimerEvent: {}
+[0.726253] (sensor) StdoutLine: {'line': b'-- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[0.727406] (sensor) StdoutLine: {'line': b'-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[0.793965] (sensor) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.801807] (sensor) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.802666] (-) TimerEvent: {}
+[0.903168] (-) TimerEvent: {}
+[1.003886] (-) TimerEvent: {}
+[1.079630] (sensor) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.104116] (-) TimerEvent: {}
+[1.204907] (-) TimerEvent: {}
+[1.207410] (sensor) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.302083] (sensor) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[1.305140] (-) TimerEvent: {}
+[1.306115] (sensor) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.405406] (-) TimerEvent: {}
+[1.506142] (-) TimerEvent: {}
+[1.553045] (sensor) StdoutLine: {'line': b'-- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)\n'}
+[1.567964] (sensor) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[1.606334] (-) TimerEvent: {}
+[1.656491] (sensor) StdoutLine: {'line': b'-- Found PythonInterp: /bin/python3 (found version "3.8.10") \n'}
+[1.706508] (-) TimerEvent: {}
+[1.807988] (-) TimerEvent: {}
+[1.908429] (-) TimerEvent: {}
+[2.009162] (-) TimerEvent: {}
+[2.052845] (sensor) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[2.109393] (-) TimerEvent: {}
+[2.210180] (-) TimerEvent: {}
+[2.311051] (-) TimerEvent: {}
+[2.393445] (sensor) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.411322] (-) TimerEvent: {}
+[2.493913] (sensor) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.511590] (-) TimerEvent: {}
+[2.530169] (sensor) StdoutLine: {'line': b'-- Found PythonInterp: /bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.533881] (sensor) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[2.585388] (sensor) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /bin/python3\n'}
+[2.585968] (sensor) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[2.586311] (sensor) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[2.613582] (-) TimerEvent: {}
+[2.648841] (sensor) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[2.679041] (sensor) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.683078] (sensor) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.685550] (sensor) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/uboot/data/ros2_uboot/src/sensor/include\n'}
+[2.685987] (sensor) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.686512] (sensor) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.686859] (sensor) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[2.687408] (sensor) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.688679] (sensor) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.689100] (sensor) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.689582] (sensor) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.700402] (sensor) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.713780] (-) TimerEvent: {}
+[2.814659] (-) TimerEvent: {}
+[2.915210] (-) TimerEvent: {}
+[2.928238] (sensor) StdoutLine: {'line': b'-- Generating done\n'}
+[3.002235] (sensor) StdoutLine: {'line': b'-- Build files have been written to: /home/uboot/data/ros2_uboot/build/sensor\n'}
+[3.015472] (-) TimerEvent: {}
+[3.116363] (-) TimerEvent: {}
+[3.127352] (sensor) StdoutLine: {'line': b'[  2%] Built target sensor__cpp\n'}
+[3.134567] (sensor) StdoutLine: {'line': b'[ 10%] Built target sensor__rosidl_generator_c\n'}
+[3.147637] (sensor) StdoutLine: {'line': b'[ 14%] Built target human_detector_client\n'}
+[3.151630] (sensor) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking CXX executable sensor_node\x1b[0m\n'}
+[3.157870] (sensor) StdoutLine: {'line': b'[ 21%] Built target do_something_server\n'}
+[3.190559] (sensor) StdoutLine: {'line': b'[ 29%] Built target sensor__rosidl_typesupport_cpp\n'}
+[3.191028] (sensor) StdoutLine: {'line': b'[ 38%] Built target sensor__rosidl_typesupport_introspection_cpp\n'}
+[3.191250] (sensor) StdoutLine: {'line': b'[ 46%] Built target sensor__rosidl_typesupport_fastrtps_cpp\n'}
+[3.202885] (sensor) StdoutLine: {'line': b'[ 55%] Built target sensor__rosidl_typesupport_c\n'}
+[3.205191] (sensor) StdoutLine: {'line': b'[ 63%] Built target sensor__rosidl_typesupport_introspection_c\n'}
+[3.216530] (-) TimerEvent: {}
+[3.263143] (sensor) StdoutLine: {'line': b'[ 72%] Built target sensor__rosidl_typesupport_fastrtps_c\n'}
+[3.316714] (-) TimerEvent: {}
+[3.337099] (sensor) StdoutLine: {'line': b'[ 72%] Built target sensor\n'}
+[3.410345] (sensor) StdoutLine: {'line': b'[ 74%] Built target sensor__py\n'}
+[3.416916] (-) TimerEvent: {}
+[3.420476] (sensor) StdoutLine: {'line': b'[ 78%] Built target openamp_core1\n'}
+[3.511828] (sensor) StdoutLine: {'line': b'[ 85%] Built target sensor__python\n'}
+[3.517136] (-) TimerEvent: {}
+[3.568997] (sensor) StdoutLine: {'line': b'[ 87%] Built target sensor_node\n'}
+[3.569836] (sensor) StdoutLine: {'line': b'[ 91%] Built target sensor__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.587181] (sensor) StdoutLine: {'line': b'[ 95%] Built target sensor__rosidl_typesupport_introspection_c__pyext\n'}
+[3.605846] (sensor) StdoutLine: {'line': b'[100%] Built target sensor__rosidl_typesupport_c__pyext\n'}
+[3.617324] (-) TimerEvent: {}
+[3.643499] (sensor) CommandEnded: {'returncode': 0}
+[3.646310] (sensor) JobProgress: {'identifier': 'sensor', 'progress': 'install'}
+[3.680426] (sensor) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/uboot/data/ros2_uboot/build/sensor'], 'cwd': '/home/uboot/data/ros2_uboot/build/sensor', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'uboot'), ('SSH_CLIENT', '192.168.0.116 37624 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/uboot/data/ros2_uboot/install/sensor/lib:/home/uboot/data/ros2_uboot/install/micro_ros_agent/lib:/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib:/home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/uboot'), ('OLDPWD', '/home/uboot/data/ros2_uboot/sh'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('LC_MONETARY', 'C.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('QTWEBENGINE_CHROMIUM_FLAGS', '--no-sandbox --disable-es3-gl-context --ignore-gpu-blacklist --ignore-gpu-blocklist --enable-accelerated-video-decode'), ('COLCON_PREFIX_PATH', '/home/uboot/data/ros2_uboot/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'uboot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', 'c3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/uboot/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GST_GL_PLATFORM', 'egl'), ('ADBD_SHELL', '/bin/bash'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/sensor:/home/uboot/data/ros2_uboot/install/rplidar_ros:/home/uboot/data/ros2_uboot/install/micro_ros_agent:/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/home/uboot/data/ros2_uboot/install/fishbot_navigation2:/home/uboot/data/ros2_uboot/install/fishbot_interfaces:/home/uboot/data/ros2_uboot/install/fishbot_description:/home/uboot/data/ros2_uboot/install/fishbot_cartographer:/home/uboot/data/ros2_uboot/install/fishbot_bringup:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'C.UTF-8'), ('qwen2_5', '/home/uboot/data/xyc/LLM/model/qwen2.5-vl-3b-w8a8_level1_rk3588.rkllm'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('PWD', '/home/uboot/data/ros2_uboot/build/sensor'), ('SSH_CONNECTION', '192.168.0.116 37624 192.168.0.113 22'), ('deepseekR1', '/home/uboot/data/xyc/LLM/model/DeepSeek-R1-Distill-Qwen-1.5B_FP16_RK3588.rkllm'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('ADB_TCP_PORT', '5555'), ('PYTHONPATH', '/home/uboot/data/ros2_uboot/install/yolo_v5/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/uboot/data/ros2_uboot/install/sensor:/home/uboot/data/ros2_uboot/install/rplidar_ros:/home/uboot/data/ros2_uboot/install/micro_ros_agent:/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/home/uboot/data/ros2_uboot/install/fishbot_navigation2:/home/uboot/data/ros2_uboot/install/fishbot_interfaces:/home/uboot/data/ros2_uboot/install/fishbot_cartographer:/home/uboot/data/ros2_uboot/install/fishbot_bringup:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy')]), 'shell': False}
+[3.716499] (sensor) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.717440] (-) TimerEvent: {}
+[3.718180] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/ament_index/resource_index/rosidl_interfaces/sensor\n'}
+[3.718986] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor\n'}
+[3.719781] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg\n'}
+[3.721090] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.721488] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/core_command.h\n'}
+[3.721942] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail\n'}
+[3.722279] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__functions.c\n'}
+[3.722880] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__struct.h\n'}
+[3.723337] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__type_support.h\n'}
+[3.723667] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__functions.c\n'}
+[3.723998] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__struct.h\n'}
+[3.724326] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__functions.h\n'}
+[3.724654] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__functions.h\n'}
+[3.725074] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__type_support.h\n'}
+[3.725416] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/device_status.h\n'}
+[3.726142] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/library_path.sh\n'}
+[3.726485] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/library_path.dsv\n'}
+[3.726813] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_generator_c.so\n'}
+[3.727141] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor\n'}
+[3.727471] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg\n'}
+[3.727800] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail\n'}
+[3.728228] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__rosidl_typesupport_fastrtps_c.h\n'}
+[3.728593] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__rosidl_typesupport_fastrtps_c.h\n'}
+[3.729062] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.729643] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_fastrtps_c.so\n'}
+[3.730043] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor\n'}
+[3.730376] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg\n'}
+[3.730709] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.731132] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail\n'}
+[3.731466] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.731840] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/dds_fastrtps\n'}
+[3.732179] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.732521] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.732856] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor\n'}
+[3.733184] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg\n'}
+[3.733514] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.733847] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail\n'}
+[3.734177] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__type_support.c\n'}
+[3.734508] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__type_support.c\n'}
+[3.734840] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__rosidl_typesupport_introspection_c.h\n'}
+[3.735201] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__rosidl_typesupport_introspection_c.h\n'}
+[3.735541] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_introspection_c.so\n'}
+[3.737945] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_c.so\n'}
+[3.738302] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor\n'}
+[3.738692] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg\n'}
+[3.739024] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail\n'}
+[3.739516] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__builder.hpp\n'}
+[3.740011] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__type_support.hpp\n'}
+[3.740343] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__type_support.hpp\n'}
+[3.740804] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__traits.hpp\n'}
+[3.741135] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__traits.hpp\n'}
+[3.741464] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__builder.hpp\n'}
+[3.741811] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__struct.hpp\n'}
+[3.742153] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__struct.hpp\n'}
+[3.742490] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/device_status.hpp\n'}
+[3.742825] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/core_command.hpp\n'}
+[3.743159] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.743515] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor\n'}
+[3.743847] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg\n'}
+[3.744182] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail\n'}
+[3.744518] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.744861] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__type_support.cpp\n'}
+[3.745244] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/device_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.745584] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/include/sensor/msg/detail/core_command__type_support.cpp\n'}
+[3.745947] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_introspection_cpp.so\n'}
+[3.746278] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__rosidl_typesupport_cpp.so\n'}
+[3.746607] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/pythonpath.sh\n'}
+[3.746938] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/pythonpath.dsv\n'}
+[3.747267] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/__init__.py\n'}
+[3.817616] (-) TimerEvent: {}
+[3.819115] (sensor) StdoutLine: {'line': b"Compiling '/home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/__init__.py'...\n"}
+[3.827937] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/msg\n'}
+[3.828602] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/msg/__init__.py\n'}
+[3.829300] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/msg/_core_command_s.c\n'}
+[3.829672] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/msg/_core_command.py\n'}
+[3.830038] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/msg/_device_status_s.c\n'}
+[3.830511] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/msg/_device_status.py\n'}
+[3.830877] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/sensor_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[3.832621] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/sensor_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[3.834997] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages/sensor/sensor_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[3.837863] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/libsensor__python.so\n'}
+[3.839156] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/msg/CoreCommand.idl\n'}
+[3.839810] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/msg/DeviceStatus.idl\n'}
+[3.840242] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/msg/CoreCommand.msg\n'}
+[3.840776] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/msg/DeviceStatus.msg\n'}
+[3.841945] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/lib/sensor/sensor_node\n'}
+[3.846213] (sensor) StdoutLine: {'line': b'-- Set runtime path of "/home/uboot/data/ros2_uboot/install/sensor/lib/sensor/sensor_node" to ""\n'}
+[3.848255] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/sensor/human_detector_client\n'}
+[3.851050] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/sensor/do_something_server\n'}
+[3.854253] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/lib/sensor/openamp_core1\n'}
+[3.854941] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/ament_index/resource_index/package_run_dependencies/sensor\n'}
+[3.856080] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/ament_index/resource_index/parent_prefix_path/sensor\n'}
+[3.856703] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/ament_prefix_path.sh\n'}
+[3.857221] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/ament_prefix_path.dsv\n'}
+[3.857776] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/path.sh\n'}
+[3.858314] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/environment/path.dsv\n'}
+[3.858856] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/local_setup.bash\n'}
+[3.859317] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/local_setup.sh\n'}
+[3.859788] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/local_setup.zsh\n'}
+[3.860408] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/local_setup.dsv\n'}
+[3.860984] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/package.dsv\n'}
+[3.861617] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/ament_index/resource_index/packages/sensor\n'}
+[3.862104] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_generator_cExport.cmake\n'}
+[3.862530] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.863120] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.863634] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.865330] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_cExport.cmake\n'}
+[3.865781] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.866339] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_generator_cppExport.cmake\n'}
+[3.867442] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.867895] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.872678] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_cppExport.cmake\n'}
+[3.872945] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensor__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.873181] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/rosidl_cmake-extras.cmake\n'}
+[3.873448] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.873699] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.874229] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.874763] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.875353] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.875722] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.876085] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensorConfig.cmake\n'}
+[3.876450] (sensor) StdoutLine: {'line': b'-- Up-to-date: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/cmake/sensorConfig-version.cmake\n'}
+[3.876814] (sensor) StdoutLine: {'line': b'-- Installing: /home/uboot/data/ros2_uboot/install/sensor/share/sensor/package.xml\n'}
+[3.883942] (sensor) CommandEnded: {'returncode': 0}
+[3.919076] (-) TimerEvent: {}
+[4.001126] (sensor) JobEnded: {'identifier': 'sensor', 'rc': 0}
+[4.002280] (-) EventReactorShutdown: {}

@@ -1,0 +1,42 @@
+[0.030s] Invoking command in '/home/uboot/data/ros2_uboot/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8
+[0.209s] [35m[1mScanning dependencies of target sensor_node[0m
+[0.214s] [  8%] Built target sensor__rosidl_generator_c
+[0.214s] [ 10%] Built target sensor__cpp
+[0.220s] [ 14%] Built target do_something_server
+[0.221s] [ 19%] Built target human_detector_client
+[0.241s] [ 27%] Built target sensor__rosidl_typesupport_c
+[0.264s] [ 36%] Built target sensor__rosidl_typesupport_introspection_c
+[0.276s] [ 44%] Built target sensor__rosidl_typesupport_cpp
+[0.288s] [ 46%] [32mBuilding CXX object CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o[0m
+[0.291s] [ 55%] Built target sensor__rosidl_typesupport_introspection_cpp
+[0.304s] [ 63%] Built target sensor__rosidl_typesupport_fastrtps_cpp
+[0.375s] [ 72%] Built target sensor__rosidl_typesupport_fastrtps_c
+[0.436s] [ 72%] Built target sensor
+[0.512s] [ 76%] Built target openamp_core1
+[0.514s] [ 78%] Built target sensor__py
+[0.620s] [ 85%] Built target sensor__python
+[0.695s] [ 89%] Built target sensor__rosidl_typesupport_fastrtps_c__pyext
+[0.719s] [ 97%] Built target sensor__rosidl_typesupport_introspection_c__pyext
+[0.719s] [ 97%] Built target sensor__rosidl_typesupport_c__pyext
+[2.740s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[2.740s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[2.741s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.742s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.742s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.743s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.743s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.743s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.744s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.744s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.744s]                  from [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:12[m[K:
+[2.745s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:[m[K In member function ‘[01m[Kvoid SensorNode::read_and_publish()[m[K’:
+[2.745s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:194:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemperature[m[K’ was not declared in this scope
+[2.746s]   194 |             [01;31m[Ktemperature[m[K, // 占位，不打印订阅数
+[2.746s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[2.746s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:195:13:[m[K [01;31m[Kerror: [m[K‘[01m[Khumidity[m[K’ was not declared in this scope
+[2.747s]   195 |             [01;31m[Khumidity[m[K,
+[2.747s]       |             [01;31m[K^~~~~~~~[m[K
+[4.774s] make[2]: *** [CMakeFiles/sensor_node.dir/build.make:63: CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o] Error 1
+[4.775s] make[1]: *** [CMakeFiles/Makefile2:559: CMakeFiles/sensor_node.dir/all] Error 2
+[4.775s] make: *** [Makefile:141: all] Error 2
+[4.781s] Invoked command in '/home/uboot/data/ros2_uboot/build/sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8

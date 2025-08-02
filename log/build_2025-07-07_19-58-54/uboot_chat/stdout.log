@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/uboot_chat/uboot_chat.egg-info/PKG-INFO
+writing dependency_links to ../../build/uboot_chat/uboot_chat.egg-info/dependency_links.txt
+writing entry points to ../../build/uboot_chat/uboot_chat.egg-info/entry_points.txt
+writing requirements to ../../build/uboot_chat/uboot_chat.egg-info/requires.txt
+writing top-level names to ../../build/uboot_chat/uboot_chat.egg-info/top_level.txt
+reading manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'
+writing manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'
+running build
+running build_py
+copying uboot_chat/micro_recognizer.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+copying uboot_chat/test_speech.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+copying uboot_chat/speechGC.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+running install
+running install_lib
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/micro_recognizer.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/test_speech.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/speechGC.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/micro_recognizer.py to micro_recognizer.cpython-38.pyc
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/test_speech.py to test_speech.cpython-38.pyc
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/speechGC.py to speechGC.cpython-38.pyc
+running install_data
+running install_egg_info
+Copying ../../build/uboot_chat/uboot_chat.egg-info to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat-0.0.0-py3.8.egg-info
+running install_scripts
+Installing chat script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat
+Installing pub = uboot_chat.test_pub_msg:mainmicro = uboot_chat.micro_recognizer:mainspeech script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat
+writing list of installed files to '/home/uboot/data/ros2_uboot/build/uboot_chat/install.log'

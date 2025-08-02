@@ -1,0 +1,7 @@
+{
+  "package_name": "sensor",
+  "non_idl_tuples": [
+    "/home/uboot/data/ros2_uboot/src/sensor:msg/CoreCommand.msg",
+    "/home/uboot/data/ros2_uboot/src/sensor:msg/DeviceStatus.msg"
+  ]
+}

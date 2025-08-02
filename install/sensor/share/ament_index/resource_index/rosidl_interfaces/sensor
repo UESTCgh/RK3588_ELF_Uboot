@@ -1,0 +1,4 @@
+msg/CoreCommand.idl
+msg/CoreCommand.msg
+msg/DeviceStatus.idl
+msg/DeviceStatus.msg

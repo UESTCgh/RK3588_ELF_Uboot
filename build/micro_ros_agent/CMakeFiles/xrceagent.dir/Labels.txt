@@ -1,0 +1,13 @@
+# Target labels
+ xrceagent
+# Source files and their labels
+/home/uboot/data/ros2_uboot/build/micro_ros_agent/CMakeFiles/xrceagent
+/home/uboot/data/ros2_uboot/build/micro_ros_agent/CMakeFiles/xrceagent.rule
+/home/uboot/data/ros2_uboot/build/micro_ros_agent/CMakeFiles/xrceagent-complete.rule
+/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-install.rule
+/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-mkdir.rule
+/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-download.rule
+/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-update.rule
+/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-patch.rule
+/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-configure.rule
+/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-build.rule

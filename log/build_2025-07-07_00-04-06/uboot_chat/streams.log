@@ -1,0 +1,22 @@
+[2.224s] Invoking command in '/home/uboot/data/ros2_uboot/src/uboot_chat': PYTHONPATH=/home/uboot/data/ros2_uboot/build/uboot_chat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uboot_chat build --build-base /home/uboot/data/ros2_uboot/build/uboot_chat/build install --record /home/uboot/data/ros2_uboot/build/uboot_chat/install.log --install-scripts $base/lib/uboot_chat --single-version-externally-managed install_data
+[2.510s] running egg_info
+[2.511s] writing ../../build/uboot_chat/uboot_chat.egg-info/PKG-INFO
+[2.512s] writing dependency_links to ../../build/uboot_chat/uboot_chat.egg-info/dependency_links.txt
+[2.512s] writing entry points to ../../build/uboot_chat/uboot_chat.egg-info/entry_points.txt
+[2.512s] writing requirements to ../../build/uboot_chat/uboot_chat.egg-info/requires.txt
+[2.512s] writing top-level names to ../../build/uboot_chat/uboot_chat.egg-info/top_level.txt
+[2.562s] reading manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'
+[2.563s] writing manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'
+[2.563s] running build
+[2.564s] running build_py
+[2.565s] running install
+[2.566s] running install_lib
+[2.569s] running install_data
+[2.569s] running install_egg_info
+[2.573s] removing '/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat-0.0.0-py3.8.egg-info' (and everything under it)
+[2.574s] Copying ../../build/uboot_chat/uboot_chat.egg-info to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat-0.0.0-py3.8.egg-info
+[2.575s] running install_scripts
+[2.610s] Installing chat script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat
+[2.611s] Installing pub script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat
+[2.611s] writing list of installed files to '/home/uboot/data/ros2_uboot/build/uboot_chat/install.log'
+[2.696s] Invoked command in '/home/uboot/data/ros2_uboot/src/uboot_chat' returned '0': PYTHONPATH=/home/uboot/data/ros2_uboot/build/uboot_chat/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/uboot_chat build --build-base /home/uboot/data/ros2_uboot/build/uboot_chat/build install --record /home/uboot/data/ros2_uboot/build/uboot_chat/install.log --install-scripts $base/lib/uboot_chat --single-version-externally-managed install_data

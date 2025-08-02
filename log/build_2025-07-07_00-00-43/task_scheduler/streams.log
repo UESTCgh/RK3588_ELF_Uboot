@@ -1,0 +1,43 @@
+[2.818s] Invoking command in '/home/uboot/data/ros2_uboot/src/task_scheduler': PYTHONPATH=/home/uboot/data/ros2_uboot/build/task_scheduler/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task_scheduler build --build-base /home/uboot/data/ros2_uboot/build/task_scheduler/build install --record /home/uboot/data/ros2_uboot/build/task_scheduler/install.log --install-scripts $base/lib/task_scheduler --single-version-externally-managed install_data
+[4.117s] running egg_info
+[4.122s] creating ../../build/task_scheduler/task_scheduler.egg-info
+[4.132s] writing ../../build/task_scheduler/task_scheduler.egg-info/PKG-INFO
+[4.140s] writing dependency_links to ../../build/task_scheduler/task_scheduler.egg-info/dependency_links.txt
+[4.140s] writing entry points to ../../build/task_scheduler/task_scheduler.egg-info/entry_points.txt
+[4.141s] writing requirements to ../../build/task_scheduler/task_scheduler.egg-info/requires.txt
+[4.142s] writing top-level names to ../../build/task_scheduler/task_scheduler.egg-info/top_level.txt
+[4.153s] writing manifest file '../../build/task_scheduler/task_scheduler.egg-info/SOURCES.txt'
+[4.363s] reading manifest file '../../build/task_scheduler/task_scheduler.egg-info/SOURCES.txt'
+[4.366s] writing manifest file '../../build/task_scheduler/task_scheduler.egg-info/SOURCES.txt'
+[4.366s] running build
+[4.367s] running build_py
+[4.368s] creating /home/uboot/data/ros2_uboot/build/task_scheduler/build
+[4.369s] creating /home/uboot/data/ros2_uboot/build/task_scheduler/build/lib
+[4.369s] creating /home/uboot/data/ros2_uboot/build/task_scheduler/build/lib/task_scheduler
+[4.372s] copying task_scheduler/__init__.py -> /home/uboot/data/ros2_uboot/build/task_scheduler/build/lib/task_scheduler
+[4.373s] copying task_scheduler/test.py -> /home/uboot/data/ros2_uboot/build/task_scheduler/build/lib/task_scheduler
+[4.375s] copying task_scheduler/action.py -> /home/uboot/data/ros2_uboot/build/task_scheduler/build/lib/task_scheduler
+[4.398s] copying task_scheduler/scheduler.py -> /home/uboot/data/ros2_uboot/build/task_scheduler/build/lib/task_scheduler
+[4.400s] running install
+[4.404s] running install_lib
+[4.408s] creating /home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler
+[4.409s] copying /home/uboot/data/ros2_uboot/build/task_scheduler/build/lib/task_scheduler/__init__.py -> /home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler
+[4.410s] copying /home/uboot/data/ros2_uboot/build/task_scheduler/build/lib/task_scheduler/test.py -> /home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler
+[4.411s] copying /home/uboot/data/ros2_uboot/build/task_scheduler/build/lib/task_scheduler/action.py -> /home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler
+[4.412s] copying /home/uboot/data/ros2_uboot/build/task_scheduler/build/lib/task_scheduler/scheduler.py -> /home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler
+[4.422s] byte-compiling /home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler/__init__.py to __init__.cpython-38.pyc
+[4.433s] byte-compiling /home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler/test.py to test.cpython-38.pyc
+[4.442s] byte-compiling /home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler/action.py to action.cpython-38.pyc
+[4.450s] byte-compiling /home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler/scheduler.py to scheduler.cpython-38.pyc
+[4.456s] running install_data
+[4.457s] creating /home/uboot/data/ros2_uboot/install/task_scheduler/share/ament_index
+[4.457s] creating /home/uboot/data/ros2_uboot/install/task_scheduler/share/ament_index/resource_index
+[4.461s] creating /home/uboot/data/ros2_uboot/install/task_scheduler/share/ament_index/resource_index/packages
+[4.462s] copying resource/task_scheduler -> /home/uboot/data/ros2_uboot/install/task_scheduler/share/ament_index/resource_index/packages
+[4.475s] copying package.xml -> /home/uboot/data/ros2_uboot/install/task_scheduler/share/task_scheduler
+[4.477s] running install_egg_info
+[4.486s] Copying ../../build/task_scheduler/task_scheduler.egg-info to /home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler-0.0.0-py3.8.egg-info
+[4.505s] running install_scripts
+[4.650s] Installing start script to /home/uboot/data/ros2_uboot/install/task_scheduler/lib/task_scheduler
+[4.659s] writing list of installed files to '/home/uboot/data/ros2_uboot/build/task_scheduler/install.log'
+[5.046s] Invoked command in '/home/uboot/data/ros2_uboot/src/task_scheduler' returned '0': PYTHONPATH=/home/uboot/data/ros2_uboot/build/task_scheduler/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task_scheduler build --build-base /home/uboot/data/ros2_uboot/build/task_scheduler/build install --record /home/uboot/data/ros2_uboot/build/task_scheduler/install.log --install-scripts $base/lib/task_scheduler --single-version-externally-managed install_data

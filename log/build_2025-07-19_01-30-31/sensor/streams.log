@@ -1,0 +1,23 @@
+[0.023s] Invoking command in '/home/uboot/data/ros2_uboot/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8
+[0.137s] [35m[1mScanning dependencies of target sensor_node[0m
+[0.149s] [  4%] Built target do_something_server
+[0.175s] [ 12%] Built target sensor__rosidl_generator_c
+[0.176s] [ 17%] Built target human_detector_client
+[0.195s] [ 19%] Built target sensor__cpp
+[0.207s] [ 21%] [32mBuilding CXX object CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o[0m
+[0.265s] [ 29%] Built target sensor__rosidl_typesupport_c
+[0.268s] [ 38%] Built target sensor__rosidl_typesupport_introspection_c
+[0.282s] [ 46%] Built target sensor__rosidl_typesupport_fastrtps_cpp
+[0.283s] [ 55%] Built target sensor__rosidl_typesupport_cpp
+[0.288s] [ 63%] Built target sensor__rosidl_typesupport_introspection_cpp
+[0.377s] [ 72%] Built target sensor__rosidl_typesupport_fastrtps_c
+[0.405s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/BatteryState.h: No such file or directory
+[0.405s]    15 | #include [01;31m[K<sensor_msgs/BatteryState.h>[m[K
+[0.406s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.407s] compilation terminated.
+[0.407s] make[2]: *** [CMakeFiles/sensor_node.dir/build.make:63: CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o] Error 1
+[0.408s] make[1]: *** [CMakeFiles/Makefile2:559: CMakeFiles/sensor_node.dir/all] Error 2
+[0.408s] make[1]: *** Waiting for unfinished jobs....
+[0.448s] [ 72%] Built target sensor
+[0.451s] make: *** [Makefile:141: all] Error 2
+[0.454s] Invoked command in '/home/uboot/data/ros2_uboot/build/sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8

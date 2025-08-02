@@ -1,0 +1,122 @@
+[0.542s] Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_interfaces -- -j8 -l8
+[0.674s] [  3%] Built target fishbot_interfaces__cpp
+[0.688s] [ 12%] Built target fishbot_interfaces__rosidl_generator_c
+[0.732s] [ 22%] Built target fishbot_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.745s] [ 32%] Built target fishbot_interfaces__rosidl_typesupport_introspection_cpp
+[0.769s] [ 41%] Built target fishbot_interfaces__rosidl_typesupport_cpp
+[0.771s] [ 51%] Built target fishbot_interfaces__rosidl_typesupport_introspection_c
+[0.780s] [ 61%] Built target fishbot_interfaces__rosidl_typesupport_c
+[0.840s] [ 70%] Built target fishbot_interfaces__rosidl_typesupport_fastrtps_c
+[0.902s] [ 70%] Built target fishbot_interfaces
+[0.954s] [ 74%] Built target fishbot_interfaces__py
+[1.026s] [ 80%] Built target fishbot_interfaces__python
+[1.090s] [ 87%] Built target fishbot_interfaces__rosidl_typesupport_c__pyext
+[1.100s] [ 93%] Built target fishbot_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.116s] [100%] Built target fishbot_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.472s] Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_interfaces -- -j8 -l8
+[2.482s] Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_interfaces
+[2.528s] -- Install configuration: ""
+[2.529s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/ament_index/resource_index/rosidl_interfaces/fishbot_interfaces
+[2.530s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces
+[2.536s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/msg
+[2.538s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.540s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv
+[2.545s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail
+[2.546s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__functions.c
+[2.547s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__struct.h
+[2.547s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__functions.h
+[2.547s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__type_support.h
+[2.548s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/fish_bot_config.h
+[2.549s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/environment/library_path.sh
+[2.549s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/environment/library_path.dsv
+[2.549s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/libfishbot_interfaces__rosidl_generator_c.so
+[2.550s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces
+[2.550s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/msg
+[2.550s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.550s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv
+[2.550s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail
+[2.550s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__rosidl_typesupport_fastrtps_c.h
+[2.551s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/libfishbot_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.551s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces
+[2.551s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/msg
+[2.551s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.551s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv
+[2.551s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail
+[2.551s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/dds_fastrtps
+[2.552s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__rosidl_typesupport_fastrtps_cpp.hpp
+[2.552s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/libfishbot_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.552s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces
+[2.552s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/msg
+[2.552s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.552s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv
+[2.553s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail
+[2.553s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__type_support.c
+[2.553s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__rosidl_typesupport_introspection_c.h
+[2.555s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/libfishbot_interfaces__rosidl_typesupport_introspection_c.so
+[2.555s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/libfishbot_interfaces__rosidl_typesupport_c.so
+[2.555s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces
+[2.555s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/msg
+[2.555s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.555s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv
+[2.555s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail
+[2.555s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__builder.hpp
+[2.556s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__struct.hpp
+[2.556s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__type_support.hpp
+[2.556s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__traits.hpp
+[2.556s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/fish_bot_config.hpp
+[2.556s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces
+[2.556s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv
+[2.556s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail
+[2.557s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__type_support.cpp
+[2.557s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/include/fishbot_interfaces/srv/detail/fish_bot_config__rosidl_typesupport_introspection_cpp.hpp
+[2.557s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/libfishbot_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.557s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/libfishbot_interfaces__rosidl_typesupport_cpp.so
+[2.557s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/environment/pythonpath.sh
+[2.557s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/environment/pythonpath.dsv
+[2.557s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages/fishbot_interfaces/__init__.py
+[2.645s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages/fishbot_interfaces/srv
+[2.646s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages/fishbot_interfaces/srv/__init__.py
+[2.647s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages/fishbot_interfaces/srv/_fish_bot_config.py
+[2.648s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages/fishbot_interfaces/srv/_fish_bot_config_s.c
+[2.649s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages/fishbot_interfaces/fishbot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[2.651s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages/fishbot_interfaces/fishbot_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[2.652s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages/fishbot_interfaces/fishbot_interfaces_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[2.652s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/libfishbot_interfaces__python.so
+[2.660s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/srv/FishBotConfig.idl
+[2.660s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/srv/FishBotConfig.srv
+[2.661s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/srv/FishBotConfig_Request.msg
+[2.661s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/srv/FishBotConfig_Response.msg
+[2.662s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/ament_index/resource_index/package_run_dependencies/fishbot_interfaces
+[2.662s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/ament_index/resource_index/parent_prefix_path/fishbot_interfaces
+[2.663s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/environment/ament_prefix_path.sh
+[2.663s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/environment/ament_prefix_path.dsv
+[2.664s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/environment/path.sh
+[2.665s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/environment/path.dsv
+[2.665s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/local_setup.bash
+[2.665s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/local_setup.sh
+[2.666s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/local_setup.zsh
+[2.666s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/local_setup.dsv
+[2.667s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/package.dsv
+[2.667s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/ament_index/resource_index/packages/fishbot_interfaces
+[2.668s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfaces__rosidl_generator_cExport.cmake
+[2.668s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.668s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.669s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.670s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfaces__rosidl_typesupport_cExport.cmake
+[2.672s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.672s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfaces__rosidl_generator_cppExport.cmake
+[2.673s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.673s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.674s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfaces__rosidl_typesupport_cppExport.cmake
+[2.674s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.675s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.675s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.676s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.676s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.677s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.678s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.678s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.679s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfacesConfig.cmake
+[2.679s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/cmake/fishbot_interfacesConfig-version.cmake
+[2.680s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_interfaces/share/fishbot_interfaces/package.xml
+[2.774s] Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_interfaces

@@ -1,0 +1,28 @@
+[0.021s] Invoking command in '/home/uboot/data/ros2_uboot/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8
+[0.134s] [  2%] Built target sensor__cpp
+[0.139s] [ 10%] Built target sensor__rosidl_generator_c
+[0.154s] [35m[1mScanning dependencies of target sensor_node[0m
+[0.170s] [ 14%] Built target do_something_server
+[0.181s] [ 23%] Built target sensor__rosidl_typesupport_introspection_cpp
+[0.189s] [ 31%] Built target sensor__rosidl_typesupport_c
+[0.193s] [ 40%] Built target sensor__rosidl_typesupport_introspection_c
+[0.199s] [ 48%] Built target sensor__rosidl_typesupport_cpp
+[0.205s] [ 53%] Built target human_detector_client
+[0.227s] [ 61%] Built target sensor__rosidl_typesupport_fastrtps_cpp
+[0.258s] [ 63%] [32mBuilding CXX object CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o[0m
+[0.302s] [ 72%] Built target sensor__rosidl_typesupport_fastrtps_c
+[0.366s] [ 72%] Built target sensor
+[0.427s] [ 76%] Built target openamp_core1
+[0.429s] [ 78%] Built target sensor__py
+[0.502s] [ 85%] Built target sensor__python
+[0.599s] [ 89%] Built target sensor__rosidl_typesupport_fastrtps_c__pyext
+[0.605s] [ 93%] Built target sensor__rosidl_typesupport_introspection_c__pyext
+[0.609s] [ 97%] Built target sensor__rosidl_typesupport_c__pyext
+[2.226s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:[m[K In member function ‘[01m[Kvoid SensorNode::read_and_publish()[m[K’:
+[2.226s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:190:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing BatteryState = struct sensor_msgs::msg::BatteryState_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct sensor_msgs::msg::BatteryState_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+[2.226s]   190 |         npu_msg.[01;31m[Kdata[m[K = npu_score;
+[2.226s]       |                 [01;31m[K^~~~[m[K
+[3.948s] make[2]: *** [CMakeFiles/sensor_node.dir/build.make:63: CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o] Error 1
+[3.948s] make[1]: *** [CMakeFiles/Makefile2:559: CMakeFiles/sensor_node.dir/all] Error 2
+[3.949s] make: *** [Makefile:141: all] Error 2
+[3.952s] Invoked command in '/home/uboot/data/ros2_uboot/build/sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8

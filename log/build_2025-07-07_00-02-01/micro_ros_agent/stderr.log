@@ -1,0 +1,14 @@
+Cloning into 'xrceagent'...
+fatal: unable to access 'https://github.com/eProsima/Micro-XRCE-DDS-Agent.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.
+Cloning into 'xrceagent'...
+fatal: unable to access 'https://github.com/eProsima/Micro-XRCE-DDS-Agent.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.
+Cloning into 'xrceagent'...
+fatal: unable to access 'https://github.com/eProsima/Micro-XRCE-DDS-Agent.git/': gnutls_handshake() failed: The TLS connection was non-properly terminated.
+CMake Error at /home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/tmp/xrceagent-gitclone.cmake:31 (message):
+  Failed to clone repository:
+  'https://github.com/eProsima/Micro-XRCE-DDS-Agent.git'
+
+
+make[2]: *** [CMakeFiles/xrceagent.dir/build.make:91: agent/src/xrceagent-stamp/xrceagent-download] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/xrceagent.dir/all] Error 2
+make: *** [Makefile:84: all] Error 2

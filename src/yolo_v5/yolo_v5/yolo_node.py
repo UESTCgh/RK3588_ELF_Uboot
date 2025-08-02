@@ -196,7 +196,7 @@ class ImagePublisher(Node):
         if not IMG_QUEUE.empty() and WORKING:
             img = IMG_QUEUE.get()
             if len(IMG_QUEUE) > 10:
-                self.counter += 1:
+                self.counter += 1
                 if self.counter > 1:
                     self.counter = 0
                     result_msg = self.bridge.cv2_to_imgmsg(img, encoding="bgr8")

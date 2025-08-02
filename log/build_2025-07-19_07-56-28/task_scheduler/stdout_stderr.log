@@ -1,0 +1,19 @@
+running egg_info
+writing ../../build/task_scheduler/task_scheduler.egg-info/PKG-INFO
+writing dependency_links to ../../build/task_scheduler/task_scheduler.egg-info/dependency_links.txt
+writing entry points to ../../build/task_scheduler/task_scheduler.egg-info/entry_points.txt
+writing requirements to ../../build/task_scheduler/task_scheduler.egg-info/requires.txt
+writing top-level names to ../../build/task_scheduler/task_scheduler.egg-info/top_level.txt
+reading manifest file '../../build/task_scheduler/task_scheduler.egg-info/SOURCES.txt'
+writing manifest file '../../build/task_scheduler/task_scheduler.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/task_scheduler/task_scheduler.egg-info to /home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages/task_scheduler-0.0.0-py3.8.egg-info
+running install_scripts
+Installing start script to /home/uboot/data/ros2_uboot/install/task_scheduler/lib/task_scheduler
+writing list of installed files to '/home/uboot/data/ros2_uboot/build/task_scheduler/install.log'

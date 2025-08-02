@@ -1,0 +1,8 @@
+[1.365s] Invoking command in '/home/uboot/data/ros2_uboot/build/micro_ros_agent': AMENT_PREFIX_PATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/micro_ros_agent -- -j8 -l8
+[1.584s] [ 31%] [34m[1mPerforming download step (git clone) for 'xrceagent'[0m
+[1.620s] -- Avoiding repeated git clone, stamp file is up to date: '/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitclone-lastrun.txt'
+[1.627s] cmake -E touch: failed to update "/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-download".
+[1.631s] make[2]: *** [CMakeFiles/xrceagent.dir/build.make:92: agent/src/xrceagent-stamp/xrceagent-download] Error 1
+[1.631s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/xrceagent.dir/all] Error 2
+[1.633s] make: *** [Makefile:84: all] Error 2
+[1.676s] Invoked command in '/home/uboot/data/ros2_uboot/build/micro_ros_agent' returned '2': AMENT_PREFIX_PATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/micro_ros_agent -- -j8 -l8

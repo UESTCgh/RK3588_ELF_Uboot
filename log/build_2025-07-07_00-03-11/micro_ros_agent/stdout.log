@@ -1,0 +1,2 @@
+[ 31%] [34m[1mPerforming download step (git clone) for 'xrceagent'[0m
+-- Avoiding repeated git clone, stamp file is up to date: '/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-gitclone-lastrun.txt'

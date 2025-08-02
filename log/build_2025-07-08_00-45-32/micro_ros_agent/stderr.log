@@ -1,0 +1,4 @@
+Cloning into 'xrceagent'...
+make[2]: *** [CMakeFiles/xrceagent.dir/build.make:91: agent/src/xrceagent-stamp/xrceagent-download] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/xrceagent.dir/all] Interrupt
+make: *** [Makefile:84: all] Interrupt

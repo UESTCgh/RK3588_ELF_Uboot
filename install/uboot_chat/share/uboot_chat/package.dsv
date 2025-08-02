@@ -1,0 +1,6 @@
+source;share/uboot_chat/hook/pythonpath.ps1
+source;share/uboot_chat/hook/pythonpath.dsv
+source;share/uboot_chat/hook/pythonpath.sh
+source;share/uboot_chat/hook/ament_prefix_path.ps1
+source;share/uboot_chat/hook/ament_prefix_path.dsv
+source;share/uboot_chat/hook/ament_prefix_path.sh

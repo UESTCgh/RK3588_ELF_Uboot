@@ -1,0 +1,9 @@
+Error removing directory "/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent".
+CMake Error at /home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/tmp/xrceagent-gitclone.cmake:12 (message):
+  Failed to remove directory:
+  '/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent'
+
+
+make[2]: *** [CMakeFiles/xrceagent.dir/build.make:91: agent/src/xrceagent-stamp/xrceagent-download] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/xrceagent.dir/all] Error 2
+make: *** [Makefile:84: all] Error 2

@@ -1,0 +1,8 @@
+[ 31%] [34m[1mPerforming download step (git clone) for 'xrceagent'[0m
+Cloning into 'xrceagent'...
+Switched to a new branch 'ros2'
+Branch 'ros2' set up to track remote branch 'ros2' from 'origin'.
+cmake -E touch: failed to update "/home/uboot/data/ros2_uboot/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-download".
+make[2]: *** [CMakeFiles/xrceagent.dir/build.make:92: agent/src/xrceagent-stamp/xrceagent-download] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/xrceagent.dir/all] Error 2
+make: *** [Makefile:84: all] Error 2

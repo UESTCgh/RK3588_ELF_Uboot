@@ -1,0 +1,213 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				},
+				{
+					"build" : "fishbot_interfaces__py",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/uboot/data/ros2_uboot/build/fishbot_interfaces/fishbot_interfaces__py",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "fishbot_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces-1a2cd0a5220fed3e7699.json",
+					"name" : "fishbot_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces__cpp-9fc2877402162eaa9fdd.json",
+					"name" : "fishbot_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fishbot_interfaces__py::@14737eba867c52c18ae3",
+					"jsonFile" : "target-fishbot_interfaces__py-e42f70ef854e161d80ea.json",
+					"name" : "fishbot_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces__python::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces__python-5d73b9e5d0ab9797dcc3.json",
+					"name" : "fishbot_interfaces__python",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces__rosidl_generator_c-857fc88a6db9844a9f2c.json",
+					"name" : "fishbot_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces__rosidl_typesupport_c-cf7a2fc6a74ea71ba295.json",
+					"name" : "fishbot_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces__rosidl_typesupport_c__pyext-75d97b3009eddf17c403.json",
+					"name" : "fishbot_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces__rosidl_typesupport_cpp-3c340a75c0f6713b7877.json",
+					"name" : "fishbot_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces__rosidl_typesupport_fastrtps_c-3113ff58e51d425e8478.json",
+					"name" : "fishbot_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces__rosidl_typesupport_fastrtps_c__pyext-c7a27af7ea7930c6be6e.json",
+					"name" : "fishbot_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces__rosidl_typesupport_fastrtps_cpp-2dc272790f1310711f46.json",
+					"name" : "fishbot_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces__rosidl_typesupport_introspection_c-6affc74dd16f3a36e347.json",
+					"name" : "fishbot_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces__rosidl_typesupport_introspection_c__pyext-595f79f79a1664f77a19.json",
+					"name" : "fishbot_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces__rosidl_typesupport_introspection_cpp-2ee7e515343366dee2a6.json",
+					"name" : "fishbot_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fishbot_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fishbot_interfaces_uninstall-ebf4bca3174580707e7e.json",
+					"name" : "fishbot_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-06fae0e9afd0e0821394.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/uboot/data/ros2_uboot/build/fishbot_interfaces",
+		"source" : "/home/uboot/data/ros2_uboot/src/fishbot/src/fishbot_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

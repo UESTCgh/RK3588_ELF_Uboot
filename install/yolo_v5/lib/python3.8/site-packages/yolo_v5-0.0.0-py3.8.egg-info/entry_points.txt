@@ -1,0 +1,3 @@
+[console_scripts]
+start = yolo_v5.yolo_node:main
+

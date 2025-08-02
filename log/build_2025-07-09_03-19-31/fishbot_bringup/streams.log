@@ -1,0 +1,27 @@
+[0.149s] Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_bringup -- -j8 -l8
+[0.715s] [100%] Built target odom2tf
+[0.719s] Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_bringup -- -j8 -l8
+[0.739s] Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_bringup
+[0.768s] -- Install configuration: ""
+[0.769s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/lib/fishbot_bringup/odom2tf
+[0.769s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/launch
+[0.769s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/launch/bringup_quick.launch.py
+[0.769s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/launch/bringup.launch.py
+[0.769s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/launch/urdf2tf.launch.py
+[0.769s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/launch/fishbot_bringup.launch.py
+[0.770s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/ament_index/resource_index/package_run_dependencies/fishbot_bringup
+[0.770s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/ament_index/resource_index/parent_prefix_path/fishbot_bringup
+[0.770s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/environment/ament_prefix_path.sh
+[0.770s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/environment/ament_prefix_path.dsv
+[0.770s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/environment/path.sh
+[0.770s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/environment/path.dsv
+[0.770s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/local_setup.bash
+[0.771s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/local_setup.sh
+[0.771s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/local_setup.zsh
+[0.771s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/local_setup.dsv
+[0.771s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/package.dsv
+[0.772s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/ament_index/resource_index/packages/fishbot_bringup
+[0.772s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/cmake/fishbot_bringupConfig.cmake
+[0.772s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/cmake/fishbot_bringupConfig-version.cmake
+[0.772s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_bringup/share/fishbot_bringup/package.xml
+[0.829s] Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_bringup

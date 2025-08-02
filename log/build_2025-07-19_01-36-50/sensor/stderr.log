@@ -1,0 +1,27 @@
+[01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:[m[K In constructor ‘[01m[KSensorNode::SensorNode()[m[K’:
+[01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:32:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kbattery_state[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’; did you mean ‘[01m[KBatteryState[m[K’?
+   32 |         battery_publisher_     = this->create_publisher<sensor_msgs::msg::[01;31m[Kbattery_state[m[K>("battery", 10);
+      |                                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                                           [32m[KBatteryState[m[K
+[01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:32:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kbattery_state[m[K’ is not a member of ‘[01m[Ksensor_msgs::msg[m[K’; did you mean ‘[01m[KBatteryState[m[K’?
+   32 |         battery_publisher_     = this->create_publisher<sensor_msgs::msg::[01;31m[Kbattery_state[m[K>("battery", 10);
+      |                                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                                           [32m[KBatteryState[m[K
+[01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:32:103:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KSensorNode::create_publisher<<expression error> >(const char [8], int)[m[K’
+   32 |         battery_publisher_     = this->create_publisher<sensor_msgs::msg::battery_state>("battery", 10[01;31m[K)[m[K;
+      |                                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1224[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:12[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:71:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+   71 | [01;36m[KNode[m[K::create_publisher(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:71:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:32:103:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   32 |         battery_publisher_     = this->create_publisher<sensor_msgs::msg::battery_state>("battery", 10[01;31m[K)[m[K;
+      |                                                                                                       [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/sensor_node.dir/build.make:63: CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:559: CMakeFiles/sensor_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,53 @@
+[0.158s] Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/uboot/data/ros2_uboot/src/fishbot/src/fishbot_cartographer -DCMAKE_INSTALL_PREFIX=/home/uboot/data/ros2_uboot/install/fishbot_cartographer
+[0.703s] -- The C compiler identification is GNU 9.4.0
+[0.703s] -- The CXX compiler identification is GNU 9.4.0
+[0.704s] -- Check for working C compiler: /usr/bin/cc
+[0.738s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.742s] -- Detecting C compiler ABI info
+[0.907s] -- Detecting C compiler ABI info - done
+[0.919s] -- Detecting C compile features
+[0.921s] -- Detecting C compile features - done
+[0.926s] -- Check for working CXX compiler: /usr/bin/c++
+[1.054s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.055s] -- Detecting CXX compiler ABI info
+[1.336s] -- Detecting CXX compiler ABI info - done
+[1.351s] -- Detecting CXX compile features
+[1.352s] -- Detecting CXX compile features - done
+[1.359s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.402s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.402s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.831s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.026s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.035s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.038s] -- Added test 'lint_cmake' to check CMake code style
+[2.041s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.046s] -- Added test 'xmllint' to check XML markup files
+[2.094s] -- Configuring done
+[2.101s] -- Generating done
+[2.108s] -- Build files have been written to: /home/uboot/data/ros2_uboot/build/fishbot_cartographer
+[2.146s] Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/uboot/data/ros2_uboot/src/fishbot/src/fishbot_cartographer -DCMAKE_INSTALL_PREFIX=/home/uboot/data/ros2_uboot/install/fishbot_cartographer
+[2.147s] Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_cartographer -- -j8 -l8
+[2.483s] Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_cartographer -- -j8 -l8
+[2.490s] Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_cartographer
+[2.553s] -- Install configuration: ""
+[2.556s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/config
+[2.557s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/config/fishbot_2d.lua
+[2.558s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/launch
+[2.558s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/launch/cartographer.launch.py
+[2.560s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/rviz
+[2.565s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/ament_index/resource_index/package_run_dependencies/fishbot_cartographer
+[2.566s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/ament_index/resource_index/parent_prefix_path/fishbot_cartographer
+[2.567s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/environment/ament_prefix_path.sh
+[2.571s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/environment/ament_prefix_path.dsv
+[2.571s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/environment/path.sh
+[2.572s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/environment/path.dsv
+[2.572s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.bash
+[2.573s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.sh
+[2.573s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.zsh
+[2.573s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.dsv
+[2.574s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/package.dsv
+[2.574s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/ament_index/resource_index/packages/fishbot_cartographer
+[2.575s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/cmake/fishbot_cartographerConfig.cmake
+[2.575s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/cmake/fishbot_cartographerConfig-version.cmake
+[2.575s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/package.xml
+[2.581s] Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_cartographer

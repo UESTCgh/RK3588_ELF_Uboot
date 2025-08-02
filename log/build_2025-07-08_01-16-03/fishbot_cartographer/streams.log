@@ -1,0 +1,25 @@
+[0.229s] Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_cartographer -- -j8 -l8
+[0.834s] Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_cartographer -- -j8 -l8
+[0.847s] Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_cartographer
+[0.869s] -- Install configuration: ""
+[0.870s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/config
+[0.870s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/config/fishbot_2d.lua
+[0.870s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/launch
+[0.870s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/launch/cartographer.launch.py
+[0.870s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/rviz
+[0.870s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/ament_index/resource_index/package_run_dependencies/fishbot_cartographer
+[0.870s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/ament_index/resource_index/parent_prefix_path/fishbot_cartographer
+[0.871s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/environment/ament_prefix_path.sh
+[0.872s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/environment/ament_prefix_path.dsv
+[0.872s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/environment/path.sh
+[0.872s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/environment/path.dsv
+[0.872s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.bash
+[0.872s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.sh
+[0.872s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.zsh
+[0.873s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/local_setup.dsv
+[0.873s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/package.dsv
+[0.873s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/ament_index/resource_index/packages/fishbot_cartographer
+[0.873s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/cmake/fishbot_cartographerConfig.cmake
+[0.873s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/cmake/fishbot_cartographerConfig-version.cmake
+[0.873s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_cartographer/share/fishbot_cartographer/package.xml
+[1.022s] Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_cartographer

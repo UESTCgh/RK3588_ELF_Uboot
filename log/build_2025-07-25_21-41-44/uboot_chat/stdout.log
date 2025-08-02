@@ -1,0 +1,52 @@
+running egg_info
+writing ../../build/uboot_chat/uboot_chat.egg-info/PKG-INFO
+writing dependency_links to ../../build/uboot_chat/uboot_chat.egg-info/dependency_links.txt
+writing entry points to ../../build/uboot_chat/uboot_chat.egg-info/entry_points.txt
+writing requirements to ../../build/uboot_chat/uboot_chat.egg-info/requires.txt
+writing top-level names to ../../build/uboot_chat/uboot_chat.egg-info/top_level.txt
+reading manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'
+writing manifest file '../../build/uboot_chat/uboot_chat.egg-info/SOURCES.txt'
+running build
+running build_py
+copying uboot_chat/micro_recognizer.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+copying uboot_chat/denoised.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+copying uboot_chat/test_micro_recognizer_denoised.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+copying uboot_chat/localModel.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+copying uboot_chat/test_record_denoised.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+copying uboot_chat/calibrate.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+copying uboot_chat/test_micro_record.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+copying uboot_chat/chat.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+copying uboot_chat/localCalibrate.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+copying uboot_chat/sparkModel.py -> /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat
+running install
+running install_lib
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/micro_recognizer.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/denoised.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/test_micro_recognizer_denoised.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/localModel.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/test_record_denoised.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/calibrate.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/test_micro_record.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/chat.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/localCalibrate.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+copying /home/uboot/data/ros2_uboot/build/uboot_chat/build/lib/uboot_chat/sparkModel.py -> /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/micro_recognizer.py to micro_recognizer.cpython-38.pyc
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/denoised.py to denoised.cpython-38.pyc
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/test_micro_recognizer_denoised.py to test_micro_recognizer_denoised.cpython-38.pyc
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/localModel.py to localModel.cpython-38.pyc
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/test_record_denoised.py to test_record_denoised.cpython-38.pyc
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/calibrate.py to calibrate.cpython-38.pyc
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/test_micro_record.py to test_micro_record.cpython-38.pyc
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/chat.py to chat.cpython-38.pyc
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/localCalibrate.py to localCalibrate.cpython-38.pyc
+byte-compiling /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat/sparkModel.py to sparkModel.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/uboot_chat/uboot_chat.egg-info to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages/uboot_chat-0.0.0-py3.8.egg-info
+running install_scripts
+Installing chat script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat
+Installing micro script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat
+Installing pub script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat
+Installing speech script to /home/uboot/data/ros2_uboot/install/uboot_chat/lib/uboot_chat
+writing list of installed files to '/home/uboot/data/ros2_uboot/build/uboot_chat/install.log'

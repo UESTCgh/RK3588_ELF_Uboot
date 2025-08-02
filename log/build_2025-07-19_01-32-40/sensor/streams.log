@@ -1,0 +1,59 @@
+[0.017s] Invoking command in '/home/uboot/data/ros2_uboot/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8
+[0.110s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.169s] -- Found PythonInterp: /bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.170s] -- Using PYTHON_EXECUTABLE: /bin/python3
+[0.460s] -- Found rclpy: 1.0.13 (/opt/ros/foxy/share/rclpy/cmake)
+[0.460s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[0.493s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.499s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.681s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.747s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.808s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.811s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.004s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/share/std_srvs/cmake)
+[1.021s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.195s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.260s] -- Found PythonInterp: /bin/python3 (found version "3.8.10") 
+[1.545s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.810s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.899s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.954s] -- Found PythonInterp: /bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.959s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[2.023s] -- Using PYTHON_EXECUTABLE: /bin/python3
+[2.023s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.023s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[2.078s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.112s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.113s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.116s] -- Configured cppcheck include dirs: /home/uboot/data/ros2_uboot/src/sensor/include
+[2.116s] -- Configured cppcheck exclude dirs and/or files: 
+[2.117s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.117s] -- Configured cpplint exclude dirs and/or files: 
+[2.118s] -- Added test 'lint_cmake' to check CMake code style
+[2.119s] -- Added test 'uncrustify' to check C / C++ code style
+[2.120s] -- Configured uncrustify additional arguments: 
+[2.120s] -- Added test 'xmllint' to check XML markup files
+[2.131s] -- Configuring done
+[2.232s] -- Generating done
+[2.266s] -- Build files have been written to: /home/uboot/data/ros2_uboot/build/sensor
+[2.340s] [  4%] Built target human_detector_client
+[2.360s] [  6%] [32mBuilding CXX object CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o[0m
+[2.372s] [  8%] Built target sensor__cpp
+[2.379s] [ 17%] Built target sensor__rosidl_generator_c
+[2.402s] [ 21%] Built target do_something_server
+[2.436s] [ 29%] Built target sensor__rosidl_typesupport_fastrtps_cpp
+[2.448s] [ 38%] Built target sensor__rosidl_typesupport_cpp
+[2.474s] [ 46%] Built target sensor__rosidl_typesupport_introspection_c
+[2.479s] [ 55%] Built target sensor__rosidl_typesupport_c
+[2.482s] [ 63%] Built target sensor__rosidl_typesupport_fastrtps_c
+[2.483s] [ 72%] Built target sensor__rosidl_typesupport_introspection_cpp
+[2.513s] [01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/BatteryState.h: No such file or directory
+[2.514s]    15 | #include [01;31m[K<sensor_msgs/BatteryState.h>[m[K
+[2.514s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.514s] compilation terminated.
+[2.516s] make[2]: *** [CMakeFiles/sensor_node.dir/build.make:63: CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o] Error 1
+[2.516s] make[1]: *** [CMakeFiles/Makefile2:559: CMakeFiles/sensor_node.dir/all] Error 2
+[2.517s] make[1]: *** Waiting for unfinished jobs....
+[2.552s] [ 72%] Built target sensor
+[2.555s] make: *** [Makefile:141: all] Error 2
+[2.560s] Invoked command in '/home/uboot/data/ros2_uboot/build/sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/sensor -- -j8 -l8

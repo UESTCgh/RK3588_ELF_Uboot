@@ -1,0 +1,7 @@
+[01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:[m[K In member function ‘[01m[Kvoid SensorNode::read_and_publish()[m[K’:
+[01m[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:190:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing BatteryState = struct sensor_msgs::msg::BatteryState_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct sensor_msgs::msg::BatteryState_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdata[m[K’
+  190 |         npu_msg.[01;31m[Kdata[m[K = npu_score;
+      |                 [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/sensor_node.dir/build.make:63: CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:559: CMakeFiles/sensor_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

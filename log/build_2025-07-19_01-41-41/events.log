@@ -1,0 +1,84 @@
+[0.000000] (-) TimerEvent: {}
+[0.000641] (-) JobUnselected: {'identifier': 'fishbot_bringup'}
+[0.000699] (-) JobUnselected: {'identifier': 'fishbot_cartographer'}
+[0.000990] (-) JobUnselected: {'identifier': 'fishbot_description'}
+[0.001044] (-) JobUnselected: {'identifier': 'fishbot_interfaces'}
+[0.001129] (-) JobUnselected: {'identifier': 'fishbot_navigation2'}
+[0.001166] (-) JobUnselected: {'identifier': 'micro_ros_agent'}
+[0.001296] (-) JobUnselected: {'identifier': 'micro_ros_msgs'}
+[0.001333] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.001400] (-) JobUnselected: {'identifier': 'task_scheduler'}
+[0.001434] (-) JobUnselected: {'identifier': 'uboot_chat'}
+[0.001618] (-) JobUnselected: {'identifier': 'yolo_v5'}
+[0.001667] (sensor) JobQueued: {'identifier': 'sensor', 'dependencies': OrderedDict()}
+[0.001711] (sensor) JobStarted: {'identifier': 'sensor'}
+[0.016518] (sensor) JobProgress: {'identifier': 'sensor', 'progress': 'cmake'}
+[0.017644] (sensor) JobProgress: {'identifier': 'sensor', 'progress': 'build'}
+[0.018897] (sensor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/uboot/data/ros2_uboot/build/sensor', '--', '-j8', '-l8'], 'cwd': '/home/uboot/data/ros2_uboot/build/sensor', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'uboot'), ('SSH_CLIENT', '192.168.0.104 53524 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/uboot/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/uboot/data/ros2_uboot/install/sensor/lib:/home/uboot/data/ros2_uboot/install/micro_ros_agent/lib:/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib:/home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/uboot/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/uboot'), ('OLDPWD', '/home/uboot'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1001/vscode-ipc-091efe38-d807-4a75-9b12-9a6b4b279cb0.sock'), ('ROS_PYTHON_VERSION', '3'), ('COGL_DRIVER', 'gles2'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/uboot/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/uboot/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('QTWEBENGINE_CHROMIUM_FLAGS', '--no-sandbox --disable-es3-gl-context --ignore-gpu-blacklist --ignore-gpu-blocklist --enable-accelerated-video-decode'), ('COLCON_PREFIX_PATH', '/home/uboot/data/ros2_uboot/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'uboot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GST_GL_API', 'gles2'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/uboot/.vscode-server/cli/servers/Stable-903b1e9d8990623e3d7da1df3d33db3e42d80eda/server/bin/remote-cli:/home/uboot/.local/bin:/opt/ros/foxy/bin:/home/uboot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GST_GL_PLATFORM', 'egl'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('ADBD_SHELL', '/bin/bash'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-2c9c81e6a0.sock'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/sensor:/home/uboot/data/ros2_uboot/install/rplidar_ros:/home/uboot/data/ros2_uboot/install/micro_ros_agent:/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/home/uboot/data/ros2_uboot/install/fishbot_navigation2:/home/uboot/data/ros2_uboot/install/fishbot_interfaces:/home/uboot/data/ros2_uboot/install/fishbot_description:/home/uboot/data/ros2_uboot/install/fishbot_cartographer:/home/uboot/data/ros2_uboot/install/fishbot_bringup:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'C.UTF-8'), ('qwen2_5', '/home/uboot/data/xyc/LLM/model/qwen2.5-vl-3b-w8a8_level1_rk3588.rkllm'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/uboot/data/ros2_uboot/build/sensor'), ('SSH_CONNECTION', '192.168.0.104 53524 192.168.0.107 22'), ('deepseekR1', '/home/uboot/data/xyc/LLM/model/DeepSeek-R1-Distill-Qwen-1.5B_FP16_RK3588.rkllm'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('ADB_TCP_PORT', '5555'), ('PYTHONPATH', '/home/uboot/data/ros2_uboot/install/yolo_v5/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/uboot_chat/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/task_scheduler/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/sensor/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/micro_ros_msgs/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/fishbot_interfaces/lib/python3.8/site-packages:/home/uboot/data/ros2_uboot/install/fishbot_description/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/uboot/data/ros2_uboot/install/sensor:/home/uboot/data/ros2_uboot/install/rplidar_ros:/home/uboot/data/ros2_uboot/install/micro_ros_agent:/home/uboot/data/ros2_uboot/install/micro_ros_msgs:/home/uboot/data/ros2_uboot/install/fishbot_navigation2:/home/uboot/data/ros2_uboot/install/fishbot_interfaces:/home/uboot/data/ros2_uboot/install/fishbot_cartographer:/home/uboot/data/ros2_uboot/install/fishbot_bringup:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy')]), 'shell': False}
+[0.099161] (-) TimerEvent: {}
+[0.148356] (sensor) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sensor_node\x1b[0m\n'}
+[0.174487] (sensor) StdoutLine: {'line': b'[  4%] Built target human_detector_client\n'}
+[0.176563] (sensor) StdoutLine: {'line': b'[  6%] Built target sensor__cpp\n'}
+[0.199164] (sensor) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o\x1b[0m\n'}
+[0.199427] (-) TimerEvent: {}
+[0.200239] (sensor) StdoutLine: {'line': b'[ 12%] Built target do_something_server\n'}
+[0.211716] (sensor) StdoutLine: {'line': b'[ 21%] Built target sensor__rosidl_generator_c\n'}
+[0.235814] (sensor) StdoutLine: {'line': b'[ 29%] Built target sensor__rosidl_typesupport_fastrtps_cpp\n'}
+[0.241829] (sensor) StdoutLine: {'line': b'[ 38%] Built target sensor__rosidl_typesupport_cpp\n'}
+[0.258729] (sensor) StdoutLine: {'line': b'[ 46%] Built target sensor__rosidl_typesupport_introspection_cpp\n'}
+[0.267009] (sensor) StdoutLine: {'line': b'[ 55%] Built target sensor__rosidl_typesupport_introspection_c\n'}
+[0.285228] (sensor) StdoutLine: {'line': b'[ 63%] Built target sensor__rosidl_typesupport_c\n'}
+[0.299551] (-) TimerEvent: {}
+[0.361687] (sensor) StdoutLine: {'line': b'[ 72%] Built target sensor__rosidl_typesupport_fastrtps_c\n'}
+[0.399656] (-) TimerEvent: {}
+[0.438131] (sensor) StdoutLine: {'line': b'[ 72%] Built target sensor\n'}
+[0.498687] (sensor) StdoutLine: {'line': b'[ 74%] Built target sensor__py\n'}
+[0.499753] (-) TimerEvent: {}
+[0.521445] (sensor) StdoutLine: {'line': b'[ 78%] Built target openamp_core1\n'}
+[0.554420] (sensor) StdoutLine: {'line': b'[ 85%] Built target sensor__python\n'}
+[0.599861] (-) TimerEvent: {}
+[0.616763] (sensor) StdoutLine: {'line': b'[ 89%] Built target sensor__rosidl_typesupport_c__pyext\n'}
+[0.633677] (sensor) StdoutLine: {'line': b'[ 93%] Built target sensor__rosidl_typesupport_introspection_c__pyext\n'}
+[0.653340] (sensor) StdoutLine: {'line': b'[ 97%] Built target sensor__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.700123] (-) TimerEvent: {}
+[0.801078] (-) TimerEvent: {}
+[0.902100] (-) TimerEvent: {}
+[1.003010] (-) TimerEvent: {}
+[1.103972] (-) TimerEvent: {}
+[1.204742] (-) TimerEvent: {}
+[1.305531] (-) TimerEvent: {}
+[1.406325] (-) TimerEvent: {}
+[1.507149] (-) TimerEvent: {}
+[1.607952] (-) TimerEvent: {}
+[1.708617] (-) TimerEvent: {}
+[1.809032] (-) TimerEvent: {}
+[1.909822] (-) TimerEvent: {}
+[2.010576] (-) TimerEvent: {}
+[2.111326] (-) TimerEvent: {}
+[2.168833] (sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SensorNode::read_and_publish()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.169622] (sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/uboot/data/ros2_uboot/src/sensor/src/sensor_node.cpp:189:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knpu_score\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.169983] (sensor) StderrLine: {'line': b'  189 |         npu_msg.percentage = \x1b[01;31m\x1b[Knpu_score\x1b[m\x1b[K / 100.0f;  // \xe8\xbd\xac\xe4\xb8\xba 0.0 ~ 1.0 \xe5\x8c\xba\xe9\x97\xb4\n'}
+[2.170320] (sensor) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.211507] (-) TimerEvent: {}
+[2.312218] (-) TimerEvent: {}
+[2.412893] (-) TimerEvent: {}
+[2.513531] (-) TimerEvent: {}
+[2.614221] (-) TimerEvent: {}
+[2.714939] (-) TimerEvent: {}
+[2.815587] (-) TimerEvent: {}
+[2.916171] (-) TimerEvent: {}
+[3.016510] (-) TimerEvent: {}
+[3.116855] (-) TimerEvent: {}
+[3.217234] (-) TimerEvent: {}
+[3.317604] (-) TimerEvent: {}
+[3.417944] (-) TimerEvent: {}
+[3.518350] (-) TimerEvent: {}
+[3.619134] (-) TimerEvent: {}
+[3.720036] (-) TimerEvent: {}
+[3.820895] (-) TimerEvent: {}
+[3.869903] (sensor) StderrLine: {'line': b'make[2]: *** [CMakeFiles/sensor_node.dir/build.make:63: CMakeFiles/sensor_node.dir/src/sensor_node.cpp.o] Error 1\n'}
+[3.870837] (sensor) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:559: CMakeFiles/sensor_node.dir/all] Error 2\n'}
+[3.871516] (sensor) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[3.873622] (sensor) CommandEnded: {'returncode': 2}
+[3.895072] (sensor) JobEnded: {'identifier': 'sensor', 'rc': 2}
+[3.905983] (-) EventReactorShutdown: {}
