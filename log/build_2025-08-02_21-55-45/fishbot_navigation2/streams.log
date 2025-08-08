@@ -1,0 +1,45 @@
+[0.045s] Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_navigation2 -- -j8 -l8
+[0.321s] Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --build /home/uboot/data/ros2_uboot/build/fishbot_navigation2 -- -j8 -l8
+[0.391s] Invoking command in '/home/uboot/data/ros2_uboot/build/fishbot_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_navigation2
+[0.437s] -- Install configuration: ""
+[0.439s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/launch
+[0.439s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/launch/navigation2.launch.py
+[0.440s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/launch/odom_ekf.launch.py
+[0.441s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/config
+[0.442s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/config/ekf.yaml
+[0.443s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/param
+[0.443s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/param/fishbot_nav2.yaml
+[0.445s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/param/fishbot.yaml
+[0.445s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps
+[0.446s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/0802.yaml
+[0.447s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/my_map.pgm
+[0.447s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/fishbot_map.yaml
+[0.448s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/0802.pgm
+[0.448s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/gh.yaml
+[0.449s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/show_pgm.py
+[0.449s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/map_1751998385.pgm
+[0.450s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/fishbot_map.pgm
+[0.450s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/fishbot_map.png
+[0.451s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/gh.pgm
+[0.453s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/map_1747574051.yaml
+[0.454s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/gh_room.yaml
+[0.460s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/map_1751998385.yaml
+[0.461s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/map_1747574051.pgm
+[0.474s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/gh_room.pgm
+[0.475s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/my_map.yaml
+[0.476s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/ament_index/resource_index/package_run_dependencies/fishbot_navigation2
+[0.477s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/ament_index/resource_index/parent_prefix_path/fishbot_navigation2
+[0.478s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/environment/ament_prefix_path.sh
+[0.479s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/environment/ament_prefix_path.dsv
+[0.479s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/environment/path.sh
+[0.480s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/environment/path.dsv
+[0.481s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.bash
+[0.482s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.sh
+[0.482s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.zsh
+[0.483s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/local_setup.dsv
+[0.484s] -- Installing: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/package.dsv
+[0.484s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/ament_index/resource_index/packages/fishbot_navigation2
+[0.485s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/cmake/fishbot_navigation2Config.cmake
+[0.485s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/cmake/fishbot_navigation2Config-version.cmake
+[0.486s] -- Up-to-date: /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/package.xml
+[0.488s] Invoked command in '/home/uboot/data/ros2_uboot/build/fishbot_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/uboot/data/ros2_uboot/install/yolo_v5:/home/uboot/data/ros2_uboot/install/uboot_chat:/home/uboot/data/ros2_uboot/install/task_scheduler:/home/uboot/data/ros2_uboot/install/fishbot_description:/opt/ros/foxy /usr/bin/cmake --install /home/uboot/data/ros2_uboot/build/fishbot_navigation2

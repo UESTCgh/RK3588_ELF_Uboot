@@ -15,5 +15,4 @@ test/test_pep257.py
 yolo_v5/__init__.py
 yolo_v5/yolo_node copy.py
 yolo_v5/yolo_node.py
-yolo_v5/yolo_node_NPU copy.py
 yolo_v5/yolo_node_NPU.py

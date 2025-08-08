@@ -217,14 +217,14 @@ def inference_process(img_q, info_q, working_flag):
         #     detect_msgs.append(f"{info.get('name','未知')} {score:.2f} 坐标:({cx},{cy})")
         CONFIDENCE_THRESHOLD = 0.6
 
+        cls_ids_in_frame = []
+        CONFIDENCE_THRESHOLD = 0.6
         for box, score, cid in zip(boxes, confs, cls_ids):
             if score < CONFIDENCE_THRESHOLD:
                 continue  # 不绘制低置信度目标
             plot_one_box(box, img0, cid, score, line_thickness=2)
-            info = CLASS_INFO.get(cid, {})
-            cx, cy = int((box[0] + box[2]) / 2), int((box[1] + box[3]) / 2)
-            # detect_msgs.append(f"{info.get('name','未知')} {score:.2f} 坐标:({cx},{cy})")
-            detect_msgs.append(f"{info.get('name','未知')}")
+            if cid not in cls_ids_in_frame:
+                cls_ids_in_frame.append(cid)
 
 
         # 计算并绘制 FPS
@@ -234,8 +234,11 @@ def inference_process(img_q, info_q, working_flag):
             start_time, counter = time.time(), 0
         cv2.putText(img0, f"FPS: {fps:.2f}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 2)
 
-        # 发布信息到队列
-        info_q.put("\n".join(detect_msgs) if detect_msgs else "无目标")
+        if cls_ids_in_frame:
+            info_q.put(" ".join(str(i) for i in cls_ids_in_frame))
+        else:
+            info_q.put("")  # 不发送“0”，用空串表示没检测到
+
         img_q.put(img0)
 
     cap.release()

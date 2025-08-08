@@ -183,10 +183,11 @@ class ImagePublisher(Node):
         self.detect_pub = self.create_publisher(String, 'yolo/detect_info', 10)  # 新增话题
         # 压缩后 JPEG 发布者
         self.comp_pub = self.create_publisher(CompressedImage, 'yolo/result_image/compressed', 10)
-        self.timer_ = self.create_timer(0.1, self.timer_callback)
+        self.timer_ = self.create_timer(0.01, self.timer_callback)
         self.bridge = CvBridge()
         self.detect = threading.Thread(target=predict)
         self.detect.start()
+        self.counter = 0
         print('[IMG NODE] WORK.')
     
     def timer_callback(self):
@@ -194,20 +195,24 @@ class ImagePublisher(Node):
         # print('[IMG NODE]:working...')
         if not IMG_QUEUE.empty() and WORKING:
             img = IMG_QUEUE.get()
-            result_msg = self.bridge.cv2_to_imgmsg(img, encoding="bgr8")
-            # self.result_pub.publish(result_msg)
-             # —— 压缩发布 —— #
-            # 1. 用 OpenCV 编码成 JPEG（二进制）
-            img_small = cv2.resize(img, (480, 360), interpolation=cv2.INTER_AREA)
-            success, buffer = cv2.imencode('.jpg', img_small, [int(cv2.IMWRITE_JPEG_QUALITY),80])
-            if success:
-                comp_msg = CompressedImage()
-                comp_msg.header.stamp = self.get_clock().now().to_msg()
-                comp_msg.format = "jpeg"
-                comp_msg.data = np.array(buffer).tobytes()
-                self.comp_pub.publish(comp_msg)
-            else:
-                self.get_logger().warn("JPEG 编码失败")
+            if len(IMG_QUEUE) > 10:
+                self.counter += 1
+                if self.counter > 1:
+                    self.counter = 0
+                    result_msg = self.bridge.cv2_to_imgmsg(img, encoding="bgr8")
+                    # self.result_pub.publish(result_msg)
+                    # —— 压缩发布 —— #
+                    # 1. 用 OpenCV 编码成 JPEG（二进制）
+                    img_small = cv2.resize(img, (480, 360), interpolation=cv2.INTER_AREA)
+                    success, buffer = cv2.imencode('.jpg', img_small, [int(cv2.IMWRITE_JPEG_QUALITY),80])
+                    if success:
+                        comp_msg = CompressedImage()
+                        comp_msg.header.stamp = self.get_clock().now().to_msg()
+                        comp_msg.format = "jpeg"
+                        comp_msg.data = np.array(buffer).tobytes()
+                        self.comp_pub.publish(comp_msg)
+                    else:
+                        self.get_logger().warn("JPEG 编码失败")
 
         if not INFO_QUEUE.empty() and WORKING:
             info = INFO_QUEUE.get()

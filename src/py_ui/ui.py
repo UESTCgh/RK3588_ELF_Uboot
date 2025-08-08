@@ -94,7 +94,7 @@ class ROSListener(Node):
         # 协方差矩阵是 6×6，按行优先存储（共 36 个 float64）
         pose_cov_stamped.pose.covariance = [0.0] * 36  # 初始化为 0
 
-        for i in range(3):
+        for i in range(5):
             self.publisher_initialPose.publish(pose_cov_stamped)
             sleep(0.1)
 
@@ -425,7 +425,7 @@ class MainWindow(QMainWindow):
         nav_layout.setSpacing(20)
 
         # 标题
-        nav_label = QLabel("<b>领航模式</b><br>带机器人开始巡航")
+        nav_label = QLabel("<b>领航模式</b><br>让我带你去房间吧！")
         nav_label.setAlignment(Qt.AlignCenter)
         nav_layout.addWidget(nav_label)
 
@@ -480,13 +480,13 @@ class MainWindow(QMainWindow):
         g_layout = QVBoxLayout(page_garbage)
         g_layout.setContentsMargins(20, 10, 20, 20)
         g_layout.setSpacing(10)
-        g_label = QLabel("<b>垃圾巡查模式</b><br>检测并显示垃圾")
+        g_label = QLabel("<b>垃圾巡查模式</b>")
         g_label.setAlignment(Qt.AlignCenter)
         g_layout.addWidget(g_label)
         g_layout.addStretch(1)
         cam = GLCameraWidget(self.ros)
         # cam = CameraWidget(self.ros)
-        cam.setFixedSize(600, 450)
+        cam.setFixedSize(760, 570)
         g_layout.addWidget(cam, alignment=Qt.AlignCenter)
         g_layout.addStretch(2)
 
@@ -496,7 +496,7 @@ class MainWindow(QMainWindow):
         d_layout.setContentsMargins(20, 20, 20, 20)
         d_layout.setSpacing(16)
 
-        d_label = QLabel("<b>服务交互模式</b><br>控制灯光及语音交互")
+        d_label = QLabel("<b>服务交互模式</b><br>语音交互与灯光")
         d_label.setAlignment(Qt.AlignCenter)
         d_layout.addWidget(d_label)
 

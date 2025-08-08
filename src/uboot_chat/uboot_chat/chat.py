@@ -99,15 +99,15 @@ class ChatPublisher(Node):
             self.chat.talk('警告！有毒，快跑！')
             self.talk = False
        
-        print(msg.data)
+        # print(msg.data)
     
     def temp_status_callback(self, msg:Float32):
         self.T = msg.data
-        print(self.T)
+        # print(self.T)
         
     def hum_status_callback(self, msg:Float32):
         self.H = msg.data
-        print(self.H)
+        # print(self.H)
 
     def timer_callback(self):
         msg = String()

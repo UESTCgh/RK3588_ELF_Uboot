@@ -3,8 +3,10 @@
 /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/config/ekf.yaml
 /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/param/fishbot_nav2.yaml
 /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/param/fishbot.yaml
+/home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/0802.yaml
 /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/my_map.pgm
 /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/fishbot_map.yaml
+/home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/0802.pgm
 /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/gh.yaml
 /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/show_pgm.py
 /home/uboot/data/ros2_uboot/install/fishbot_navigation2/share/fishbot_navigation2/maps/map_1751998385.pgm
