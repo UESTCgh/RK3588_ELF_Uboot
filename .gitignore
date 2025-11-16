@@ -1,0 +1,61 @@
+# ============ ROS2 colcon build outputs ============
+build/
+install/
+log/
+.colcon/
+.colcon_install_cache/
+
+# ============ CMake generated files ============
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+CTestConfiguration.ini
+compile_commands.json
+
+# ============ Python ============
+__pycache__/
+*.pyc
+*.pyo
+
+# ============ Qt generated files ============
+moc_*
+qrc_*
+ui_*
+*.pro.user
+*.qmake.stash
+
+# ============ uboot / C / C++ 编译产物 ============
+*.o
+*.a
+*.so
+*.elf
+*.bin
+*.map
+*.tmp
+
+# ============ IDE / editor ============
+.vscode/
+.idea/
+*.swp
+*~
+*.bak
+*.old
+
+# ============ Logs ============
+*.log
+
+# ============ Generated media ============
+*.mp3
+*.wav
+
+# ============ Package build eggs ============
+*.egg-info/
+
+# ============ ROS2 generated Python packages ============
+prefix_override/
+lib/*/
+
+# ============ You mentioned specific files ============
+ros_qt5_gui_app
+ros_qt_gui_app.log
