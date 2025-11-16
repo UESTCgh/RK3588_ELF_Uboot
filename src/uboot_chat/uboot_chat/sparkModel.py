@@ -3,8 +3,8 @@ from sparkai.core.messages import ChatMessage
 from sparkai.errors import SparkAIConnectionError
 from sparkai.core.utils.function_calling import convert_to_openai_function
 from queue import Queue
-from time import time, sleep
 import re
+
 
 SPARKAI_URL = 'wss://spark-api.xf-yun.com/v4.0/chat'
 SPARKAI_APP_ID = 'ce227ede'
@@ -13,18 +13,8 @@ SPARKAI_API_KEY = '3e61db5044ba85695db2fd3c7f03ab04'
 SPARKAI_DOMAIN = '4.0Ultra'
 
 contents_size = 2  # 上下文的最大数量
-GPT_role = (
-    "你是uboot征服者酒店(深圳龙华)的服务机器人，严格遵守以下指令：\n"
-    "1. 函数调用优先级高于直接回答\n"
-    "2. 当用户表达位置需求时，必须调用func_getPos\n"
-    "   - 触发词：去/到/带我去/房间/楼层/号房\n"
-    "   - 示例：'去1001'/'带我到三楼'/'请送我去八号房间'\n"
-    "   - 自动转换：中文数字转阿拉伯数字（'三楼'→3，'八号'→8）\n"
-    "3. 当询问环境参数时，必须调用func_getStatus\n"
-    "   - 温度相关：热/冷/温度/多少度\n"
-    "   - 湿度相关：湿度/潮湿/闷\n"
-    "4. 其他问题直接回答\n\n"
-)
+GPT_role = ("你是uboot征服者酒店的酒店服务机器人（酒店地址在深圳龙华）。在用户与你对话时你要注意对方的语调和情绪来回答，在介绍深圳龙华时要极力夸赞，"
+            "回答时不用给出具体的解析过程，并且你的回答必须精简且口语化。")
 
 
 class History:
@@ -36,6 +26,24 @@ class History:
         self.contain.append(data)
         if len(self.contain) > self.max_size:
             self.contain = self.contain[1:]
+
+
+# 常用中文数字映射
+cn_num = {'零':0,'〇':0,'一':1,'二':2,'三':3,'四':4,'五':5,'六':6,'七':7,'八':8,'九':9,'十':10}
+
+def cn2num(s):
+    if s.isdigit():
+        return int(s)
+    if len(s) == 1:  # 单个字
+        return cn_num.get(s, 0)
+    if s[0] == '十': # 十开头，如 "十三"
+        return 10 + cn_num.get(s[1], 0)
+    if s[-1] == '十': # "二十"
+        return cn_num.get(s[0], 0) * 10
+    if '十' in s: # "二十五"
+        parts = s.split('十')
+        return cn_num.get(parts[0], 0)*10 + cn_num.get(parts[1], 0)
+    return 0
 
 
 class SparkGPT:
@@ -52,25 +60,52 @@ class SparkGPT:
         self.handler = ChunkPrintHandler()
         self.user_requirements = Queue()
         self.function_definition = [convert_to_openai_function(self.func_getPos), convert_to_openai_function(self.func_getStatus)]
-        print('<-sparkGPT initing...->')
-        self.contact("带我去3号房间")
-        sleep(0.2)
-        self.contact("现在温度怎么样")
-        sleep(0.2)
-        self.contact("现在湿度怎么样")
-        sleep(0.2)
         print('<-SparkGPT Working...->')
         print('<-SparkGPT:{} ->'.format(self.contact('你好')))
 
     def contact(self, user_msg: str):
-        start_time = time()
+        # if "环境温度" in user_msg:
+        #     return self._call_status('温度')
+        # if "环境湿度" in user_msg:
+        #     return self._call_status('湿度')
+
+
+        m = re.search(
+            r'(?:去|到|带我去|送我去)?\s*([零〇一二三四五六七八九十]{1,3}|\d{1,4})号',
+            user_msg
+        )
+        if m:
+            number = cn2num(m.group(1))
+            print(f"<-LocalGPT: Function Callback success (func_getPos)->")
+            return self._call_server(number)
+        if re.search(r"温度", user_msg):
+            self.user_requirements.put("温度")
+            print(f"<-LocalGPT: Function Callback success (func_getStatus)->")
+            return ""
+        if re.search(r"湿度", user_msg):
+            self.user_requirements.put("湿度")
+            print(f"<-LocalGPT: Function Callback success (func_getStatus)->")
+            return ""
+        if re.search(r"开灯", user_msg):
+            self.user_requirements.put("开灯")
+            print(f"<-LocalGPT: Function Callback success (func_controlStatus)->")
+            return ""
+        if re.search(r"关灯", user_msg):
+            self.user_requirements.put("关灯")
+            print(f"<-LocalGPT: Function Callback success (func_controlStatus)->")
+            return ""
+
         messages = [ChatMessage(role="system", content=self.system_content)]
         for msg in self.history.contain:
             messages.append(msg)
         user_chatMessage = ChatMessage(role="user", content=user_msg)
         messages.append(user_chatMessage)
         try:
-            answer = self._spark.generate([messages], callbacks=[self.handler], function_definition=self.function_definition)
+            answer = self._spark.generate(
+                [messages],
+                callbacks=[self.handler],
+                function_definition=self.function_definition
+            )
             # print(answer)
             answer_text = answer.generations[0][0].text
         except SparkAIConnectionError:
@@ -85,21 +120,15 @@ class SparkGPT:
                 function_name = answer.generations[0][0].message.function_call['name']
                 print(f"<-SparkGPT: Function Callback success ({function_name})->")
                 if function_name == 'func_getPos':
-                    # number = eval(answer.generations[0][0].message.function_call['arguments'])['number']
-                    match = re.search(r"(?:去|到|带我去|送我去)?\s*(\d{1,4})\s*(?:号房|房间|房)?", user_msg)
-                    number = int(match.group(1))
+                    # print(answer)
+                    number = eval(answer.generations[0][0].message.function_call['arguments'])['number']
                     answer_text = self._call_server(number)
                 elif function_name == 'func_getStatus':
-                    # status = eval(answer.generations[0][0].message.function_call['arguments'])['status']
-                    if re.search(r"温度", user_msg):
-                        status = "温度"
-                    else:
-                        status = "湿度"
+                    status = eval(answer.generations[0][0].message.function_call['arguments'])['status']
                     answer_text = self._call_status(status)
             except SyntaxError:
                 print('<-SparkGPT: 解析错误->')
                 return '解析错误'
-        print(f"<-sparkGPT used time: {time()-start_time:.2f}s->")
         self.history.update(user_chatMessage)
         if answer_text:
             self.history.update(ChatMessage(role="assistant", content=answer_text))
@@ -117,49 +146,45 @@ class SparkGPT:
         print('<-SparkGPT END->')
 
     @staticmethod
-    def func_getPos(number: int) -> str:
-        """
-        房间位置查询函数（触发条件：含'房间''带我去''位置'等关键词+3-4位数字）
-        Args:
-            number: 输入房间号
-        Return:
-                房间的位置
-
-        """
+    def func_getPos(number: int) ->str:
+        """你是一个房间位置查询器，当要去某号房间时，可以帮我查询该房间号对应的位置。例如：带我去3号房间，或带我去八号房间
+    Args:
+        number: 房间号, int类型
+    Return:
+             返回 房间的位置
+    """
+        return "房间位置"
 
     @staticmethod
     def func_getStatus(status: str) -> str:
-        """严格处理环境查询：当且仅当包含温度/湿度关键词时调用
-        Args:
-            status: 映射用户输入到指定值（
-                    示例：'热吗'→温度, '潮湿'→湿度）
-        Return:
-            返回环境状态数据
+        """你是一个'温度'和'湿度'查询器，可以帮我查询当前环境的温度或湿度。例如：现在的温度怎么样、现在多少度、房间的湿度怎么样
+    Args:
+        status: 输入'温度'或'湿度'
+    Return:
+             返回 房间内的状态
         """
+
+    @staticmethod
+    def func_test(a, b: int) -> int:
+        """你是一个乘法计算器，可以帮我计算两个数的乘积，例如：计算1乘1等于几或计算1*1等于几
+        Args:
+            a: 输入a
+            b: 输入b
+        Return:
+             返回 a*b 结果
+        """
+        print("hello success")
+        return a * b
 
 
 if __name__ == '__main__':
     from time import sleep
     sparkGPT = SparkGPT()
+    sleep(0.5)
+    print(sparkGPT.contact("带我去316房间"))
+    sleep(0.5)
     # print(sparkGPT.contact("现在温度怎么样"))
     while True:
         question = input('我:')
         if question:
             print(sparkGPT.contact(question))
-
-        """
-        match = re.search(r"(?:去|到|带我去|送我去)?\s*(\d{1,4})\s*(?:号房|房间|房)?", user_msg)
-        if match:
-            number = int(match.group(1))
-            self.user_requirements.put(number)
-            print(f"<-LocalGPT: Function Callback success (func_getPos)->")
-            return func_getPos(number)
-        if re.search(r"温度", user_msg):
-            self.user_requirements.put("温度")
-            print(f"<-LocalGPT: Function Callback success (func_getStatus)->")
-            return ""
-        if re.search(r"湿度", user_msg):
-            self.user_requirements.put("湿度")
-            print(f"<-LocalGPT: Function Callback success (func_getStatus)->")
-            return ""
-        """

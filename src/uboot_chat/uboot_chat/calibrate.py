@@ -1,6 +1,5 @@
 from sparkai.llm.llm import ChatSparkLLM, ChunkPrintHandler
 from sparkai.core.messages import ChatMessage
-from time import time
 
 
 SPARKAI_URL = 'wss://spark-api.xf-yun.com/v4.0/chat'
@@ -42,7 +41,6 @@ class CalibratorGPT:
         print('<-CalibratorGPT Working...->')
 
     def contact(self, user_msg: str):
-        start_time = time()
         messages = [ChatMessage(role="system", content=self.system_content)]
         for msg in self.history.contain:
             messages.append(msg)
@@ -53,7 +51,7 @@ class CalibratorGPT:
         answer_text = answer.generations[0][0].text
         if answer_text == "":
             answer_text = self._call_server()
-        print(f'<-CalibratorGPT used time {time()-start_time:.2f}s->')
+
         return answer_text
 
     @staticmethod

@@ -16,118 +16,65 @@ current_dir = os.path.dirname(current_file_path)
 sys.path.append(current_dir)
 
 
+from calibrate import CalibratorGPT
+
+
 # resource_path = pkg_resources.resource_filename(__name__, '/vosk-model-small-cn-0.22')
 resource_path = current_dir + '/vosk-model-small-cn-0.22'
-server_url = "passport.xfyun.cn"
+server_url = "console.xfyun.cn"
 
 def check_internet_connection(url=server_url, port=443):
+    return False
     try:
         # 尝试连接到指定的网址和端口
         socket.create_connection((url, port), timeout=5)
-        print(f"<-Mic Recognizer: 已启用GPT修正语音识别结果->")
+        print(f"<-Mic Recognizer: 已连接到 {url}，已启用GPT修正语音识别结果->")
         return True
     except OSError:
-        print(f"<-Mic Recognizer: 无法连接到 GPT，仅使用本地模型识别->")
+        print(f"<-Mic Recognizer: 无法连接到 {url}，仅使用本地模型识别->")
         return False
 
 
 class MicRecognizer:
-    def __init__(self, mode=2, debug=False):
-        """
-            mode=0 选用本地模型；
-            mode=1 选用云模型；
-            mode=other 不使用模型优化；        
-        """
+    def __init__(self, debug=False):
         self._q = queue.Queue()
-        self.device_info = sd.query_devices(1, 'input')
-        print(self.device_info)
+        self.device_info = sd.query_devices(None, 'input')
+        # print(self.device_info)
         self._samplerate = int(self.device_info["default_samplerate"])
         self._rec = KaldiRecognizer(Model(resource_path), self._samplerate)
         self.rec_result = queue.Queue()
         self.work = True
         self.listen = True
-        if mode == 0:
-            self.use_GPT = True
-            from localCalibrate import CalibratorGPT
-            self.calibrator = CalibratorGPT()
-        elif mode == 1:
-            self.use_GPT = check_internet_connection()
-            if self.use_GPT:
-                from calibrate import CalibratorGPT
-                self.calibrator = CalibratorGPT()
-        else:
-            self.use_GPT = False
-        self.channel = -1
+        self.use_GPT = check_internet_connection()
+        self.calibrator = CalibratorGPT()
         self.debug = debug
 
-    # def _callback(self, indata, frames, time, status):
-    #     """This is called (from a separate thread) for each audio block."""
-    #     if self.device_info['max_input_channels'] == 1:
-    #         self._q.put(bytes(indata))
-    #     else:
-    #         # 将立体声(双通道)转换为单声道
-    #         # 先将缓冲区转换为numpy数组
-    #         audio_data = np.frombuffer(indata, dtype=np.int16)
-    #         print("1:")
-    #         print(audio_data)
-    #         # 重塑为双通道数组
-    #         audio_data = audio_data.reshape(-1, 2)
-    #         print("2:")
-    #         print(audio_data)
-    #         # 得到单声道
-    #         if self.channel < 0:
-    #             MSE = [np.sum(audio_data[:, i] ** 2) for i in range(audio_data.shape[1])]
-    #             self.channel = MSE.index(max(MSE))
-    #         mono_data = audio_data[:, self.channel]
-    #         self._q.put(mono_data.tobytes())
     def _callback(self, indata, frames, time, status):
         """This is called (from a separate thread) for each audio block."""
-        if self.device_info['max_input_channels'] == 1:
+        if self.listen:
             self._q.put(bytes(indata))
-        else:
-            # 将多通道数据转换为numpy数组
-            audio_data = np.frombuffer(indata, dtype=np.int16)
-            
-            # 计算总通道数
-            num_channels = self.device_info['max_input_channels']
-            
-            # 重塑为(帧数, 通道数)数组
-            audio_data = audio_data.reshape(-1, num_channels)
-            
-            # 选择通道逻辑
-            if self.channel < 0:  # 自动选择模式
-                # 计算各通道能量(MSE)
-                channel_energies = [np.sum(audio_data[:, i] ** 2) 
-                                for i in range(num_channels)]
-                self.channel = np.argmax(channel_energies)
-            
-            # 确保选择的通道在有效范围内
-            selected_channel = min(self.channel, num_channels - 1)
-            
-            # 提取选定通道数据
-            mono_data = audio_data[:, selected_channel]
-            
-            self._q.put(mono_data.tobytes())
-
 
     def start(self):
         debug = self.debug
         self.work = True
         self.open_ear()
-        with sd.RawInputStream(samplerate=self._samplerate, dtype="int16", channels=self.device_info['max_input_channels'],
+        with sd.RawInputStream(samplerate=self._samplerate, dtype="int16", channels=1,
                                callback=self._callback, device=self.device_info['name']):
             print('<-Mic Recognizer Working...->')
 
             try:
                 while self.work:
+                    if not self.listen:
+                        if self._q.empty():
+                            sleep(0.001)
+                        else:
+                            data = self._q.get()
+                        continue
                     data = self._q.get()
                     if debug:
                         # volume = np.linalg.norm(np.frombuffer(data, dtype='int16')) / 1000
                         # print("音量:", volume)
                         pass
-                    if not self.listen:
-                        sleep(0.001)
-                        continue
                     if self._rec.AcceptWaveform(data):
                         text = eval(self._rec.Result())["text"]
                         if debug:
@@ -142,7 +89,7 @@ class MicRecognizer:
                                 calibrated_text = self.calibrator.contact(text)
                                 if len(calibrated_text) < 1.5*len(text):
                                     text = calibrated_text
-                            if debug and self.use_GPT:
+                            if debug:
                                 print('CalibratorGPT:' + text)
                             self.rec_result.put(text)
             except KeyboardInterrupt:
@@ -152,10 +99,9 @@ class MicRecognizer:
         self.listen = False
 
     def open_ear(self):
-        self.listen = True
         while not self.rec_result.empty():
-            sleep(0.001)
             self.rec_result.get()
+        self.listen = True
 
     def end(self):
         self.work = False
@@ -164,7 +110,7 @@ class MicRecognizer:
 
 
 def main():
-    recognizer = MicRecognizer(mode=2, debug=True)
+    recognizer = MicRecognizer(True)
     try:
         recognizer.start()
     except KeyboardInterrupt:

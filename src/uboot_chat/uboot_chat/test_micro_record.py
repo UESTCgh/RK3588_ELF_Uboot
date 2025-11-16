@@ -4,7 +4,7 @@ import wave
 
 # 设置录音参数
 fs = 44100          # 采样率（Hz）
-duration = 5        # 录制时长（秒）
+duration = 3        # 录制时长（秒）
 filename = "record.wav"  # 输出文件名
 channels = 2        # 声道数（1=单声道，2=立体声）
 dtype = 'int16'     # 音频数据格式（WAV 文件常用格式）

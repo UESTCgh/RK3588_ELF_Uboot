@@ -71,7 +71,7 @@ class ROSListener(Node):
         self.nav_start_time = 0
         self.nav_time = 0
         self.is_task = False
-        self.start()
+        # self.start()
 
     def start(self):
         pose_cov_stamped = PoseWithCovarianceStamped()
@@ -334,7 +334,7 @@ class MainWindow(QMainWindow):
         self.full_text = ""
         self.current_index = 0
 
-        with open('/home/uboot/data/gh/py_ui/room.pos', 'r') as file:
+        with open('/home/uboot/data/ros2_uboot/src/task_scheduler/task_scheduler/room.pos', 'r') as file:
             self.room_pos = eval(file.readline())
 
         self.setWindowTitle("酒店机器人交互界面")
@@ -449,8 +449,8 @@ class MainWindow(QMainWindow):
         content_layout.addWidget(map_container)
 
         # ---- 按钮部分 ----
-        btn1 = QPushButton("房间1")
-        btn2 = QPushButton("房间2")
+        btn1 = QPushButton("服务点")
+        btn2 = QPushButton("房间3")
         nav_normal  = "background-color:#4CAF50; color:white; border-radius:8px;"
         nav_pressed = "background-color:#45a049; color:white; border-radius:8px;"
         for b in (btn1, btn2):
@@ -588,20 +588,20 @@ class MainWindow(QMainWindow):
 
     ########################### 各按钮回调###################################3
     def on_goto_room1(self):
-        print('房间1 按钮被按下')
+        print('服务点 按钮被按下')
 
         # 先广播机器人模式
-        self.ros.publish_mode('goto_room101')
+        self.ros.publish_mode('goto_room100')
         # 再发送导航目标点，假设房间101在地图坐标 (2.0, 3.5)
-        self.ros.send_goal(self.room_pos[1][0], self.room_pos[1][1])
+        self.ros.send_goal(self.room_pos[0][0], self.room_pos[0][1])
         # 切换界面
         self.on_mode_selected(self.mode_index['navigation'], 'navigation')
 
     def on_goto_room2(self):
-        print('房间2 按钮被按下')
-        self.ros.publish_mode('goto_room102')
+        print('房间3 按钮被按下')
+        self.ros.publish_mode('goto_room103')
         # 假设房间102坐标 (4.0, 1.0)
-        self.ros.send_goal(self.room_pos[2][0], self.room_pos[2][1])
+        self.ros.send_goal(self.room_pos[3][0], self.room_pos[3][1])
         self.on_mode_selected(self.mode_index['navigation'], 'navigation')
 
     def on_light_on(self):

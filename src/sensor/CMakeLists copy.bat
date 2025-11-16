@@ -38,10 +38,7 @@ rosidl_target_interfaces(openamp_core1
   ${PROJECT_NAME} "rosidl_typesupport_cpp"
 )
 
-# === 新增：LED 节点 ===
-add_executable(led_node src/sensor_node_led.cpp)
-ament_target_dependencies(led_node rclcpp std_msgs)
-# =======================
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -74,7 +71,6 @@ install(TARGETS
   human_detector_client
   do_something_server
   openamp_core1
-  led_node        # 新增
   DESTINATION lib/${PROJECT_NAME}
 )
 
