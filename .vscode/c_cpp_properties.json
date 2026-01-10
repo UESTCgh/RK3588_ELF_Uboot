@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/media/gh/890c4358-74eb-4f78-a3c0-de833f89da5f/home/user/ros2_uboot/install/sensor/include/**",
+        "/opt/ros/foxy/include/**",
+        "/media/gh/890c4358-74eb-4f78-a3c0-de833f89da5f/home/user/ros2_uboot/src/fishbot/src/fishbot_cartographer/include/**",
+        "/media/gh/890c4358-74eb-4f78-a3c0-de833f89da5f/home/user/ros2_uboot/src/micro-ROS-Agent/micro_ros_agent/include/**",
+        "/media/gh/890c4358-74eb-4f78-a3c0-de833f89da5f/home/user/ros2_uboot/src/rplidar_ros/include/**",
+        "/media/gh/890c4358-74eb-4f78-a3c0-de833f89da5f/home/user/ros2_uboot/src/sensor/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

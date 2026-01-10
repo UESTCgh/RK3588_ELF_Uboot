@@ -55,8 +55,8 @@ class TaskScheduler(Node):
         pose_cov_stamped.header.frame_id = "map"     # 参考坐标系（如 "map"）
 
         # 设置位置（x, y, z）
-        pose_cov_stamped.pose.pose.position.x = 0.0
-        pose_cov_stamped.pose.pose.position.y = 0.0
+        pose_cov_stamped.pose.pose.position.x = self.room_pos[0][0]
+        pose_cov_stamped.pose.pose.position.y = self.room_pos[0][1]
         pose_cov_stamped.pose.pose.position.z = 0.0
 
         # 设置姿态（四元数，表示无旋转）
@@ -134,7 +134,7 @@ class TaskScheduler(Node):
                 msg.data = 'back'
                 sleep(3)
                 self.publisher_uboot.publish(msg)
-                self.send_goal(0.0, 0.0)
+                self.send_goal(self.room_pos[0][0], self.room_pos[0][1])
         else:
             self.get_logger().error(f'❌ 导航失败，状态码: {status}')
 

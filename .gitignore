@@ -1,0 +1,4 @@
+#忽略的目录
+build/
+install/
+log/

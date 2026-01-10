@@ -20,7 +20,7 @@ class StatusPub(Node):
         self.msg.humidity += gauss(0, 1)
         self.msg.temperature += gauss(0, 0.5)
         self.msg.presence = choice([0,1])
-        self.msg.mq2 = choice([0,1])
+        self.msg.mq2 = 1  # choice([0,1])
         self.pub.publish(self.msg)
 
 def main():

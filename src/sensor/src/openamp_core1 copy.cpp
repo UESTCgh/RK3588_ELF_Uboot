@@ -1,9 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor/msg/device_status.hpp"
-// #include "sensor/msg/core_command.hpp"
-#include "std_msgs/msg/float32.hpp"
-#include "std_msgs/msg/bool.hpp"
-#include "std_msgs/msg/u_int16.hpp"
+#include "sensor/msg/core_command.hpp"
 
 #include <fcntl.h>
 #include <unistd.h>
@@ -23,14 +20,9 @@
 #define DEVICE_CORE_STOP  0x0002U
 #define DEVICE_CORE_CHECK 0x0003U
 
-
-/*
-ros2 topic pub /led std_msgs/msg/Bool "{data: false}"
-ros2 topic pub /pwm std_msgs/msg/UInt16 "{data: 30}"
-*/
 struct DeviceStatusRaw {
     int led = 1;
-    int pwm = 1;
+    int pwm = 6;
     float temperature = -1;
     float humidity = -1;
     int presence = -1;
@@ -74,26 +66,12 @@ ssize_t read_full(int fd, void *buf, size_t count) {
 class OpenAMPNode : public rclcpp::Node {
 public:
     OpenAMPNode() : Node("openamp_core1") {
-        // status_pub_ = this->create_publisher<sensor::msg::DeviceStatus>("from_core", 10);
-
-        temperature_publisher_ = this->create_publisher<std_msgs::msg::Float32>("temp", 10);
-        humidity_publisher_    = this->create_publisher<std_msgs::msg::Float32>("hum", 10);
-        mq2_publisher_         = this->create_publisher<std_msgs::msg::Bool>("mq2", 10);
-        people_publisher_         = this->create_publisher<std_msgs::msg::Bool>("people", 10);
-
-        // command_sub_ = this->create_subscription<sensor::msg::CoreCommand>(
-        //     "to_core", 10, std::bind(&OpenAMPNode::command_callback, this, std::placeholders::_1));
-        led_sub_ = this->create_subscription<std_msgs::msg::Bool>(
-            "/led", 10,
-            std::bind(&OpenAMPNode::led_callback, this, std::placeholders::_1));
-
-
-        pwm_sub_ = this->create_subscription<std_msgs::msg::UInt16>(
-            "pwm", 10,
-            std::bind(&OpenAMPNode::pwm_callback, this, std::placeholders::_1));
+        status_pub_ = this->create_publisher<sensor::msg::DeviceStatus>("from_core", 10);
+        command_sub_ = this->create_subscription<sensor::msg::CoreCommand>(
+            "to_core", 10, std::bind(&OpenAMPNode::command_callback, this, std::placeholders::_1));
 
         init_rpmsg();
-        timer_ = this->create_wall_timer(std::chrono::milliseconds(10), std::bind(&OpenAMPNode::loop, this));
+        timer_ = this->create_wall_timer(std::chrono::milliseconds(1000), std::bind(&OpenAMPNode::loop, this));
     }
 
     ~OpenAMPNode() {
@@ -102,26 +80,10 @@ public:
     }
 
 private:
-    // void command_callback(const sensor::msg::CoreCommand::SharedPtr msg) {
-    //     device.led = msg->led;
-    //     device.pwm = msg->pwm;
-    // }
-
-    void led_callback(const std_msgs::msg::Bool::SharedPtr msg) {
-        device.led = msg->data ? 1 : 0;
-    //RCLCPP_INFO(this->get_logger(), "LED 设置为 %d", device.led);
+    void command_callback(const sensor::msg::CoreCommand::SharedPtr msg) {
+        device.led = msg->led;
+        device.pwm = msg->pwm;
     }
-
-
-    void pwm_callback(const std_msgs::msg::UInt16::SharedPtr msg) {
-        // 根据硬件范围裁剪
-        int val = static_cast<int>(msg->data);
-        if (val < 0) val = 0;
-        if (val > 400) val = 400;  // 假设 PWM 范围 0–1000
-        device.pwm = val;
-    //    RCLCPP_INFO(this->get_logger(), "PWM 设置为 %d", device.pwm);
-    }
-
 
     void init_rpmsg() {
         //打开控制设备
@@ -152,7 +114,6 @@ private:
             close(ctrl_fd_);
             ctrl_fd_ = -1;
         }
-        RCLCPP_INFO(this->get_logger(),"open rpmsg0 success...\r\n");
     }
 
     void loop() {
@@ -165,7 +126,7 @@ private:
         send_pkt.command = DEVICE_CORE_CHECK;
         send_pkt.length = static_cast<uint16_t>(len);
     
-        // RCLCPP_INFO(this->get_logger(), "Sending: %s", send_pkt.data);
+        RCLCPP_INFO(this->get_logger(), "Sending: %s", send_pkt.data);
         write_full(rpmsg_fd_, &send_pkt, sizeof(DataPacket));
     
         struct pollfd fds = { rpmsg_fd_, POLLIN, 0 };
@@ -174,7 +135,7 @@ private:
                 std::memcpy(recv_buff, recv_pkt.data, recv_pkt.length);
                 recv_buff[recv_pkt.length] = '\0';
     
-                // RCLCPP_INFO(this->get_logger(), "Received raw: %s", recv_buff);
+                RCLCPP_INFO(this->get_logger(), "Received raw: %s", recv_buff);
     
                 if (recv_pkt.length >= 25 &&
                     sscanf(recv_pkt.data, "T:%f|H:%f|P:%d|M:%d|V:%d",
@@ -189,29 +150,17 @@ private:
                     if (device.val != 0 && device.val != 1) device.val = -1;
                 }
     
+                auto msg = sensor::msg::DeviceStatus();
+                msg.temperature = device.temperature;
+                msg.humidity = device.humidity;
+                msg.presence = device.presence;
+                msg.mq2 = device.mq2;
+                msg.val = device.val;
     
-                // RCLCPP_INFO(this->get_logger(), "Published: T=%.1f H=%.1f P=%d M=%d V=%d",
-                // device.temperature, device.humidity, device.presence, device.mq2, device.val);
+                RCLCPP_INFO(this->get_logger(), "Published: T=%.1f H=%.1f P=%d M=%d V=%d",
+                            msg.temperature, msg.humidity, msg.presence, msg.mq2, msg.val);
     
-                // status_pub_->publish(msg);
-
-                {
-                    std_msgs::msg::Float32 temp_msg;
-                    temp_msg.data = device.temperature;
-                    temperature_publisher_->publish(temp_msg);
-                  
-                    std_msgs::msg::Float32 hum_msg;
-                    hum_msg.data = device.humidity;
-                    humidity_publisher_->publish(hum_msg);
-                  
-                    std_msgs::msg::Bool mq2_msg;
-                    mq2_msg.data = !(device.mq2 == 1);
-                    mq2_publisher_->publish(mq2_msg);
-                  
-                    std_msgs::msg::Bool presence_msg;
-                    presence_msg.data = (device.presence == 1);
-                    people_publisher_->publish(presence_msg);
-                }
+                status_pub_->publish(msg);
             } else {
                 RCLCPP_WARN(this->get_logger(), "Failed to read from rpmsg");
             }
@@ -220,16 +169,8 @@ private:
         }
     }
     
-    // rclcpp::Publisher<sensor::msg::DeviceStatus>::SharedPtr status_pub_;
-    // publishers
-    rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr temperature_publisher_;
-    rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr humidity_publisher_;
-    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr    mq2_publisher_;
-    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr    people_publisher_;
-
-    // rclcpp::Subscription<sensor::msg::CoreCommand>::SharedPtr command_sub_;
-    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr  led_sub_;
-    rclcpp::Subscription<std_msgs::msg::UInt16>::SharedPtr pwm_sub_;
+    rclcpp::Publisher<sensor::msg::DeviceStatus>::SharedPtr status_pub_;
+    rclcpp::Subscription<sensor::msg::CoreCommand>::SharedPtr command_sub_;
     rclcpp::TimerBase::SharedPtr timer_;
     int ctrl_fd_ = -1;
     int rpmsg_fd_ = -1;

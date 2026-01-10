@@ -4,15 +4,12 @@ import time
 import random
 import rclpy
 from rclpy.node import Node
-from sensor_msgs.msg import Image, CompressedImage 
+from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
-import threading
-from std_msgs.msg import String
-import queue
 
-IMG_QUEUE = queue.Queue() 
-INFO_QUEUE = queue.Queue() 
-WORKING = False
+from std_msgs.msg import String
+from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSDurabilityPolicy
+
 
 def plot_one_box(x, img, color=None, label=None, line_thickness=None):
     tl = line_thickness or round(0.002 * (img.shape[0] + img.shape[1]) / 2) + 1
@@ -95,11 +92,20 @@ def infer_img(img0, net, model_h, model_w, nl, na, stride, anchor_grid, thred_nm
     boxes, confs, ids = post_process_opencv(outs, model_h, model_w, img_h, img_w, thred_nms, thred_cond)
 
     return boxes, confs, ids
-    
-def predict():
-    global WORKING, IMG_QUEUE, INFO_QUEUE
-    WORKING = True
-    #print("[INFO] YOLO 图像节点启动")
+
+class ImagePublisher(Node):
+    def __init__(self):
+        super().__init__('yolo_image_publisher')
+        self.raw_pub = self.create_publisher(Image, 'yolo/raw_image', 10)
+        self.result_pub = self.create_publisher(Image, 'yolo/result_image', 10)
+        self.detect_pub = self.create_publisher(String, 'yolo/detect_info', 10)  # 新增话题
+        self.bridge = CvBridge()
+
+def main():
+    rclpy.init()
+    image_node = ImagePublisher()
+
+    print("[INFO] YOLO 图像节点启动")
 
     model_pb_path = "/home/user/ros2_uboot/src/yolo_v5/models/best_320.onnx"
     net = cv2.dnn.readNetFromONNX(model_pb_path)
@@ -116,33 +122,30 @@ def predict():
 
     video = 0
     cap = cv2.VideoCapture(video)
+    flag_det = True
 
-    counter = 0
-    start_time = time.time()
-    fps = 5
-    num = 0
-    det_boxes, scores, ids = [], [], []
-    while WORKING:
-        try:
-            success, img0 = cap.read()
-            if success:
-                # 发布原始图像
-                # raw_msg = image_node.bridge.cv2_to_imgmsg(img0, encoding="bgr8")
-                # image_node.raw_pub.publish(raw_msg)
-                
-                img_copy = img0  # .copy
-                detect_msgs = []
-                num += 1
-                if num<8:
-                    det_boxes, scores, ids = infer_img(
-                        img_copy, net, model_h, model_w, nl, na, stride, anchor_grid,
-                        thred_nms=0.4, thred_cond=0.5
-                    )
-                else:
-                    num = 0
+    prev_time = time.time()
+    while rclpy.ok():
+        success, img0 = cap.read()
+        if success:
+            # 发布原始图像
+            raw_msg = image_node.bridge.cv2_to_imgmsg(img0, encoding="bgr8")
+            image_node.raw_pub.publish(raw_msg)
+
+            img_copy = img0.copy()
+            detect_msgs = []
+            if flag_det:
+                t1 = time.time()
+                det_boxes, scores, ids = infer_img(
+                    img_copy, net, model_h, model_w, nl, na, stride, anchor_grid,
+                    thred_nms=0.4, thred_cond=0.5
+                )
+                t2 = time.time()
+
                 for box, score, id in zip(det_boxes, scores, ids):
                     label = '%s:%.2f' % (dic_labels[id], score)
                     plot_one_box(box.astype(np.int16), img_copy, color=(255, 0, 0), label=label)
+
                     x1, y1, x2, y2 = box.astype(np.int32)
                     center_x = int((x1 + x2) / 2)
                     center_y = int((y1 + y2) / 2)
@@ -150,11 +153,7 @@ def predict():
                     print(f"[DETECT] {label} at ({center_x},{center_y}) confidence: {score:.2f}")
 
                 # FPS 信息
-                counter += 1
-                if time.time() - start_time > 1:
-                    fps = counter / (time.time() - start_time)
-                    start_time = time.time()
-                    counter = 0
+                fps = 1.0 / (t2 - t1 + 1e-6)
                 cv2.putText(img_copy, f"FPS: {fps:.2f}", (10, 30),
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
@@ -163,75 +162,17 @@ def predict():
                     detect_info = "\n".join(detect_msgs)
                 else:
                     detect_info = "No objects detected"
-                INFO_QUEUE.put(String(data=detect_info))
+                image_node.detect_pub.publish(String(data=detect_info))
 
-                # 发布处理后图像
-                # image_node.result_pub.publish(result_msg)
-                # result_msg = image_node.bridge.cv2_to_imgmsg(img_copy, encoding="bgr8")
-                IMG_QUEUE.put(img_copy)
-                # cv2.imshow("Detection Result", img_copy)
-        except KeyboardInterrupt:
-            cap.release()
-            WORKING = False
+            # 发布处理后图像
+            result_msg = image_node.bridge.cv2_to_imgmsg(img_copy, encoding="bgr8")
+            image_node.result_pub.publish(result_msg)
+
+        rclpy.spin_once(image_node, timeout_sec=0.01)
+
     cap.release()
-    
-
-class ImagePublisher(Node):
-    def __init__(self):
-        super().__init__('yolo_image_publisher')
-        # self.raw_pub = self.create_publisher(Image, 'yolo/raw_image', 10)
-        # self.result_pub = self.create_publisher(Image, 'yolo/result_image', 10)
-        self.detect_pub = self.create_publisher(String, 'yolo/detect_info', 10)  # 新增话题
-        # 压缩后 JPEG 发布者
-        self.comp_pub = self.create_publisher(CompressedImage, 'yolo/result_image/compressed', 10)
-        self.timer_ = self.create_timer(0.1, self.timer_callback)
-        self.bridge = CvBridge()
-        self.detect = threading.Thread(target=predict)
-        self.detect.start()
-        print('[IMG NODE] WORK.')
-    
-    def timer_callback(self):
-        global IMG_QUEUE, INFO_QUEUE, WORKING
-        # print('[IMG NODE]:working...')
-        if not IMG_QUEUE.empty() and WORKING:
-            img = IMG_QUEUE.get()
-            result_msg = self.bridge.cv2_to_imgmsg(img, encoding="bgr8")
-            # self.result_pub.publish(result_msg)
-             # —— 压缩发布 —— #
-            # 1. 用 OpenCV 编码成 JPEG（二进制）
-            img_small = cv2.resize(img, (480, 360), interpolation=cv2.INTER_AREA)
-            success, buffer = cv2.imencode('.jpg', img_small, [int(cv2.IMWRITE_JPEG_QUALITY),80])
-            if success:
-                comp_msg = CompressedImage()
-                comp_msg.header.stamp = self.get_clock().now().to_msg()
-                comp_msg.format = "jpeg"
-                comp_msg.data = np.array(buffer).tobytes()
-                self.comp_pub.publish(comp_msg)
-            else:
-                self.get_logger().warn("JPEG 编码失败")
-
-        if not INFO_QUEUE.empty() and WORKING:
-            info = INFO_QUEUE.get()
-            self.detect_pub.publish(info)
-    
-    def end(self):
-        global WORKING
-        WORKING = False
-        self.detect.join()
-        print('[IMG NODE] EXIT.')
-
-
-def main():
-    rclpy.init()
-    image_node = ImagePublisher()
-    try:
-        rclpy.spin(image_node) # 启动节点的事件循环
-    except KeyboardInterrupt:
-        image_node.end()
-        image_node.destroy_node() # 清理并关闭节点
-    finally:
-        rclpy.shutdown() # 关闭ROS2
-
+    image_node.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == "__main__":
     main()

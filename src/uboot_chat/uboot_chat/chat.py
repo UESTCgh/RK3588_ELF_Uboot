@@ -7,20 +7,20 @@ current_file_path = os.path.abspath(__file__)
 current_dir = os.path.dirname(current_file_path)
 sys.path.append(current_dir)
 
-
 from sparkModel import SparkGPT
 from micro_recognizer import MicRecognizer
 from speechGC import Speech
 import threading
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
-from time import sleep
+from std_msgs.msg import String, Bool, Float32
 from sensor.msg import DeviceStatus
+from time import sleep
 
 
 class Chat:
-    def __init__(self):
+    def __init__(self,subtitle_publisher):
+        self.subtitle_pub = subtitle_publisher
         self.recognizer = MicRecognizer()
         self.recognizer_thread = threading.Thread(target=self.recognizer.start)
         self.chat_core = SparkGPT()
@@ -36,6 +36,12 @@ class Chat:
                 sleep(0.1)
                 continue
             question = self.recognizer.rec_result.get()
+            print('识别结果：' + question)
+            if ('小优' in question) or ('小有' in question) or ('小悠' in question) or ('小友' in question) or ('小忧' in question) or ('想要' in question):
+                self.talk("我在！")
+            else:
+                continue
+            question = self.recognizer.rec_result.get()
             print('顾客：' + question)
             answer = self.chat_core.contact(question)
             if answer:
@@ -43,6 +49,11 @@ class Chat:
             self.recognizer.rec_result.task_done()
             
     def talk(self, msg):
+        subtitle_msg = String()
+        subtitle_msg.data = msg
+        self.subtitle_pub.publish(subtitle_msg)
+        print('[字幕] 已发布：', msg)
+
         self.recognizer.close_ear()
         self.speech.talk(msg)
         self.recognizer.open_ear()
@@ -59,11 +70,19 @@ class Chat:
 class ChatPublisher(Node):
     def __init__(self):
         super().__init__('chat_server')
-        self.chat = Chat()
+        
+        self.subtitle_pub = self.create_publisher(String, '/subtitle', 10)  # 创建字幕发布器
+        self.chat = Chat(self.subtitle_pub)
         self.chat_thread = threading.Thread(target=self.chat.start)
         self.publisher_ = self.create_publisher(String, '/chat', 10)
         self.subscription = self.create_subscription(String, '/uboot', self.listener_callback, 10)
-        self.subscription_status = self.create_subscription(DeviceStatus, '/from_core', self.status_callback, 10)
+        # self.subscription_status = self.create_subscription(DeviceStatus, '/from_core', self.status_callback, 10)
+        self.subscription_status_mq2 = self.create_subscription(Bool, '/mq2', self.mq2_status_callback, 10)
+        self.subscription_status_temp = self.create_subscription(Float32, '/temp', self.temp_status_callback, 10)
+        self.subscription_status_hum = self.create_subscription(Float32, '/hum', self.hum_status_callback, 10)
+        self.subscription_status_chat_switch = self.create_subscription(Bool, '/chat_switch', self.chat_switch_callback, 10)
+        self.led_pub = self.create_publisher(Bool, '/led1', 10)
+
         self.T = 24  # 温度
         self.H = 68  # 湿度
         self.talk = False  # 说话标志位
@@ -74,21 +93,36 @@ class ChatPublisher(Node):
         if str(msg.data) == 'back':
             self.chat.talk('尊敬的客人，我们已到达目标房间，本机将开始返回服务点')
 
-    def status_callback(self, msg: DeviceStatus):
-        self.T = msg.temperature
-        self.H = msg.humidity
-        if msg.mq2 == 0 and self.talk==False:
+    def mq2_status_callback(self, msg:Bool):
+        if msg.data == True and self.talk==False:
             self.talk = True
-            self.chat.talk('警告！有毒，快跑！')
+            self.chat.talk('警告！危险，快跑！')
             self.talk = False
+       
+        # print(msg.data)
+    
+    def temp_status_callback(self, msg:Float32):
+        self.T = msg.data
+        # print(self.T)
+        
+    def hum_status_callback(self, msg:Float32):
+        self.H = msg.data
+        # print(self.H)
 
+    def chat_switch_callback(self, msg:Bool):
+        if msg.data == True:
+            self.chat.talk("已开启语音对话功能")
+            self.chat.recognizer.open_ear()
+        else:
+            self.chat.talk("已关闭语音对话功能")
+            self.chat.recognizer.close_ear()
 
     def timer_callback(self):
         msg = String()
         if self.chat.chat_core.user_requirements.empty():
             msg.data = "0"
         else:
-            requirement = str(self.chat.chat_core.user_requirements.get())[1:]
+            requirement = str(self.chat.chat_core.user_requirements.get())
             if requirement.isdigit():
                 msg.data = requirement
             else:
@@ -100,8 +134,14 @@ class ChatPublisher(Node):
     def talk_status(self, status):
         if status == '温度':
             self.chat.talk(f'现在的环境温度为{self.T:.1f}度')
-        else:
+        elif status == '湿度':
             self.chat.talk(f'现在的环境湿度为百分之{self.H:.1f}')
+        elif status == '开灯':
+            self.led_pub.publish(Bool(data=True))
+            self.chat.talk('控制成功')
+        elif status == '关灯':
+            self.led_pub.publish(Bool(data=False))
+            self.chat.talk('已经关闭灯')
 
     def msg_to_uboot(self, value:str):
         msg = String()

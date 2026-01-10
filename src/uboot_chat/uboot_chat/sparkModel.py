@@ -3,6 +3,8 @@ from sparkai.core.messages import ChatMessage
 from sparkai.errors import SparkAIConnectionError
 from sparkai.core.utils.function_calling import convert_to_openai_function
 from queue import Queue
+import re
+
 
 SPARKAI_URL = 'wss://spark-api.xf-yun.com/v4.0/chat'
 SPARKAI_APP_ID = 'ce227ede'
@@ -26,6 +28,24 @@ class History:
             self.contain = self.contain[1:]
 
 
+# 常用中文数字映射
+cn_num = {'零':0,'〇':0,'一':1,'二':2,'三':3,'四':4,'五':5,'六':6,'七':7,'八':8,'九':9,'十':10}
+
+def cn2num(s):
+    if s.isdigit():
+        return int(s)
+    if len(s) == 1:  # 单个字
+        return cn_num.get(s, 0)
+    if s[0] == '十': # 十开头，如 "十三"
+        return 10 + cn_num.get(s[1], 0)
+    if s[-1] == '十': # "二十"
+        return cn_num.get(s[0], 0) * 10
+    if '十' in s: # "二十五"
+        parts = s.split('十')
+        return cn_num.get(parts[0], 0)*10 + cn_num.get(parts[1], 0)
+    return 0
+
+
 class SparkGPT:
     def __init__(self):
         self.history = History(contents_size)
@@ -44,31 +64,48 @@ class SparkGPT:
         print('<-SparkGPT:{} ->'.format(self.contact('你好')))
 
     def contact(self, user_msg: str):
-        if ('6号' in user_msg) or ('六号' in user_msg) :
-            print(f"<-SparkGPT: Function Callback success (func_getPos)->")
-            return self._call_server('A1006') 
-        if ('7号' in user_msg) or ('七号' in user_msg) :
-            print(f"<-SparkGPT: Function Callback success (func_getPos)->")
-            return self._call_server('7')
-        if ('8号' in user_msg) or ('八号' in user_msg) :
-            print(f"<-SparkGPT: Function Callback success (func_getPos)->")
-            return self._call_server('A1008')
-        if ('9号' in user_msg) or ('九号' in user_msg) :
-            print(f"<-SparkGPT: Function Callback success (func_getPos)->")
-            return self._call_server('A1009')
-        if ('温度' in user_msg) or ('多少度' in user_msg) :
-            print(f"<-SparkGPT: Function Callback success (func_getStatus)->")
-            return self._call_status('温度')
-        if ('湿度' in user_msg):
-            print(f"<-SparkGPT: Function Callback success (func_getStatus)->")
-            return self._call_status('湿度')
+        # if "环境温度" in user_msg:
+        #     return self._call_status('温度')
+        # if "环境湿度" in user_msg:
+        #     return self._call_status('湿度')
+
+
+        m = re.search(
+            r'(?:去|到|带我去|送我去)?\s*([零〇一二三四五六七八九十]{1,3}|\d{1,4})号',
+            user_msg
+        )
+        if m:
+            number = cn2num(m.group(1))
+            print(f"<-LocalGPT: Function Callback success (func_getPos)->")
+            return self._call_server(number)
+        if re.search(r"温度", user_msg):
+            self.user_requirements.put("温度")
+            print(f"<-LocalGPT: Function Callback success (func_getStatus)->")
+            return ""
+        if re.search(r"湿度", user_msg):
+            self.user_requirements.put("湿度")
+            print(f"<-LocalGPT: Function Callback success (func_getStatus)->")
+            return ""
+        if re.search(r"开灯", user_msg):
+            self.user_requirements.put("开灯")
+            print(f"<-LocalGPT: Function Callback success (func_controlStatus)->")
+            return ""
+        if re.search(r"关灯", user_msg):
+            self.user_requirements.put("关灯")
+            print(f"<-LocalGPT: Function Callback success (func_controlStatus)->")
+            return ""
+
         messages = [ChatMessage(role="system", content=self.system_content)]
         for msg in self.history.contain:
             messages.append(msg)
         user_chatMessage = ChatMessage(role="user", content=user_msg)
         messages.append(user_chatMessage)
         try:
-            answer = self._spark.generate([messages], callbacks=[self.handler], function_definition=self.function_definition)
+            answer = self._spark.generate(
+                [messages],
+                callbacks=[self.handler],
+                function_definition=self.function_definition
+            )
             # print(answer)
             answer_text = answer.generations[0][0].text
         except SparkAIConnectionError:
@@ -83,6 +120,7 @@ class SparkGPT:
                 function_name = answer.generations[0][0].message.function_call['name']
                 print(f"<-SparkGPT: Function Callback success ({function_name})->")
                 if function_name == 'func_getPos':
+                    # print(answer)
                     number = eval(answer.generations[0][0].message.function_call['arguments'])['number']
                     answer_text = self._call_server(number)
                 elif function_name == 'func_getStatus':
@@ -109,13 +147,13 @@ class SparkGPT:
 
     @staticmethod
     def func_getPos(number: int) ->str:
-        """你是一个房间位置查询器，当要去某号房间时，可以帮我查询该房间号对应的位置。例如：带我去3号房间，或带我去7号房间，或带我去9号房间，或带我去八号房间
+        """你是一个房间位置查询器，当要去某号房间时，可以帮我查询该房间号对应的位置。例如：带我去3号房间，或带我去八号房间
     Args:
-        number: 输入房间号
+        number: 房间号, int类型
     Return:
              返回 房间的位置
     """
-        return "位置"
+        return "房间位置"
 
     @staticmethod
     def func_getStatus(status: str) -> str:
